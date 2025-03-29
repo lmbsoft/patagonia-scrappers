@@ -3,8 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 from src.models import (
-    Base, TipoUsuario, TipoNota, Paises, Usuario, Hashtags, NotasXUsuario,
-    HashtagsXNotas, Empresas, EmpresasXNota, TipoEvento,
+    Base, TipoUsuario, TipoNota, Paises, Usuario, NotasXUsuario,
+    Empresas, EmpresasXNota, TipoEvento,
     EventosFinancierosXEmpresa, CotizacionXEmpresa
 )
 
@@ -13,11 +13,16 @@ class TestModels(unittest.TestCase):
     def setUpClass(cls):
         # Create an in-memory SQLite database for testing
         cls.engine = create_engine('sqlite:///:memory:')
-        Base.metadata.create_all(cls.engine)
-        Session = sessionmaker(bind=cls.engine)
-        cls.session = Session()
+        cls.Session = sessionmaker(bind=cls.engine)
 
     def setUp(self):
+        # Create a fresh database for each test
+        Base.metadata.drop_all(self.engine)
+        Base.metadata.create_all(self.engine)
+        
+        # Create a new session for each test
+        self.session = self.Session()
+        
         # Create test data
         # Tipo Usuario
         self.tipo_usuario = TipoUsuario(
@@ -53,12 +58,6 @@ class TestModels(unittest.TestCase):
         )
         self.session.add(self.usuario)
 
-        # Hashtag
-        self.hashtag = Hashtags(
-            texto='#test'
-        )
-        self.session.add(self.hashtag)
-
         # Empresa
         self.empresa = Empresas(
             nombre='Test Company',
@@ -78,7 +77,7 @@ class TestModels(unittest.TestCase):
         self.session.commit()
 
     def tearDown(self):
-        self.session.rollback()
+        # Close the session after each test
         self.session.close()
 
     def test_create_tipo_nota(self):
@@ -124,18 +123,6 @@ class TestModels(unittest.TestCase):
         # Test relationships
         self.assertEqual(nota.usuario.handle, '@testuser')
         self.assertEqual(nota.tipo_nota.descripcion, 'texto')
-        
-        # Add hashtag to nota
-        hashtag_nota = HashtagsXNotas(
-            id_nota=nota.id_nota,
-            id_hashtag=self.hashtag.id_hashtag,
-            frecuencia=1
-        )
-        self.session.add(hashtag_nota)
-        self.session.commit()
-
-        self.assertEqual(len(nota.hashtags), 1)
-        self.assertEqual(nota.hashtags[0].hashtag.texto, '#test')
 
     def test_create_empresa_nota(self):
         """Test empresa-nota relationship and impact tracking"""
@@ -200,12 +187,6 @@ class TestModels(unittest.TestCase):
 
     def test_constraints(self):
         """Test model constraints"""
-        # Test unique constraint on hashtag
-        duplicate_hashtag = Hashtags(texto='#test')
-        with self.assertRaises(Exception):
-            self.session.add(duplicate_hashtag)
-            self.session.commit()
-
         # Test nullable constraints
         invalid_usuario = Usuario(
             handle='@testinvalid'  # Missing required nombre
@@ -213,6 +194,7 @@ class TestModels(unittest.TestCase):
         with self.assertRaises(Exception):
             self.session.add(invalid_usuario)
             self.session.commit()
+        self.session.rollback()  # Roll back after the expected exception
 
         # Test nota without required tipo_nota
         invalid_nota = NotasXUsuario(
@@ -224,6 +206,7 @@ class TestModels(unittest.TestCase):
         with self.assertRaises(Exception):
             self.session.add(invalid_nota)
             self.session.commit()
+        self.session.rollback()  # Roll back after the expected exception
 
     def test_cascading_delete(self):
         """Test cascading delete behavior"""
@@ -237,23 +220,31 @@ class TestModels(unittest.TestCase):
         self.session.add(nota)
         self.session.commit()
 
-        hashtag_nota = HashtagsXNotas(
+        # Store the nota_id for later use
+        nota_id = nota.id_nota
+
+        empresa_nota = EmpresasXNota(
             id_nota=nota.id_nota,
-            id_hashtag=self.hashtag.id_hashtag,
-            frecuencia=1
+            id_empresa=self.empresa.id_empresa,
+            fuente_extraccion='test_model',
+            tipo_mencion='directa',
+            contexto='Mentioned in test',
+            impacto_calculado=2.5,
+            tipo_impacto='positivo',
+            tiempo_reaccion=30.0
         )
-        self.session.add(hashtag_nota)
+        self.session.add(empresa_nota)
         self.session.commit()
 
         # Delete the nota and verify relationships are properly handled
         self.session.delete(nota)
         self.session.commit()
 
-        # Verify hashtag still exists but relationship is gone
-        hashtag = self.session.query(Hashtags).filter_by(texto='#test').first()
-        self.assertIsNotNone(hashtag)
-        hashtag_rel = self.session.query(HashtagsXNotas).filter_by(id_nota=nota.id_nota).first()
-        self.assertIsNone(hashtag_rel)
+        # Verify empresa still exists but relationship is gone
+        empresa = self.session.query(Empresas).filter_by(nombre='Test Company').first()
+        self.assertIsNotNone(empresa)
+        empresa_rel = self.session.query(EmpresasXNota).filter_by(id_nota=nota_id).first()
+        self.assertIsNone(empresa_rel)
 
 if __name__ == '__main__':
     unittest.main()

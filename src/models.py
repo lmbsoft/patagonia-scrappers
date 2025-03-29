@@ -1,6 +1,5 @@
 from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, ForeignKey, Table, Float, Boolean
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker, relationship
+from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 from datetime import datetime
 
 Base = declarative_base()
@@ -17,7 +16,7 @@ class TipoNota(Base):
 
 class Paises(Base):
     __tablename__ = 'paises'
-    cod_pais = Column(Integer, primary_key=True)
+    cod_pais = Column(String, primary_key=True)
     descripcion = Column(String, nullable=False)
 
 class Usuario(Base):
@@ -28,7 +27,7 @@ class Usuario(Base):
     cod_tipo_usuario = Column(Integer, ForeignKey('tipo_usuarios.cod_tipo_usuario'))
     verificado = Column(Boolean, default=False)
     seguidores = Column(Integer)
-    cod_pais = Column(Integer, ForeignKey('paises.cod_pais'))
+    cod_pais = Column(String, ForeignKey('paises.cod_pais'))
     idioma_principal = Column(String)
     score_credibilidad = Column(Float)  # (0,1)
 
@@ -36,11 +35,6 @@ class Usuario(Base):
     tipo_usuario = relationship("TipoUsuario")
     pais = relationship("Paises")
     notas = relationship("NotasXUsuario", back_populates="usuario")
-
-class Hashtags(Base):
-    __tablename__ = 'hashtags'
-    id_hashtag = Column(Integer, primary_key=True)
-    texto = Column(String, nullable=False)
 
 class NotasXUsuario(Base):
     __tablename__ = 'notas_x_usuario'
@@ -58,18 +52,7 @@ class NotasXUsuario(Base):
     # Relationships
     usuario = relationship("Usuario", back_populates="notas")
     tipo_nota = relationship("TipoNota")
-    hashtags = relationship("HashtagsXNotas", back_populates="nota")
-    empresas = relationship("EmpresasXNota", back_populates="nota")
-
-class HashtagsXNotas(Base):
-    __tablename__ = 'hashtags_x_notas'
-    id_nota = Column(Integer, ForeignKey('notas_x_usuario.id_nota'), primary_key=True)
-    id_hashtag = Column(Integer, ForeignKey('hashtags.id_hashtag'), primary_key=True)
-    frecuencia = Column(Integer)
-
-    # Relationships
-    nota = relationship("NotasXUsuario", back_populates="hashtags")
-    hashtag = relationship("Hashtags")
+    empresas = relationship("EmpresasXNota", back_populates="nota", cascade="all, delete-orphan")
 
 class Empresas(Base):
     __tablename__ = 'empresas'
@@ -85,7 +68,7 @@ class Empresas(Base):
 
 class EmpresasXNota(Base):
     __tablename__ = 'empresas_x_nota'
-    id_nota = Column(Integer, ForeignKey('notas_x_usuario.id_nota'), primary_key=True)
+    id_nota = Column(Integer, ForeignKey('notas_x_usuario.id_nota', ondelete='CASCADE'), primary_key=True)
     id_empresa = Column(Integer, ForeignKey('empresas.id_empresa'), primary_key=True)
     fuente_extraccion = Column(String)  # modelo que detectó la mención
     tipo_mencion = Column(String)  # (directa, ticker, similar)
