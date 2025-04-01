@@ -1,0 +1,25 @@
+{
+    "news_ext": {
+        "the_guardian": "@theguardian.com",
+        "washington_post": "@washingtonpost.com",
+        "bloomberg": "@bloomberg.com",
+        "new_york_times": "@nytimes.com",
+        "the_economist": "@economist.com",
+        "el_diario_spain": "@eldiario.es",
+        "el_pais_spain": "@elpais.com",
+        "la_vanguardia": "@lavanguardia.com"
+    },
+    "news_local": {
+        "infobae": "@infobae.bsky.social",
+        "la_nacion": "@lanacioncom.bsky.social",
+        "clarin": "@diarioclarin.bsky.social"
+    },
+    "others": {
+        "barchart": "@barchart.com",
+        "wired": "@wired.com",
+        "unusual_whales": "@unusualwhales.bsky.social"
+    },
+    "influencers": {
+
+    }
+}
