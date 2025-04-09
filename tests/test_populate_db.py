@@ -14,8 +14,8 @@ import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from populate_db import populate_market_data
-from src.models import Base, Empresas, CotizacionXEmpresa
-from src.database import init_db as original_init_db # Rename to avoid conflict
+# Import db setup from src.models
+from src.models import Base, Empresas, CotizacionXEmpresa, SessionLocal, engine, init_db as original_init_db # Rename to avoid conflict
 
 # Use an in-memory SQLite database for testing
 TEST_DATABASE_URL = "sqlite:///:memory:"
@@ -175,8 +175,8 @@ def test_populate_market_data_file_not_found(db_session: Session, caplog):
 
 def test_populate_market_data_empty_csv(db_session: Session, caplog):
     """Test behavior with an empty CSV file (only headers)."""
-    empty_csv = "Date,Price,Volume,Opening,Min,Max,ticker,settlement,instrument_type
-"
+    # Correctly define the multi-line string with headers and newline
+    empty_csv = """Date,Price,Volume,Opening,Min,Max,ticker,settlement,instrument_type\n"""
     with patch('builtins.open', mock_open(read_data=empty_csv)) as mocked_file:
         populate_market_data(db_session, "empty.csv")
 
@@ -189,4 +189,5 @@ def test_populate_market_data_empty_csv(db_session: Session, caplog):
     # Check the final log message counts
     assert "Processed: 0, Added Cotizaciones: 0, Skipped: 0" in caplog.text
 
-# Add more tests if needed, e.g., for boundary conditions, specific data formats, etc. 
+# Add more tests if needed, e.g., for boundary conditions, specific data formats, etc.
+# (Ensure no extra characters or incorrect indentation below this line) 
