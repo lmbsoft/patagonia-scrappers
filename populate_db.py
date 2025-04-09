@@ -7,11 +7,11 @@ from sqlalchemy.exc import IntegrityError
 # Assuming your models and db session setup are in src
 # Adjust the import path if your structure is different
 try:
-    from src.models import Base, Empresas, CotizacionXEmpresa
-    from src.database import SessionLocal, engine, init_db
+    # Import models and db setup from src.models
+    from src.models import Base, Empresas, CotizacionXEmpresa, SessionLocal, engine, init_db
 except ImportError as e:
-    print(f"Error importing database modules: {e}")
-    print("Please ensure src/models.py and src/database.py exist and are correctly structured.")
+    print(f"Error importing database modules from src.models: {e}")
+    print("Please ensure src/models.py exists and contains SessionLocal, engine, and init_db.")
     exit(1)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
