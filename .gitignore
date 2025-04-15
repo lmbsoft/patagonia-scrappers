@@ -1,3 +1,6 @@
+# Directorios __pycache__ en cualquier nivel
+**/__pycache__/
+
 # Archivos CSV en /app y subdirectorios
 /app/**/*.csv
 
