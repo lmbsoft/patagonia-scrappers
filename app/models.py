@@ -1,6 +1,17 @@
-from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, ForeignKey, Table, Float, Boolean
+import os
+from sqlalchemy import create_engine, Column, Integer, String, Text, DateTime, ForeignKey, Float, Boolean
 from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 from datetime import datetime
+
+# Configuración de la base de datos PostgreSQL mediante variables de entorno
+USER = os.getenv("DB_USER", "tu_usuario")
+PASSWORD = os.getenv("DB_PASSWORD", "tu_contraseña")
+HOST = os.getenv("DB_HOST", "db")
+DB = os.getenv("DB_NAME", "patagonia_db")
+
+DATABASE_URL = f"postgresql://{USER}:{PASSWORD}@{HOST}/{DB}"
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 Base = declarative_base()
 
@@ -134,10 +145,5 @@ class TablaPPI(Base):
     def __repr__(self):
         return f"<TablaPPI(Date='{self.Date}', ticker='{self.ticker}', Price={self.Price})>"
 
-# Database configuration
-DATABASE_URL = "sqlite:///patagonia_datos.db"
-engine = create_engine(DATABASE_URL)
-SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
-
 def init_db():
-    Base.metadata.create_all(bind=engine) 
+    Base.metadata.create_all(bind=engine)
