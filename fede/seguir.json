@@ -20,6 +20,12 @@
         "unusual_whales": "@unusualwhales.bsky.social"
     },
     "influencers": {
-
+        "Daron Acemoglu": "@dacemoglumit.bsky.social",
+        "Michael Clemens": "@mclem.org",
+        "Arin Dube": "@arindube.bsky.social",
+        "Paul Goldsmith-Pinkham": "@paulgp.com",
+        "Austan Goolsbee": "@goolsbee.bsky.social",
+        "Heather Long": "@byheatherlong.bsky.social",
+        "Claudia Sahm": "@claudia-sahm.bsky.social" 
     }
 }
