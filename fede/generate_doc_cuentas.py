@@ -2,7 +2,11 @@ import requests
 import json
 from pathlib import Path
 import pandas as pd
+from langdetect import detect
 
+
+def identify_lang(texto: str):
+    return detect(texto)
 
 
 def get_profile(handle, URL_BASE):
@@ -31,7 +35,7 @@ def generate_csv(path_json: Path, output_csv: Path, URL_BASE):
                 "verificado": None,
                 "seguidores": response["followersCount"],
                 "cod_pais": None,
-                "idioma_principal": None,
+                "idioma_principal": identify_lang(response['description']),
                 "Score_credibilidad": None
             })
 
