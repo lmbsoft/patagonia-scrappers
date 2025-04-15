@@ -1,11 +1,15 @@
-venv/
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.db
-.env
-.venv
-env/
-ENV/
+# Archivos CSV en /app y subdirectorios
+/app/**/*.csv
+
+# Archivos de log en /app y subdirectorios
+/app/**/*.log
+
+# Archivos .old en /app y subdirectorios
+/app/**/*.old
+
+# Cualquier archivo que contenga 'copy' en el nombre en /app y subdirectorios
+/app/**/*copy*.*
+
+# También podemos excluir archivos temporales comunes
+/app/**/*.tmp
+/app/**/*.bak
