@@ -1,184 +1,184 @@
-﻿actor_handle,uri,text,created_at,likes,reposts,replies,sentiment_vader,interpretacion_sentimiento
+﻿actor_handle,uri,text,created_at,likes,reposts,replies,sentiment_vader,interpretacion_sentimiento,text_length,word_count,hour,engagement,date,sentiment
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lmv6wfhr422u,"Thank YOU for coming out!
 
 This is exactly why we do this.
 
 One objective of these rallies has been for people in red and swing areas to start seeing and finding one another. There is power in numbers.
 
-We also bring local organizers onstage to speak and highlight local issues. It’s been great 💜",2025-04-15 23:06:41.062000+00:00,4305,428,114,0.9259,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmv6mrxfsq2j,"Nvidia said the US will begin requiring a license to export the company’s H20 chips to China, an escalation of restrictions that the company has publicly opposed",2025-04-15 23:01:18.438000+00:00,62,23,9,0.0,Neutral
+We also bring local organizers onstage to speak and highlight local issues. It’s been great 💜",2025-04-15 23:06:41.062000+00:00,4305,428,114,0.9259,Positivo,296,54,23,4847,2025-04-15,0.17500000000000002
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmv6mrxfsq2j,"Nvidia said the US will begin requiring a license to export the company’s H20 chips to China, an escalation of restrictions that the company has publicly opposed",2025-04-15 23:01:18.438000+00:00,62,23,9,0.0,Neutral,161,27,23,94,2025-04-15,0.0
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmv3wolhew2h,"📩 Coming soon: Go in-depth on Pointed, our weekly news quiz. 
 
-Quizmaster @aimeelucido.bsky.social's newsletter will reveal how the game is made and give hints for next week. Sign up here",2025-04-15 22:13:00+00:00,4,0,0,0.0,Neutral
+Quizmaster @aimeelucido.bsky.social's newsletter will reveal how the game is made and give hints for next week. Sign up here",2025-04-15 22:13:00+00:00,4,0,0,0.0,Neutral,187,30,22,4,2025-04-15,-0.2
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3lmv3dkbzcs2z,"China has toughness and discipline on its side in its showdown with America. But the rigidity of China’s one-party system, and its horror of exposing Xi Jinping to embarrassment, makes dealing with Trumpian chaos a nightmare. My column, “The Telegram”
 economist.com/internationa...
-from The Economist",2025-04-15 22:02:27.352000+00:00,16,5,0,-0.9625,Negativo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmv2qsdnns2f,"AOC: Donald Trump is a criminal. He was found guilty of 34 felony counts of fraud, found liable for sexual abuse. If he wants to find the rapists and criminals in this country, he should look in the mirror",2025-04-15 21:51:58.265000+00:00,8914,1790,150,-0.9792,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuxuoj5wt2n,Harvard University’s balance sheet — fortified to withstand surprise blows — is facing an unprecedented test as it faces off with the Trump administration,2025-04-15 21:00:00+00:00,106,22,13,0.2732,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuwhdjzyx2r,United Airlines stood by its full-year profit outlook but warned a “recessionary” scenario would erode demand and dramatically lower earnings,2025-04-15 20:35:00+00:00,77,21,6,-0.5187,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuvyva4cs2u,"In an unusual U-turn, REI retracted its endorsement of Interior Secretary Doug Burgum and apologized for what the CEO said was a ""mistake""",2025-04-15 20:27:01.024000+00:00,315,69,39,0.296,Positivo
+from The Economist",2025-04-15 22:02:27.352000+00:00,16,5,0,-0.9625,Negativo,300,44,22,21,2025-04-15,0.0
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmv2qsdnns2f,"AOC: Donald Trump is a criminal. He was found guilty of 34 felony counts of fraud, found liable for sexual abuse. If he wants to find the rapists and criminals in this country, he should look in the mirror",2025-04-15 21:51:58.265000+00:00,8914,1790,150,-0.9792,Negativo,205,39,21,10854,2025-04-15,-0.06
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuxuoj5wt2n,Harvard University’s balance sheet — fortified to withstand surprise blows — is facing an unprecedented test as it faces off with the Trump administration,2025-04-15 21:00:00+00:00,106,22,13,0.2732,Positivo,154,24,21,141,2025-04-15,0.6
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuwhdjzyx2r,United Airlines stood by its full-year profit outlook but warned a “recessionary” scenario would erode demand and dramatically lower earnings,2025-04-15 20:35:00+00:00,77,21,6,-0.5187,Negativo,141,20,20,104,2025-04-15,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuvyva4cs2u,"In an unusual U-turn, REI retracted its endorsement of Interior Secretary Doug Burgum and apologized for what the CEO said was a ""mistake""",2025-04-15 20:27:01.024000+00:00,315,69,39,0.296,Positivo,138,23,20,423,2025-04-15,0.2
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmuumisq3r2q,"Trump is betting that a 25% tariff on imports of vehicles and automotive parts will spur more US manufacturing. 
 
 But that would require a major overhaul of the globally integrated supply chains the auto industry has spent decades fine-tuning. 
 
-Here’s what to know:",2025-04-15 20:02:00+00:00,104,37,21,0.0,Neutral
-aoc.bsky.social,at://did:plc:4llrhdclvdlmmynkwsmg5tdc/app.bsky.feed.post/3lmutshu4b22j,"Abrego Garcia's wife: ""I will not stop fighting until I see my husband alive. Kilmar, if you can hear me, stay strong. God hasn't forgotten about you. Our children are asking when you will come home ... they miss their dad so much.""",2025-04-15 19:47:38.189000+00:00,29814,7873,701,0.8769,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmutbqkjst2z,"In President Trump’s eyes, tariffs might simply be the price other countries should pay for admission to a premium market",2025-04-15 19:38:14.717000+00:00,72,18,40,-0.1027,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmusphk7ns2b,The conclusion of the tax filing season is about to provide early clues toward resolving a nagging question hanging over the US Treasury: How honest will Americans be about their income when there are suddenly fewer auditors to check them?,2025-04-15 19:28:01.284000+00:00,50,10,14,0.6124,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmunqarqhb2q,Exclusive: The SEC has pushed back on a request by a member of Elon Musk’s DOGE team to grant read and write access to some agency data,2025-04-15 17:58:59.007000+00:00,137,48,6,0.4588,Positivo
+Here’s what to know:",2025-04-15 20:02:00+00:00,104,37,21,0.0,Neutral,266,43,20,162,2025-04-15,0.115625
+aoc.bsky.social,at://did:plc:4llrhdclvdlmmynkwsmg5tdc/app.bsky.feed.post/3lmutshu4b22j,"Abrego Garcia's wife: ""I will not stop fighting until I see my husband alive. Kilmar, if you can hear me, stay strong. God hasn't forgotten about you. Our children are asking when you will come home ... they miss their dad so much.""",2025-04-15 19:47:38.189000+00:00,29814,7873,701,0.8769,Positivo,232,43,19,38388,2025-04-15,0.24444444444444446
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmutbqkjst2z,"In President Trump’s eyes, tariffs might simply be the price other countries should pay for admission to a premium market",2025-04-15 19:38:14.717000+00:00,72,18,40,-0.1027,Negativo,121,20,19,130,2025-04-15,-0.0625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmusphk7ns2b,The conclusion of the tax filing season is about to provide early clues toward resolving a nagging question hanging over the US Treasury: How honest will Americans be about their income when there are suddenly fewer auditors to check them?,2025-04-15 19:28:01.284000+00:00,50,10,14,0.6124,Positivo,239,40,19,74,2025-04-15,0.2333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmunqarqhb2q,Exclusive: The SEC has pushed back on a request by a member of Elon Musk’s DOGE team to grant read and write access to some agency data,2025-04-15 17:58:59.007000+00:00,137,48,6,0.4588,Positivo,135,27,17,191,2025-04-15,-0.05
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lmun45wgok2m,"I cannot convey enough how grateful I am to the millions of you all supporting us with your time, resources, and energy.
 
 Your support has allowed us to rally people together at record scale to organize their communities.
 
 All with an average donation of $21.
 
-THANK YOU & Pa’lante 🙏🏽♥️",2025-04-15 17:47:47.123000+00:00,47954,6032,918,0.9526,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmumpr5kw52t,Alani Nu's popularity with millennial and gen-Z women has pushed energy drink makers to target a once-unlikely group of consumers,2025-04-15 17:40:48.786000+00:00,20,2,3,0.6369,Positivo
+THANK YOU & Pa’lante 🙏🏽♥️",2025-04-15 17:47:47.123000+00:00,47954,6032,918,0.9526,Positivo,286,50,17,54904,2025-04-15,0.03333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmumpr5kw52t,Alani Nu's popularity with millennial and gen-Z women has pushed energy drink makers to target a once-unlikely group of consumers,2025-04-15 17:40:48.786000+00:00,20,2,3,0.6369,Positivo,129,20,17,25,2025-04-15,0.0
 bloomberg.com,at://did:plc:zrl2kj7wvvjtx7eaekp5wb7f/app.bsky.feed.post/3lmufnba3rs22,"Sodium-ion batteries are not a new technology, but they've long been overlooked because they pack less energy into the same amount of space compared to lithium-ion. But tariffs and the rise of AI may be boosting their prospects. 
 
-My story for BW (🎁 link): www.bloomberg.com/news/article...",2025-04-15 15:34:11.081000+00:00,37,12,1,0.8959,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmufm4vh7o2z,Americans are increasingly looking for jobs in Britain as President Donald Trump’s administration continues funding cuts and worries increase over a darkening economic outlook,2025-04-15 15:33:30.676000+00:00,129,42,14,-0.4019,Negativo
+My story for BW (🎁 link): www.bloomberg.com/news/article...",2025-04-15 15:34:11.081000+00:00,37,12,1,0.8959,Positivo,290,45,15,50,2025-04-15,-0.07121212121212121
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmufm4vh7o2z,Americans are increasingly looking for jobs in Britain as President Donald Trump’s administration continues funding cuts and worries increase over a darkening economic outlook,2025-04-15 15:33:30.676000+00:00,129,42,14,-0.4019,Negativo,175,24,15,185,2025-04-15,0.2
 bloomberg.com,at://did:plc:wkqncivjptmnjiysb4d65xzd/app.bsky.feed.post/3lmud3esu322y,"🚨Renewables + storage is expected to make up 50+% of power capacity needed by 2035 to meet data center demand. But almost 2/3 of additional electricity generation will come from fossil fuels, BNEF said in its latest report. 
 With @mchediak.bsky.social and Josh Saul
 
-www.bloomberg.com/news/article...",2025-04-15 14:48:23.380000+00:00,18,10,2,-0.0644,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmucys2kml2t,President Donald Trump threatened Harvard University’s charitable tax status after the school said it would not accept his administration’s demands in exchange for continued federal funding,2025-04-15 14:46:54.390000+00:00,120,41,22,-0.3578,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmucjstbda2w,EXCLUSIVE: The EU expects most US tariffs to stay put after little progress was made in trade talks this week,2025-04-15 14:38:33.251000+00:00,87,34,10,0.5775,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmubwbteut2g,Federal workers who scoffed when they first received Elon Musk’s infamous buyout offer are taking different tack now that there is a second one: saying yes,2025-04-15 14:27:36.542000+00:00,38,21,6,0.4019,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu6uxf6ws2a,The groups are accusing several US federal agencies of illegally wiping out online tools used to map environmental threats facing disadvantaged communities,2025-04-15 13:33:13.007000+00:00,198,80,8,-0.7351,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu6ii4jsr2b,"Mark Carney, the former central banker, has never looked at home on the campaign trail. Yet on the crucial question of who Canadians see as the best person to deal with Trump, surveys show him with a clear edge",2025-04-15 13:26:12.246000+00:00,151,27,16,0.7783,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu5t244us2z,"Billionaire hedge fund manager Bill Ackman has donated $250,000 to a super PAC supporting former New York Governor Andrew Cuomo in New York City’s mayoral race",2025-04-15 13:14:12.838000+00:00,79,53,47,0.7783,Positivo
+www.bloomberg.com/news/article...",2025-04-15 14:48:23.380000+00:00,18,10,2,-0.0644,Negativo,300,44,14,30,2025-04-15,0.09999999999999999
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmucys2kml2t,President Donald Trump threatened Harvard University’s charitable tax status after the school said it would not accept his administration’s demands in exchange for continued federal funding,2025-04-15 14:46:54.390000+00:00,120,41,22,-0.3578,Negativo,189,26,14,183,2025-04-15,0.6
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmucjstbda2w,EXCLUSIVE: The EU expects most US tariffs to stay put after little progress was made in trade talks this week,2025-04-15 14:38:33.251000+00:00,87,34,10,0.5775,Positivo,109,20,14,131,2025-04-15,0.15625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmubwbteut2g,Federal workers who scoffed when they first received Elon Musk’s infamous buyout offer are taking different tack now that there is a second one: saying yes,2025-04-15 14:27:36.542000+00:00,38,21,6,0.4019,Positivo,155,26,14,65,2025-04-15,-0.0625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu6uxf6ws2a,The groups are accusing several US federal agencies of illegally wiping out online tools used to map environmental threats facing disadvantaged communities,2025-04-15 13:33:13.007000+00:00,198,80,8,-0.7351,Negativo,155,22,13,286,2025-04-15,-0.25
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu6ii4jsr2b,"Mark Carney, the former central banker, has never looked at home on the campaign trail. Yet on the crucial question of who Canadians see as the best person to deal with Trump, surveys show him with a clear edge",2025-04-15 13:26:12.246000+00:00,151,27,16,0.7783,Positivo,210,39,13,194,2025-04-15,0.22000000000000003
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu5t244us2z,"Billionaire hedge fund manager Bill Ackman has donated $250,000 to a super PAC supporting former New York Governor Andrew Cuomo in New York City’s mayoral race",2025-04-15 13:14:12.838000+00:00,79,53,47,0.7783,Positivo,159,26,13,179,2025-04-15,0.1712121212121212
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmu526yszc2r,"Trump’s stringent immigration policies have major implications for education, tourism and jobs. 
 
 We're answering questions about how his agenda could shape the US economy
-🎧Tune in on April 16 at 11:30am EDT: bloom.bg/3YsJCw0",2025-04-15 13:00:19.125000+00:00,47,12,4,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtzu2wlfy2h,Exclusive: The US has told G-7 allies it won’t endorse a statement condemning Russia’s deadliest attack on Ukraine this year,2025-04-15 12:03:14.409000+00:00,161,118,60,-0.0772,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtytnherr2t,The US economy is set to lose billions of dollars in revenue in 2025 from a pullback in foreign tourism and boycotts of American products.,2025-04-15 11:45:06.469000+00:00,11840,3748,940,-0.6249,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtmwyeqln2q,BREAKING: China orders its airlines to halt any further deliveries of Boeing jets as trade war with the US expands,2025-04-15 08:12:12.948000+00:00,412,161,38,-0.5423,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtlmejaq72z,BREAKING: Hermès surpasses rival LVMH as the world's most valuable luxury stock in a stunning reversal of fortunes,2025-04-15 07:48:22.880000+00:00,99,21,22,0.7178,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtg5nbahi2z,"EXCLUSIVE: Once one of China’s top shadow lenders, Zhongrong now faces liquidation after missing billions in payments",2025-04-15 06:10:39.917000+00:00,58,21,9,0.2103,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt7crqg3s2g,"Some major public institutions in Canada, including a pension management firm and a leading hospital, are advising staff against traveling to the US.",2025-04-15 04:08:17.108000+00:00,5756,1779,224,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt5yejvq22i,"Former Treasury Secretary Janet Yellen says the rationale for President Donald Trump’s tariff policies are “unclear and not at all sensible""",2025-04-15 03:44:33.976000+00:00,350,81,37,0.2023,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt3mvglgw2t,The heightened volatility in Indian pharma stocks could continue with Trump’s administration pressing forward with plans to impose tariffs pharma imports by initiating trade probes. Read for free with your email on what could move markets today,2025-04-15 03:02:21.117000+00:00,45,9,1,0.2732,Positivo
+🎧Tune in on April 16 at 11:30am EDT: bloom.bg/3YsJCw0",2025-04-15 13:00:19.125000+00:00,47,12,4,0.0,Neutral,225,33,13,63,2025-04-15,0.0625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtzu2wlfy2h,Exclusive: The US has told G-7 allies it won’t endorse a statement condemning Russia’s deadliest attack on Ukraine this year,2025-04-15 12:03:14.409000+00:00,161,118,60,-0.0772,Negativo,124,20,12,339,2025-04-15,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtytnherr2t,The US economy is set to lose billions of dollars in revenue in 2025 from a pullback in foreign tourism and boycotts of American products.,2025-04-15 11:45:06.469000+00:00,11840,3748,940,-0.6249,Negativo,138,25,11,16528,2025-04-15,-0.0625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtmwyeqln2q,BREAKING: China orders its airlines to halt any further deliveries of Boeing jets as trade war with the US expands,2025-04-15 08:12:12.948000+00:00,412,161,38,-0.5423,Negativo,114,20,8,611,2025-04-15,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtlmejaq72z,BREAKING: Hermès surpasses rival LVMH as the world's most valuable luxury stock in a stunning reversal of fortunes,2025-04-15 07:48:22.880000+00:00,99,21,22,0.7178,Positivo,114,18,7,142,2025-04-15,0.5
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmtg5nbahi2z,"EXCLUSIVE: Once one of China’s top shadow lenders, Zhongrong now faces liquidation after missing billions in payments",2025-04-15 06:10:39.917000+00:00,58,21,9,0.2103,Positivo,117,17,6,88,2025-04-15,0.15
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt7crqg3s2g,"Some major public institutions in Canada, including a pension management firm and a leading hospital, are advising staff against traveling to the US.",2025-04-15 04:08:17.108000+00:00,5756,1779,224,0.0,Neutral,149,23,4,7759,2025-04-15,-0.04583333333333334
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt5yejvq22i,"Former Treasury Secretary Janet Yellen says the rationale for President Donald Trump’s tariff policies are “unclear and not at all sensible""",2025-04-15 03:44:33.976000+00:00,350,81,37,0.2023,Positivo,140,21,3,468,2025-04-15,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmt3mvglgw2t,The heightened volatility in Indian pharma stocks could continue with Trump’s administration pressing forward with plans to impose tariffs pharma imports by initiating trade probes. Read for free with your email on what could move markets today,2025-04-15 03:02:21.117000+00:00,45,9,1,0.2732,Positivo,244,37,3,55,2025-04-15,0.4
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsxf5qrn22l,"It was once one of Asia’s top startups, at least on paper, until it all came crashing down.
 
-Read the inside story of how eFishery faked its numbers, based on conversations with the company's founder and dozens of his investors, staff and clients.",2025-04-15 01:46:26.876000+00:00,35,13,0,0.2023,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmsvnwbebc2m,"AOC: When he talks about rapists and criminals, he should look in the mirror",2025-04-15 01:15:33.538000+00:00,37361,7472,523,-0.8402,Negativo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmsvbxohsk2m,AOC: We saw Majorie Taylor Greene buy that dip. How much did you make? How much did you make off of people’s despair? How much did you make off of that panic? How much did you make off of that suffering? No more. We can’t accept it,2025-04-15 01:08:52.363000+00:00,47302,9975,527,-0.84,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsudd2eps2t,The Trump administration froze $2.2 billion in funding to Harvard after the university refused to agree to a list of new government demands.,2025-04-15 00:51:44.100000+00:00,200,63,37,0.0772,Positivo
+Read the inside story of how eFishery faked its numbers, based on conversations with the company's founder and dozens of his investors, staff and clients.",2025-04-15 01:46:26.876000+00:00,35,13,0,0.2023,Positivo,247,43,1,48,2025-04-15,0.014814814814814817
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmsvnwbebc2m,"AOC: When he talks about rapists and criminals, he should look in the mirror",2025-04-15 01:15:33.538000+00:00,37361,7472,523,-0.8402,Negativo,76,14,1,45356,2025-04-15,0.0
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmsvbxohsk2m,AOC: We saw Majorie Taylor Greene buy that dip. How much did you make? How much did you make off of people’s despair? How much did you make off of that panic? How much did you make off of that suffering? No more. We can’t accept it,2025-04-15 01:08:52.363000+00:00,47302,9975,527,-0.84,Negativo,231,47,1,57804,2025-04-15,0.11000000000000001
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsudd2eps2t,The Trump administration froze $2.2 billion in funding to Harvard after the university refused to agree to a list of new government demands.,2025-04-15 00:51:44.100000+00:00,200,63,37,0.0772,Positivo,140,23,0,300,2025-04-15,0.13636363636363635
 aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmsticukts26,"AOC: I was watching earlier today on TV, someone was saying, “Why are AOC and Bernie going to Idaho?” 
 
-I’ll give you one simple answer: It’s because you matter",2025-04-15 00:36:37.940000+00:00,35812,6037,405,0.0258,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsqygsara2g,JPMorgan and BNY are limiting the sharing of information with the OCC because they are concerned about potential security risks to their computer networks following a major hack of the regulator’s emails,2025-04-14 23:51:57.531000+00:00,179,72,21,0.4767,Positivo
+I’ll give you one simple answer: It’s because you matter",2025-04-15 00:36:37.940000+00:00,35812,6037,405,0.0258,Neutral,160,29,0,42254,2025-04-15,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsqygsara2g,JPMorgan and BNY are limiting the sharing of information with the OCC because they are concerned about potential security risks to their computer networks following a major hack of the regulator’s emails,2025-04-14 23:51:57.531000+00:00,179,72,21,0.4767,Positivo,203,32,23,272,2025-04-14,0.020833333333333332
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsob2ijwu2w,"⏰ Pointed, our weekly news quiz, is closing soon:
 
 • Wager your points on categories you *think* you know
 • Leverage your bets on questions you *know* you know
 • Don't forget to answer wisely
 
-Play now and share your results",2025-04-14 23:03:00+00:00,12,2,0,0.6874,Positivo
+Play now and share your results",2025-04-14 23:03:00+00:00,12,2,0,0.6874,Positivo,224,41,23,14,2025-04-14,0.7
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmshmyzntk2z,"General Motors spent nearly a decade and $35 billion on its EV transition. Now CEO Mary Barra has to figure out how to sell the cars in Trump’s America.
 
-Read The Big Take here",2025-04-14 21:04:30.205000+00:00,80,26,16,0.0,Neutral
-economist.com,at://did:plc:j7eliwxzqpvvwu6jbxr5ggaf/app.bsky.feed.post/3lmsfz6egq22j,"The latest Trumplaw emergency at SCOTUS is about the president's power to remove agency officials. It's a big deal. Here's my @economist.com analysis w/ insights from @williambaude.bsky.social , @stevevladeck.bsky.social and Sai Prakash www.economist.com/united-state...",2025-04-14 20:35:31.254000+00:00,36,17,2,-0.3818,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsdytdbb42g,The US president is using import taxes in a campaign to reshape the global economy. Here’s what you need to know,2025-04-14 19:59:32.089000+00:00,42,12,15,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsdjxyywj2h,President Donald Trump said that he asked if El Salvador could build more prisons to jail as many American criminals as possible — US citizens included,2025-04-14 19:51:13.688000+00:00,171,111,68,-0.5719,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsc2kstl22t,"The Trump administration will ask lawmakers to cut more than $9 billion in funding for PBS, NPR and foreign aid in the current fiscal year",2025-04-14 19:24:42.802000+00:00,114,79,29,-0.2732,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsb7pmjb22l,This ordinary North American suburb has bus ridership that's off the charts. Here's their secret.,2025-04-14 19:09:41.964000+00:00,138,34,8,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms7rxxvkj2t,That business model for scores of online sellers is threatened by Trump's new tariffs — including eliminating the exemption for small parcels from import taxes,2025-04-14 18:44:07.184000+00:00,61,26,2,-0.4588,Negativo
+Read The Big Take here",2025-04-14 21:04:30.205000+00:00,80,26,16,0.0,Neutral,176,34,21,122,2025-04-14,0.012500000000000004
+economist.com,at://did:plc:j7eliwxzqpvvwu6jbxr5ggaf/app.bsky.feed.post/3lmsfz6egq22j,"The latest Trumplaw emergency at SCOTUS is about the president's power to remove agency officials. It's a big deal. Here's my @economist.com analysis w/ insights from @williambaude.bsky.social , @stevevladeck.bsky.social and Sai Prakash www.economist.com/united-state...",2025-04-14 20:35:31.254000+00:00,36,17,2,-0.3818,Negativo,270,33,20,55,2025-04-14,0.25
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsdytdbb42g,The US president is using import taxes in a campaign to reshape the global economy. Here’s what you need to know,2025-04-14 19:59:32.089000+00:00,42,12,15,0.0,Neutral,112,21,19,69,2025-04-14,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsdjxyywj2h,President Donald Trump said that he asked if El Salvador could build more prisons to jail as many American criminals as possible — US citizens included,2025-04-14 19:51:13.688000+00:00,171,111,68,-0.5719,Negativo,151,26,19,350,2025-04-14,0.18
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsc2kstl22t,"The Trump administration will ask lawmakers to cut more than $9 billion in funding for PBS, NPR and foreign aid in the current fiscal year",2025-04-14 19:24:42.802000+00:00,114,79,29,-0.2732,Negativo,138,25,19,222,2025-04-14,0.125
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmsb7pmjb22l,This ordinary North American suburb has bus ridership that's off the charts. Here's their secret.,2025-04-14 19:09:41.964000+00:00,138,34,8,0.0,Neutral,97,15,19,180,2025-04-14,-0.21666666666666667
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms7rxxvkj2t,That business model for scores of online sellers is threatened by Trump's new tariffs — including eliminating the exemption for small parcels from import taxes,2025-04-14 18:44:07.184000+00:00,61,26,2,-0.4588,Negativo,159,25,18,89,2025-04-14,-0.05681818181818182
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms67ugpcs2l,"🎙️ SAVE THE DATE: On Earth Day, Bloomberg journalists will answer questions about how the climate tech industry is navigating Trump's policies and tariffs.
 
-Join our Live Q&A on April 22 at 10:30am EDT:  bloom.bg/4jetMNW",2025-04-14 18:16:05.791000+00:00,33,13,6,0.7297,Positivo
+Join our Live Q&A on April 22 at 10:30am EDT:  bloom.bg/4jetMNW",2025-04-14 18:16:05.791000+00:00,33,13,6,0.7297,Positivo,220,35,18,52,2025-04-14,0.13636363636363635
 bloomberg.com,at://did:plc:zrl2kj7wvvjtx7eaekp5wb7f/app.bsky.feed.post/3lms5dqm6j22e,"Scoop: Mainspring Energy has raised a $258 million Series F to scale its linear generator business, fueled by the tailwinds of the AI data center boom. 
 
-Gift link: www.bloomberg.com/news/article...",2025-04-14 18:00:22.250000+00:00,12,5,1,0.6808,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms3uobx6d2h,Exiles fleeing communist Cuba have become a powerful force in Republican politics — but now as many as a half million recent arrivals risk deportation under Donald Trump,2025-04-14 17:34:02.700000+00:00,128,51,40,-0.1901,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms3iwfmcr2t,BREAKING:Harvard says it will not accept a deal with the Trump administration after the government threatened to halt $9 billion in funding,2025-04-14 17:27:28.528000+00:00,619,136,28,-0.6351,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrz7oy5l22z,Trump floats exemptions to his tariffs on imported vehicles and parts to give car companies more time to set up US manufacturing,2025-04-14 16:46:31.306000+00:00,47,25,30,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmry46thqa2q,"New: El Salvadoran President Nayib Bukele said a Maryland man deported to his country would not be returned to the US, even as the Supreme Court has called for the Trump administration to facilitate his release",2025-04-14 16:26:39.940000+00:00,128,61,51,0.5574,Positivo
+Gift link: www.bloomberg.com/news/article...",2025-04-14 18:00:22.250000+00:00,12,5,1,0.6808,Positivo,198,29,18,18,2025-04-14,-0.1
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms3uobx6d2h,Exiles fleeing communist Cuba have become a powerful force in Republican politics — but now as many as a half million recent arrivals risk deportation under Donald Trump,2025-04-14 17:34:02.700000+00:00,128,51,40,-0.1901,Negativo,169,28,17,219,2025-04-14,0.15833333333333335
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lms3iwfmcr2t,BREAKING:Harvard says it will not accept a deal with the Trump administration after the government threatened to halt $9 billion in funding,2025-04-14 17:27:28.528000+00:00,619,136,28,-0.6351,Negativo,139,22,17,783,2025-04-14,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrz7oy5l22z,Trump floats exemptions to his tariffs on imported vehicles and parts to give car companies more time to set up US manufacturing,2025-04-14 16:46:31.306000+00:00,47,25,30,0.0,Neutral,128,22,16,102,2025-04-14,0.5
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmry46thqa2q,"New: El Salvadoran President Nayib Bukele said a Maryland man deported to his country would not be returned to the US, even as the Supreme Court has called for the Trump administration to facilitate his release",2025-04-14 16:26:39.940000+00:00,128,61,51,0.5574,Positivo,210,36,16,240,2025-04-14,0.13636363636363635
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrxhzduim2j,"Brookfield has billions riding on a Middle East private equity push — but the Gulf can be hard to crack.
 
-Read The Big Take here.",2025-04-14 16:15:22.997000+00:00,12,2,2,-0.1531,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrxa5lpdz2g,"Hungary amends its constitution to clamp down on dissent, including a potential ban on the annual LGBTQ+ Pride parade",2025-04-14 16:10:59.117000+00:00,401,186,113,-0.296,Negativo
+Read The Big Take here.",2025-04-14 16:15:22.997000+00:00,12,2,2,-0.1531,Negativo,129,25,16,16,2025-04-14,-0.07291666666666667
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrxa5lpdz2g,"Hungary amends its constitution to clamp down on dissent, including a potential ban on the annual LGBTQ+ Pride parade",2025-04-14 16:10:59.117000+00:00,401,186,113,-0.296,Negativo,117,19,16,700,2025-04-14,-0.13518518518518519
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrvald7bf2g,"When a software company called Synapse failed, some app users lost access to money in FDIC-insured bank accounts. 
 
-How is that even possible?",2025-04-14 15:35:26.087000+00:00,52,19,5,-0.6808,Negativo
+How is that even possible?",2025-04-14 15:35:26.087000+00:00,52,19,5,-0.6808,Negativo,142,23,15,76,2025-04-14,-0.25
 bloomberg.com,at://did:plc:vo5bibvyjlwkivbvpv3tf6sj/app.bsky.feed.post/3lmrtctdvsk2y,"New: Cargo ships transport 80%+ of the global trade in goods, accounting for 3% of greenhouse gas emissions. With low-carbon fuels years away, shipping companies are embracing high-tech sails, onboard carbon capture and smart buoys to cut emissions. Free link.
-www.bloomberg.com/news/feature...",2025-04-14 15:00:54.144000+00:00,48,18,0,0.5994,Positivo
+www.bloomberg.com/news/feature...",2025-04-14 15:00:54.144000+00:00,48,18,0,0.5994,Positivo,294,41,15,66,2025-04-14,0.18766233766233767
 bloomberg.com,at://did:plc:wkqncivjptmnjiysb4d65xzd/app.bsky.feed.post/3lmrtbecrqk2l,"⚛️An exclusive with my colleague Lizette Chapman: Peter Thiel is joining the board of General Matter, a startup led by Founders Fund partner Scott Nolan. The firm plans to produce enriched uranium fuel needed for next-gen nuclear reactors.
  
-www.bloomberg.com/news/article...",2025-04-14 15:00:04.834000+00:00,28,23,4,0.1531,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrmklis3l2r,"Intel has agreed to sell a 51% stake in its programmable chips unit Altera to Silver Lake, as the struggling US company begins to spin off non-central businesses and assets",2025-04-14 12:59:58.049000+00:00,48,10,7,0.0,Neutral
+www.bloomberg.com/news/article...",2025-04-14 15:00:04.834000+00:00,28,23,4,0.1531,Positivo,275,39,15,55,2025-04-14,-0.075
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrmklis3l2r,"Intel has agreed to sell a 51% stake in its programmable chips unit Altera to Silver Lake, as the struggling US company begins to spin off non-central businesses and assets",2025-04-14 12:59:58.049000+00:00,48,10,7,0.0,Neutral,172,30,12,65,2025-04-14,0.0
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmripftkb32h,"A fundamental shift has taken hold among investors, traders and analysts. Serious questions now exist around the wisdom of owning American assets that until recently were the envy of a risk-obsessed world.
 
-Read the Markets Daily newsletter.",2025-04-14 11:51:05.006000+00:00,308,114,18,0.4019,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrhs5ct322z,"Goldman Sachs’s stock traders posted their highest quarterly revenue haul on record, riding a wave of volatility triggered by an emerging global trade war that’s roiled financial markets.",2025-04-14 11:34:42.998000+00:00,100,31,21,-0.5994,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrggsuet62h,"Pfizer abandoned work on an obesity pill due to safety issues, a severe blow to the drugmaker's post-Covid comeback strategy.",2025-04-14 11:10:29.096000+00:00,86,20,13,-0.4215,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqywaqx632b,"Italian billionaire Gianluigi Aponte’s family-run business is emerging as the lead investor of a group seeking to buy 43 ports from Hong Kong tycoon Li Ka-shing, sources say",2025-04-14 07:08:34.038000+00:00,56,10,3,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqlul7ko72w,"President Xi Jinping’s first overseas trip of the year was meant to showcase China’s clout in the region. Now, President Donald Trump’s tariff threats have turned it into a push to keep Southeast Asian leaders from cutting deals at Beijing’s expense.",2025-04-14 03:14:59.826000+00:00,112,25,16,-0.5106,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqjemkiyn2b,"Apple is readying a pair of new Vision Pro headsets, though CEO Tim Cook remains determined to release AR glasses on his watch.",2025-04-14 02:30:16.629000+00:00,43,3,18,0.5267,Positivo
+Read the Markets Daily newsletter.",2025-04-14 11:51:05.006000+00:00,308,114,18,0.4019,Positivo,241,37,11,440,2025-04-14,-0.08333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrhs5ct322z,"Goldman Sachs’s stock traders posted their highest quarterly revenue haul on record, riding a wave of volatility triggered by an emerging global trade war that’s roiled financial markets.",2025-04-14 11:34:42.998000+00:00,100,31,21,-0.5994,Negativo,187,28,11,152,2025-04-14,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmrggsuet62h,"Pfizer abandoned work on an obesity pill due to safety issues, a severe blow to the drugmaker's post-Covid comeback strategy.",2025-04-14 11:10:29.096000+00:00,86,20,13,-0.4215,Negativo,125,20,11,119,2025-04-14,-0.125
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqywaqx632b,"Italian billionaire Gianluigi Aponte’s family-run business is emerging as the lead investor of a group seeking to buy 43 ports from Hong Kong tycoon Li Ka-shing, sources say",2025-04-14 07:08:34.038000+00:00,56,10,3,0.0,Neutral,173,28,7,69,2025-04-14,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqlul7ko72w,"President Xi Jinping’s first overseas trip of the year was meant to showcase China’s clout in the region. Now, President Donald Trump’s tariff threats have turned it into a push to keep Southeast Asian leaders from cutting deals at Beijing’s expense.",2025-04-14 03:14:59.826000+00:00,112,25,16,-0.5106,Negativo,250,41,3,153,2025-04-14,-0.11666666666666665
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmqjemkiyn2b,"Apple is readying a pair of new Vision Pro headsets, though CEO Tim Cook remains determined to release AR glasses on his watch.",2025-04-14 02:30:16.629000+00:00,43,3,18,0.5267,Positivo,127,23,2,64,2025-04-14,0.13636363636363635
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lmqfpz4kc22r,"20,000 in ruby red Utah on their feet, in community, and ready to organize for a better world.
 
-A better world is possible.",2025-04-14 01:25:04.285000+00:00,78218,12710,1638,0.8074,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpxh56lqe2q,The region is even more appealing as market turmoil fueled by Trump’s tariffs dashes hopes for a deals resurgence in the US,2025-04-13 21:09:31.976000+00:00,55,14,5,0.0772,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpwzr6vwt2r,"As the spending gap between MLB teams widens, owners want to cap player salaries. Agent Scott Boras says that's not the league's real problem",2025-04-13 21:02:00+00:00,24,1,13,-0.34,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpwodlkz52g,"AE Industrial Partners, a New York-based private equity firm, is considering a sale of York Space Systems that could value the satellite company at more than $2 billion",2025-04-13 20:55:39.868000+00:00,27,7,3,0.34,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpuswkvx52j,President Donald Trump denies that there was a tariff “exception” for certain electronics announced Friday,2025-04-13 20:22:26.427000+00:00,165,42,50,-0.1779,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpqgv3jn52h,"Two years after Elon Musk acquired the social platform, it’s fair to wonder if it’s even a business at all",2025-04-13 19:04:00+00:00,130,29,18,0.3182,Positivo
+A better world is possible.",2025-04-14 01:25:04.285000+00:00,78218,12710,1638,0.8074,Positivo,123,23,1,92566,2025-04-14,0.24
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpxh56lqe2q,The region is even more appealing as market turmoil fueled by Trump’s tariffs dashes hopes for a deals resurgence in the US,2025-04-13 21:09:31.976000+00:00,55,14,5,0.0772,Positivo,123,22,21,74,2025-04-13,0.5
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpwzr6vwt2r,"As the spending gap between MLB teams widens, owners want to cap player salaries. Agent Scott Boras says that's not the league's real problem",2025-04-13 21:02:00+00:00,24,1,13,-0.34,Negativo,141,24,21,38,2025-04-13,0.2
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpwodlkz52g,"AE Industrial Partners, a New York-based private equity firm, is considering a sale of York Space Systems that could value the satellite company at more than $2 billion",2025-04-13 20:55:39.868000+00:00,27,7,3,0.34,Positivo,168,28,20,37,2025-04-13,0.10909090909090909
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpuswkvx52j,President Donald Trump denies that there was a tariff “exception” for certain electronics announced Friday,2025-04-13 20:22:26.427000+00:00,165,42,50,-0.1779,Negativo,106,15,20,257,2025-04-13,0.21428571428571427
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpqgv3jn52h,"Two years after Elon Musk acquired the social platform, it’s fair to wonder if it’s even a business at all",2025-04-13 19:04:00+00:00,130,29,18,0.3182,Positivo,106,20,19,177,2025-04-13,0.36666666666666664
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpoiarijh2r,"Play the latest edition of Pointed. The clock is ticking to test your knowledge.
 
-Have a score worth bragging about? Share your results and tag @bloomberg.com and trivia master @aimeelucido.bsky.social. Log in to see how many quiz-takers you beat this week: bloom.bg/3RshKo5",2025-04-13 18:29:00+00:00,11,0,0,0.6705,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpnztxgdq2b,"To patients in need of attention and empathy, AI tools can seem more humane that human doctors",2025-04-13 18:21:00+00:00,46,9,22,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpn6erwa42j,"Pierre Poilievre, leader of Canada's Conservative Party, promises to introduce legislation to limit politicians' financial and lobbying-related conflicts of interest",2025-04-13 18:05:42.606000+00:00,64,5,32,0.6908,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmplvizuah2r,"Lutnick's comments indicate that the exemptions were made to shift those products ultimately to a different levy, which Trump has long threatened for semiconductors",2025-04-13 17:42:49.258000+00:00,65,24,18,-0.4588,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpkuyhd472n,Pennsylvania Governor Josh Shapiro said his official residence in the state capital was targeted in an arson attack while he and his family were asleep early Sunday morning,2025-04-13 17:24:40.227000+00:00,1714,557,177,-0.4767,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpkjag6ym2q,You Must Take Part in Revolution uses Hong Kong’s 2019 protests to explore an alternate-history showdown between the US and China.,2025-04-13 17:18:00+00:00,39,8,4,-0.2263,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpfhw2yzv2t,"Energy prices are set to be lower under the current US administration than in the prior one, according to US Energy Secretary Chris Wright",2025-04-13 15:47:52.693000+00:00,41,7,50,0.25,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpdzvnwwp2w,"Trump’s tariffs are aimed at restoring US manufacturing in the name of national security. Instead, he’s alienating the allies he’d need in a potential war with China",2025-04-13 15:22:00+00:00,163,47,22,-0.0772,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpcubahho2z,"There were “no abnormalities in his mental status, cranial nerves, motor and sensory function, reflexes, gait and balance,” the White House physician wrote in a memo.",2025-04-13 15:01:05.925000+00:00,61,13,162,-0.1027,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpa4dgweo2q,"Apple is readying a pair of new Vision Pro headsets, though CEO Tim Cook remains determined to release AR glasses on his watch, @markgurman.bsky.social writes in this week’s Power On",2025-04-13 14:11:53.382000+00:00,74,3,31,0.5267,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp7vptizy2g,Correction: How do you teach teenagers to be more confident? Let them loose on a racetrack,2025-04-13 14:08:11.477000+00:00,30,1,9,0.2944,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp7te7mwj2n,"Apple has managed to dodge its biggest crisis since the pandemic — for the moment, at least",2025-04-13 14:06:52.130000+00:00,68,12,19,-0.6249,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp6mdwmxw2r,Wholesale prices for caviar have dropped significantly. So why are customers still willing to pay a premium?,2025-04-13 13:45:00+00:00,47,9,17,-0.1027,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp5h4ovfb2t,The Chinese government said the US decision to exempt certain consumer electronics from its so-called reciprocal tariffs is a small step toward rectifying its wrongdoing and urged Washington to do more to revoke the levies.,2025-04-13 13:24:16.134000+00:00,195,33,16,0.3612,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmovtmsx4q2j,How do you teach teenagers to be more confident? Let them loose on a racetrack in a BMW M3,2025-04-13 11:08:00+00:00,109,9,67,0.2944,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmoqqx6azv2j,"The price of coffee is at its highest in decades — bad news for caffeine-lovers, but good for bean farmers in Vietnam profiting from global demand",2025-04-13 09:37:00+00:00,1689,312,75,0.6428,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmnlgsevx22k,"AOC: We must acknowledge the terrifying moment we are in right now. What we are hearing and seeing with our own eyes is, in fact, happening. We are watching our neighbors, students, and friends being fired, targeted, and disappeared. It is real.",2025-04-12 22:29:18.466000+00:00,22869,5762,266,-0.7269,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmnekgolii2z,Credit investors are looking to pounce on new opportunities resulting from the wild swings in global financial markets triggered by the US-China trade war,2025-04-12 20:26:02.044000+00:00,52,9,11,0.0772,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn7qpjyif2w,Wholesale prices for caviar have dropped significantly. So why are customers still willing to pay a premium?,2025-04-12 19:00:00+00:00,18,3,8,-0.1027,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn5zdhqwf2h,"Iran said the first formal talks with US President Donald Trump’s administration over its nuclear program were “constructive,” and the two sides said they’ll meet again in a week.",2025-04-12 18:29:05.658000+00:00,37,8,14,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn5fmabyv2g,"The price of coffee is at its highest in decades — bad news for caffeine-lovers, but good for bean farmers in Vietnam profiting from global demand",2025-04-12 18:18:00+00:00,381,82,21,0.6428,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn3me6otw2r,"Two years after Elon Musk acquired the social platform, it’s fair to wonder if it’s even a business at all",2025-04-12 17:46:00+00:00,148,43,31,0.3182,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn3lbqin42z,"The UK Parliament has passed an emergency bill giving ministers control over British Steel, allowing them to direct staff and operations to keep production going.",2025-04-12 17:45:26.613000+00:00,178,45,19,-0.0516,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn2s36rdp2b,The lawsuit accuses the administration of exploiting Title VI of the Civil Rights Act to “coerce universities into undermining free speech and academic inquiry in service of the government’s political or policy preferences.”,2025-04-12 17:31:20.947000+00:00,348,118,16,-0.6597,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmvzkwnm22j,"To patients in need of attention and empathy, AI tools can seem more humane that human doctors",2025-04-12 16:06:00+00:00,37,6,16,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmuqu2wkk2b,"With Gen Z bearing the brunt of a largely frozen labor market, early signs suggest applications to grad school will be up this year",2025-04-12 15:43:19.656000+00:00,94,18,6,0.0,Neutral
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmsgxa7so2z,"Taken together, the various projects are approaching $1 billion in paper gains even after accounting for the latest round of trade war-induced market gyrations, according to Bloomberg calculations",2025-04-12 15:01:59.919000+00:00,175,88,43,0.34,Positivo
+Have a score worth bragging about? Share your results and tag @bloomberg.com and trivia master @aimeelucido.bsky.social. Log in to see how many quiz-takers you beat this week: bloom.bg/3RshKo5",2025-04-13 18:29:00+00:00,11,0,0,0.6705,Positivo,274,42,18,11,2025-04-13,0.43333333333333335
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpnztxgdq2b,"To patients in need of attention and empathy, AI tools can seem more humane that human doctors",2025-04-13 18:21:00+00:00,46,9,22,0.0,Neutral,94,17,18,77,2025-04-13,0.25
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpn6erwa42j,"Pierre Poilievre, leader of Canada's Conservative Party, promises to introduce legislation to limit politicians' financial and lobbying-related conflicts of interest",2025-04-13 18:05:42.606000+00:00,64,5,32,0.6908,Positivo,165,20,18,101,2025-04-13,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmplvizuah2r,"Lutnick's comments indicate that the exemptions were made to shift those products ultimately to a different levy, which Trump has long threatened for semiconductors",2025-04-13 17:42:49.258000+00:00,65,24,18,-0.4588,Negativo,164,24,17,107,2025-04-13,-0.025
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpkuyhd472n,Pennsylvania Governor Josh Shapiro said his official residence in the state capital was targeted in an arson attack while he and his family were asleep early Sunday morning,2025-04-13 17:24:40.227000+00:00,1714,557,177,-0.4767,Negativo,172,28,17,2448,2025-04-13,0.1
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpkjag6ym2q,You Must Take Part in Revolution uses Hong Kong’s 2019 protests to explore an alternate-history showdown between the US and China.,2025-04-13 17:18:00+00:00,39,8,4,-0.2263,Negativo,130,21,17,51,2025-04-13,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpfhw2yzv2t,"Energy prices are set to be lower under the current US administration than in the prior one, according to US Energy Secretary Chris Wright",2025-04-13 15:47:52.693000+00:00,41,7,50,0.25,Positivo,138,24,15,98,2025-04-13,0.0
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpdzvnwwp2w,"Trump’s tariffs are aimed at restoring US manufacturing in the name of national security. Instead, he’s alienating the allies he’d need in a potential war with China",2025-04-13 15:22:00+00:00,163,47,22,-0.0772,Negativo,165,27,15,232,2025-04-13,-0.15
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpcubahho2z,"There were “no abnormalities in his mental status, cranial nerves, motor and sensory function, reflexes, gait and balance,” the White House physician wrote in a memo.",2025-04-13 15:01:05.925000+00:00,61,13,162,-0.1027,Negativo,166,26,15,236,2025-04-13,-0.05
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmpa4dgweo2q,"Apple is readying a pair of new Vision Pro headsets, though CEO Tim Cook remains determined to release AR glasses on his watch, @markgurman.bsky.social writes in this week’s Power On",2025-04-13 14:11:53.382000+00:00,74,3,31,0.5267,Positivo,182,30,14,108,2025-04-13,0.13636363636363635
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp7vptizy2g,Correction: How do you teach teenagers to be more confident? Let them loose on a racetrack,2025-04-13 14:08:11.477000+00:00,30,1,9,0.2944,Positivo,90,16,14,40,2025-04-13,0.3076923076923077
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp7te7mwj2n,"Apple has managed to dodge its biggest crisis since the pandemic — for the moment, at least",2025-04-13 14:06:52.130000+00:00,68,12,19,-0.6249,Negativo,91,17,14,99,2025-04-13,-0.3
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp6mdwmxw2r,Wholesale prices for caviar have dropped significantly. So why are customers still willing to pay a premium?,2025-04-13 13:45:00+00:00,47,9,17,-0.1027,Negativo,108,17,13,73,2025-04-13,0.3125
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmp5h4ovfb2t,The Chinese government said the US decision to exempt certain consumer electronics from its so-called reciprocal tariffs is a small step toward rectifying its wrongdoing and urged Washington to do more to revoke the levies.,2025-04-13 13:24:16.134000+00:00,195,33,16,0.3612,Positivo,223,35,13,244,2025-04-13,0.11607142857142858
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmovtmsx4q2j,How do you teach teenagers to be more confident? Let them loose on a racetrack in a BMW M3,2025-04-13 11:08:00+00:00,109,9,67,0.2944,Positivo,90,19,11,185,2025-04-13,0.3076923076923077
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmoqqx6azv2j,"The price of coffee is at its highest in decades — bad news for caffeine-lovers, but good for bean farmers in Vietnam profiting from global demand",2025-04-13 09:37:00+00:00,1689,312,75,0.6428,Positivo,146,26,9,2076,2025-04-13,3.700743415417188e-17
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lmnlgsevx22k,"AOC: We must acknowledge the terrifying moment we are in right now. What we are hearing and seeing with our own eyes is, in fact, happening. We are watching our neighbors, students, and friends being fired, targeted, and disappeared. It is real.",2025-04-12 22:29:18.466000+00:00,22869,5762,266,-0.7269,Negativo,245,42,22,28897,2025-04-12,0.021428571428571422
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmnekgolii2z,Credit investors are looking to pounce on new opportunities resulting from the wild swings in global financial markets triggered by the US-China trade war,2025-04-12 20:26:02.044000+00:00,52,9,11,0.0772,Positivo,154,24,20,72,2025-04-12,0.05909090909090909
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn7qpjyif2w,Wholesale prices for caviar have dropped significantly. So why are customers still willing to pay a premium?,2025-04-12 19:00:00+00:00,18,3,8,-0.1027,Negativo,108,17,19,29,2025-04-12,0.3125
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn5zdhqwf2h,"Iran said the first formal talks with US President Donald Trump’s administration over its nuclear program were “constructive,” and the two sides said they’ll meet again in a week.",2025-04-12 18:29:05.658000+00:00,37,8,14,0.0,Neutral,179,29,18,59,2025-04-12,0.25
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn5fmabyv2g,"The price of coffee is at its highest in decades — bad news for caffeine-lovers, but good for bean farmers in Vietnam profiting from global demand",2025-04-12 18:18:00+00:00,381,82,21,0.6428,Positivo,146,26,18,484,2025-04-12,3.700743415417188e-17
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn3me6otw2r,"Two years after Elon Musk acquired the social platform, it’s fair to wonder if it’s even a business at all",2025-04-12 17:46:00+00:00,148,43,31,0.3182,Positivo,106,20,17,222,2025-04-12,0.36666666666666664
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn3lbqin42z,"The UK Parliament has passed an emergency bill giving ministers control over British Steel, allowing them to direct staff and operations to keep production going.",2025-04-12 17:45:26.613000+00:00,178,45,19,-0.0516,Negativo,162,25,17,242,2025-04-12,0.05
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmn2s36rdp2b,The lawsuit accuses the administration of exploiting Title VI of the Civil Rights Act to “coerce universities into undermining free speech and academic inquiry in service of the government’s political or policy preferences.”,2025-04-12 17:31:20.947000+00:00,348,118,16,-0.6597,Negativo,224,33,17,482,2025-04-12,0.13333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmvzkwnm22j,"To patients in need of attention and empathy, AI tools can seem more humane that human doctors",2025-04-12 16:06:00+00:00,37,6,16,0.0,Neutral,94,17,16,59,2025-04-12,0.25
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmuqu2wkk2b,"With Gen Z bearing the brunt of a largely frozen labor market, early signs suggest applications to grad school will be up this year",2025-04-12 15:43:19.656000+00:00,94,18,6,0.0,Neutral,131,24,15,118,2025-04-12,0.15714285714285714
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmsgxa7so2z,"Taken together, the various projects are approaching $1 billion in paper gains even after accounting for the latest round of trade war-induced market gyrations, according to Bloomberg calculations",2025-04-12 15:01:59.919000+00:00,175,88,43,0.34,Positivo,196,28,15,306,2025-04-12,0.075
 bloomberg.com,at://did:plc:hndbfplxreypuic7biapi5xj/app.bsky.feed.post/3lmmptvyin22c,"NEW: A massive battery fire is threatening the rapid growth of an industry key to greening the power grid — and keeping the lights on.
 
 It’s become a rallying cry for people alarmed to learn of projects planned in their neighborhoods.
 
 By @arvelisse.bsky.social
 
-www.bloomberg.com/news/article...",2025-04-12 14:15:33.687000+00:00,47,17,4,-0.8271,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmo6zpioi2j,"Trump’s administration exempted smartphones, computers and other electronics from its so-called reciprocal tariffs, potentially cushioning consumers from sticker shock.",2025-04-12 13:45:59.065000+00:00,153,59,75,-0.3818,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmmjl4fdd2q,"As the spending gap between MLB teams widens, owners want to cap player salaries. Agent Scott Boras says that's not the league's real problem",2025-04-12 13:16:00+00:00,28,3,10,-0.34,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmjryogpx2n,How do you teach teenagers to be more confident? Let them loose on a racetrack in a BMW M3,2025-04-12 12:27:00+00:00,73,4,47,0.2944,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmiyvj4h32j,"Trump’s tariffs are aimed at restoring US manufacturing in the name of national security. Instead, he’s alienating the allies he’d need in a potential war with China",2025-04-12 12:13:00+00:00,256,64,29,-0.0772,Negativo
+www.bloomberg.com/news/article...",2025-04-12 14:15:33.687000+00:00,47,17,4,-0.8271,Negativo,296,44,14,68,2025-04-12,0.04545454545454545
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmo6zpioi2j,"Trump’s administration exempted smartphones, computers and other electronics from its so-called reciprocal tariffs, potentially cushioning consumers from sticker shock.",2025-04-12 13:45:59.065000+00:00,153,59,75,-0.3818,Negativo,168,19,13,287,2025-04-12,-0.0625
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmmjl4fdd2q,"As the spending gap between MLB teams widens, owners want to cap player salaries. Agent Scott Boras says that's not the league's real problem",2025-04-12 13:16:00+00:00,28,3,10,-0.34,Negativo,141,24,13,41,2025-04-12,0.2
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmjryogpx2n,How do you teach teenagers to be more confident? Let them loose on a racetrack in a BMW M3,2025-04-12 12:27:00+00:00,73,4,47,0.2944,Positivo,90,19,12,124,2025-04-12,0.3076923076923077
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmiyvj4h32j,"Trump’s tariffs are aimed at restoring US manufacturing in the name of national security. Instead, he’s alienating the allies he’d need in a potential war with China",2025-04-12 12:13:00+00:00,256,64,29,-0.0772,Negativo,165,27,12,349,2025-04-12,-0.15
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmmdcne5cy2b,"🕐 The clock is ticking to play this weekend’s edition of Pointed. 
 
 The quiz tests what you know — and how confident you are that you know it. How many points will you score? ⤵️
-bloom.bg/4cgzPz2",2025-04-12 10:31:00+00:00,27,3,2,0.6808,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkxx4mr4y2r,"As Trump's tariff reversal whipsawed markets, investors are starting to question the wisdom of owning American assets. See how markets swung wildly this week: bloom.bg/3EdbwFv",2025-04-11 21:35:11.712000+00:00,94,34,17,0.6249,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmktefk7cj2n,New: RFK Jr. warned FDA staff about the influence of the “deep state” on the agency in an all-hands meeting where he also made off-color comments about children with developmental disabilities,2025-04-11 20:13:08.533000+00:00,789,331,252,-0.2732,Negativo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkpne3izc27,"A suspected bomb exploded Friday outside the Athens offices of Hellenic Train, Greece’s main railway company. There were no immediate reports of injuries",2025-04-11 19:06:34.113000+00:00,49,15,9,-0.743,Negativo
+bloom.bg/4cgzPz2",2025-04-12 10:31:00+00:00,27,3,2,0.6808,Positivo,194,36,10,32,2025-04-12,0.5
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkxx4mr4y2r,"As Trump's tariff reversal whipsawed markets, investors are starting to question the wisdom of owning American assets. See how markets swung wildly this week: bloom.bg/3EdbwFv",2025-04-11 21:35:11.712000+00:00,94,34,17,0.6249,Positivo,175,25,21,145,2025-04-11,0.03333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmktefk7cj2n,New: RFK Jr. warned FDA staff about the influence of the “deep state” on the agency in an all-hands meeting where he also made off-color comments about children with developmental disabilities,2025-04-11 20:13:08.533000+00:00,789,331,252,-0.2732,Negativo,192,31,20,1372,2025-04-11,0.06818181818181818
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkpne3izc27,"A suspected bomb exploded Friday outside the Athens offices of Hellenic Train, Greece’s main railway company. There were no immediate reports of injuries",2025-04-11 19:06:34.113000+00:00,49,15,9,-0.743,Negativo,153,23,19,73,2025-04-11,0.08333333333333333
 bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkm3qktvj2z,"Play Pointed, Bloomberg’s news quiz for risk-takers.
 
 This week's categories include tariffs, more tariffs, and even more tariffs.
 
 Bet big on the topics you know, and maximize your score by leveraging your wagers. Choose wisely—wrong answers will cost you ⤵️
-bloom.bg/3RshKo5",2025-04-11 18:03:01.879000+00:00,21,3,6,0.34,Positivo
-bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkjvhpoy32g,"Companies are slapping ""Trump tariff"" surcharges on customers' bills in a bid to signal where price hikes are coming from",2025-04-11 17:23:43.842000+00:00,272,102,27,0.0,Neutral
+bloom.bg/3RshKo5",2025-04-11 18:03:01.879000+00:00,21,3,6,0.34,Positivo,276,41,18,30,2025-04-11,0.3333333333333333
+bloomberg.com,at://did:plc:uewxgchsjy4kmtu7dcxa77us/app.bsky.feed.post/3lmkjvhpoy32g,"Companies are slapping ""Trump tariff"" surcharges on customers' bills in a bid to signal where price hikes are coming from",2025-04-11 17:23:43.842000+00:00,272,102,27,0.0,Neutral,121,20,17,401,2025-04-11,0.0
 bloomberg.com,at://did:plc:purp74ebpvnfpceyuxddizas/app.bsky.feed.post/3lmkjpqvzss2u,"""Israel controls more of Gaza than at any point during the war, part of a plan that officials increasingly describe as leading to a full military occupation.""
 
 See how the IDF's 'buffer zone' has expanded 👇
@@ -186,52 +186,52 @@ See how the IDF's 'buffer zone' has expanded 👇
 🗺️Map w/ 
 @TomFevrier
  
-1/3 tinyurl.com/ntry4xv4",2025-04-11 17:20:32.219000+00:00,40,21,4,-0.5994,Negativo
+1/3 tinyurl.com/ntry4xv4",2025-04-11 17:20:32.219000+00:00,40,21,4,-0.5994,Negativo,256,41,17,65,2025-04-11,0.25
 bloomberg.com,at://did:plc:3l7r46ccid6absgdigpt3lam/app.bsky.feed.post/3lmkj3yxsic2l,"Retailers are adding “Trump tariff” surcharges to customer bills on products ranging from showerheads to sex toys. Great one by Spencer Soper and Lily Meier. 
 
 FREE link >
-www.bloomberg.com/news/article...",2025-04-11 17:09:29.581000+00:00,188,58,7,0.8455,Positivo
+www.bloomberg.com/news/article...",2025-04-11 17:09:29.581000+00:00,188,58,7,0.8455,Positivo,205,29,17,253,2025-04-11,0.6000000000000001
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3lmk3b7ftms25,"Amid Donald Trump’s trade war tumult, lots of smart insiders in Washington, Beijing and other capitals still think he has ambitions to cut deals. And some of those deals could be hugely disruptive to the world order. My column, “The Telegram”
 economist.com/internationa...
-from The Economist",2025-04-11 13:01:51.719000+00:00,28,7,5,-0.7089,Negativo
+from The Economist",2025-04-11 13:01:51.719000+00:00,28,7,5,-0.7089,Negativo,291,45,13,40,2025-04-11,0.16309523809523807
 economist.com,at://did:plc:luw7pcqimp4xchky7hdkvzvd/app.bsky.feed.post/3lmhmxmzdqs22,"The thing about Europe: it's the actual land of the free now.
 
 Whatever problems Europe has - and it has plenty - it is looking pretty damn good by comparison these days.
 
 My Charlemagne this week
 
-www.economist.com/europe/2025/...",2025-04-10 13:40:38.580000+00:00,655,220,30,0.6124,Positivo
+www.economist.com/europe/2025/...",2025-04-10 13:40:38.580000+00:00,655,220,30,0.6124,Positivo,231,37,13,905,2025-04-10,0.3375
 economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lmhajjp3cc2t,"Donald Trump has replaced the old certainties that underpinned the world economy with extraordinary levels of volatility and confusion.
 
-Some of the chaos may have abated for now. But it will take a very long time to rebuild what has been lost econ.st/4i6Z4Vx",2025-04-10 09:58:00.396000+00:00,198,69,18,-0.6652,Negativo
+Some of the chaos may have abated for now. But it will take a very long time to rebuild what has been lost econ.st/4i6Z4Vx",2025-04-10 09:58:00.396000+00:00,198,69,18,-0.6652,Negativo,259,43,9,285,2025-04-10,0.12277777777777778
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lmcyjgrnuy2f,"The rare good-ish news story on the British economy—why Britain is surprisingly well-insulated from a tariff crash, at least compared to most of its peers:
 
 Part, but not all of the answer is in quite how much (un-tariffed) services dominate British exports.
 
-Link: www.economist.com/britain/202...",2025-04-08 17:24:08.437688+00:00,106,25,12,-0.25,Negativo
-economist.com,at://did:plc:oz6uf6xv7gcd7szf3krsp546/app.bsky.feed.post/3lm5qjzhfi227,"DOGE’s cuts have put vital gov't data at risk. Amid the chaos of Trump’s second term, it’s easy to miss—but the federal surveys we use to understand everything from the economy to maternal mortality to healthcare costs are under threat. My piece this week: www.economist.com/united-state...",2025-04-06 15:17:59.449000+00:00,62,23,3,-0.743,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lm4pxu3inc2r,"China has a big beautiful opportunity. Xi Jinping’s paranoid nationalism used to seem like dystopian hyperbole. Now that Donald Trump is committing such wanton self-harm and general destruction, it looks ahead of its time econ.st/3E4l0mp",2025-04-06 05:35:10.077000+00:00,291,73,14,0.5859,Positivo
-economist.com,at://did:plc:j7eliwxzqpvvwu6jbxr5ggaf/app.bsky.feed.post/3lm3x7ag36k2m,"Get ready for a slew of lawsuits against Trump's tariffs. There's a strong case he does not have the authority to impose them. But there are wrinkles galore, explored in my latest @economist.com, with insights from @nbagley.bsky.social and Alan Morrison. www.economist.com/united-state...",2025-04-05 22:11:54.362000+00:00,111,46,6,0.2237,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3llzaxeeblc2r,ChatGPT ass presidency,2025-04-04 20:28:28.265000+00:00,25497,4157,716,-0.5423,Negativo
+Link: www.economist.com/britain/202...",2025-04-08 17:24:08.437688+00:00,106,25,12,-0.25,Negativo,298,44,17,143,2025-04-08,0.19999999999999998
+economist.com,at://did:plc:oz6uf6xv7gcd7szf3krsp546/app.bsky.feed.post/3lm5qjzhfi227,"DOGE’s cuts have put vital gov't data at risk. Amid the chaos of Trump’s second term, it’s easy to miss—but the federal surveys we use to understand everything from the economy to maternal mortality to healthcare costs are under threat. My piece this week: www.economist.com/united-state...",2025-04-06 15:17:59.449000+00:00,62,23,3,-0.743,Negativo,290,45,15,88,2025-04-06,0.17777777777777778
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lm4pxu3inc2r,"China has a big beautiful opportunity. Xi Jinping’s paranoid nationalism used to seem like dystopian hyperbole. Now that Donald Trump is committing such wanton self-harm and general destruction, it looks ahead of its time econ.st/3E4l0mp",2025-04-06 05:35:10.077000+00:00,291,73,14,0.5859,Positivo,237,35,5,378,2025-04-06,0.225
+economist.com,at://did:plc:j7eliwxzqpvvwu6jbxr5ggaf/app.bsky.feed.post/3lm3x7ag36k2m,"Get ready for a slew of lawsuits against Trump's tariffs. There's a strong case he does not have the authority to impose them. But there are wrinkles galore, explored in my latest @economist.com, with insights from @nbagley.bsky.social and Alan Morrison. www.economist.com/united-state...",2025-04-05 22:11:54.362000+00:00,111,46,6,0.2237,Positivo,288,41,22,163,2025-04-05,0.37777777777777777
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3llzaxeeblc2r,ChatGPT ass presidency,2025-04-04 20:28:28.265000+00:00,25497,4157,716,-0.5423,Negativo,22,3,20,30370,2025-04-04,0.0
 economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3lly6myise22u,"Our forecast of the Canadian election is live 📈🇨🇦
 
 We give the Liberal Party an 83% chance of winning the most seats on 28th April
 
-www.economist.com/interactive/...",2025-04-04 10:14:13.063000+00:00,226,50,7,0.7964,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3llvl4efjos23,"Donald Trump has committed the most profound, harmful and unnecessary economic error in the modern era. Almost everything he said—on history, economics and the technicalities of trade—was utterly deluded econ.st/3YbbFjq",2025-04-03 09:19:34.521000+00:00,12428,5522,512,-0.1531,Negativo
+www.economist.com/interactive/...",2025-04-04 10:14:13.063000+00:00,226,50,7,0.7964,Positivo,165,26,10,283,2025-04-04,0.37878787878787873
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3llvl4efjos23,"Donald Trump has committed the most profound, harmful and unnecessary economic error in the modern era. Almost everything he said—on history, economics and the technicalities of trade—was utterly deluded econ.st/3YbbFjq",2025-04-03 09:19:34.521000+00:00,12428,5522,512,-0.1531,Negativo,219,30,9,18462,2025-04-03,0.09722222222222222
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lltnydbqbo2x,"Quick 🧵 with more than you'll want to know on the OBR's trend productivity estimate—a number that could blow up Labour's next budget
 
 To illustrate the scale: nudging it down by 0.25 percentage points would ~fully offset the headroom opened by raising employer NICs last year
 
-1/",2025-04-02 15:05:40.811137+00:00,19,3,1,0.2177,Positivo
+1/",2025-04-02 15:05:40.811137+00:00,19,3,1,0.2177,Positivo,279,47,15,23,2025-04-02,0.13555555555555554
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3llsnkiovls2n,"Donald Trump’s views on allies are being urgently debated by China’s rulers. Is he ditching Europe and Canada to focus on China - as US hawks claim - or will he ditch Asian allies too and pull back from the world? My column, The Telegram, from Beijing and Shanghai
-economist.com/internationa...",2025-04-02 05:25:17.075000+00:00,57,17,4,0.0,Neutral
+economist.com/internationa...",2025-04-02 05:25:17.075000+00:00,57,17,4,0.0,Neutral,294,50,5,78,2025-04-02,0.0
 aoc.bsky.social,at://did:plc:bono5gae7m6r3qpfxomshwbd/app.bsky.feed.post/3lloydhy3kc2q,"Pushback works, part gazillion:
 
 ""Here are the facts: DOGE moved forward with plans to close multiple field offices. Then, without public notice or explanation, they reversed their plans. Now they are trying to pretend like they were never planning to close the offices.""
-popular.info/p/how-the-so...",2025-03-31 18:27:33.653000+00:00,29868,9714,927,0.2732,Positivo
-aoc.bsky.social,at://did:plc:p2dcugajbtsn44h5n2kgt7ox/app.bsky.feed.post/3lloeqxbpf22l,"going to start calling myself a centrist and then listing all my leftist views as proof, just going to start moving the overton window by force",2025-03-31 12:37:11.069000+00:00,29760,3866,553,0.0,Neutral
-aoc.bsky.social,at://did:plc:k4kp7p2lfe2fz6z2u26yslv4/app.bsky.feed.post/3llka5cbepk24,"@chrismurphyct.bsky.social and I walking into a PACKED house at UAW Region 1 here in Warren, MI! Republican Rep. John James refuses to hold a Townhall, so we did it for him!",2025-03-29 21:03:57.581000+00:00,11699,1814,318,0.0,Neutral
+popular.info/p/how-the-so...",2025-03-31 18:27:33.653000+00:00,29868,9714,927,0.2732,Positivo,300,44,18,40509,2025-03-31,0.0
+aoc.bsky.social,at://did:plc:p2dcugajbtsn44h5n2kgt7ox/app.bsky.feed.post/3lloeqxbpf22l,"going to start calling myself a centrist and then listing all my leftist views as proof, just going to start moving the overton window by force",2025-03-31 12:37:11.069000+00:00,29760,3866,553,0.0,Neutral,143,26,12,34179,2025-03-31,-0.05
+aoc.bsky.social,at://did:plc:k4kp7p2lfe2fz6z2u26yslv4/app.bsky.feed.post/3llka5cbepk24,"@chrismurphyct.bsky.social and I walking into a PACKED house at UAW Region 1 here in Warren, MI! Republican Rep. John James refuses to hold a Townhall, so we did it for him!",2025-03-29 21:03:57.581000+00:00,11699,1814,318,0.0,Neutral,173,31,21,13831,2025-03-29,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3llhkqysli22n,"We will not be distracted.
 We will not be discouraged.
 We’ve got our eyes on the prize.
@@ -240,13 +240,13 @@ And we will build the prosperous, free nation for all that we deserve.
 
 The time to organize is now.
 
-OcasioCortez.com",2025-03-28 19:35:56.953000+00:00,105897,18974,2433,0.9185,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lled5wrscs2r,Israel’s expansionism is a danger to others—and itself econ.st/3Rn8Tnm,2025-03-27 12:42:01.862000+00:00,157,39,25,-0.5267,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lled4rq7tk2r,"Is Elon Musk remaking America’s government, or breaking it? There are three possible outcomes for DOGE econ.st/42bGqGf",2025-03-27 12:41:23.003000+00:00,187,53,46,0.0,Neutral
+OcasioCortez.com",2025-03-28 19:35:56.953000+00:00,105897,18974,2433,0.9185,Positivo,207,37,19,127304,2025-03-28,0.4
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lled5wrscs2r,Israel’s expansionism is a danger to others—and itself econ.st/3Rn8Tnm,2025-03-27 12:42:01.862000+00:00,157,39,25,-0.5267,Negativo,70,9,12,221,2025-03-27,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lled4rq7tk2r,"Is Elon Musk remaking America’s government, or breaking it? There are three possible outcomes for DOGE econ.st/42bGqGf",2025-03-27 12:41:23.003000+00:00,187,53,46,0.0,Neutral,118,17,12,286,2025-03-27,0.0
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lle7tcp5ns2o,"The British government says it's being bold on driving economic growth. If it truly thinks so, that is only because of a lack of ambition and imagination.
 
 My leader taking stock of Labour's economic agenda:
-➡️ www.economist.com/leaders/2025...",2025-03-27 11:42:24.059000+00:00,16,2,1,0.7003,Positivo
+➡️ www.economist.com/leaders/2025...",2025-03-27 11:42:24.059000+00:00,16,2,1,0.7003,Positivo,244,37,11,19,2025-03-27,0.14666666666666667
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lle5nrzvyk2p,"My analysis for @economist.com of the Spring Statement just went up. Highlights:
 — Yesterday's brouhaha was entirely avoidable
 — Britain remains fiscally rickety
@@ -254,93 +254,93 @@ economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lle5nrzv
 
 (More⬇️)
 
-www.economist.com/britain/2025...",2025-03-27 11:03:31.329000+00:00,15,1,1,0.0,Neutral
+www.economist.com/britain/2025...",2025-03-27 11:03:31.329000+00:00,15,1,1,0.0,Neutral,287,41,11,17,2025-03-27,-0.05
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3llay6ziu6s2f,"In a turbulent, Trumpian world, expect many Western countries to decide that confronting China over values or geopolitics is a luxury they can ill afford. That doesn’t mean relations will be smooth-huge tensions over trade remain. My column, The Telegram, from Beijing
-economist.com/internationa...",2025-03-26 04:47:47.919000+00:00,35,9,1,-0.5267,Negativo
-aoc.bsky.social,at://did:plc:zipphihu644mxj7qjafvwwun/app.bsky.feed.post/3lla7lqbf3s2b,Pete Hegseth must resign or be fired immediately.,2025-03-25 21:27:30.895000+00:00,86479,18077,5508,-0.7184,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ll6vkl66i22n,The exchange will only heighten alarm in Europe. It will stoke fears that America could fast turn from a protector into something more like a predator econ.st/4kYCTDL,2025-03-25 08:55:14.840000+00:00,149,38,19,-0.3415,Negativo
-aoc.bsky.social,at://did:plc:e62gb2ushvtvjvqcbrxeaw2n/app.bsky.feed.post/3ll5n4rq2ck24,"I mean very obviously Hegseth should resign, and if it were a Democratic administration this would be quickly be a consensus position.",2025-03-24 20:51:42.283000+00:00,98601,16317,3693,-0.34,Negativo
-aoc.bsky.social,at://did:plc:sgti3jsgu3luif24tokvth3a/app.bsky.feed.post/3ll52lufvkc2z,"This continues to be the biggest story in the country: DOGE has already squandered half a trillion dollars in 6 weeks. Not billion. half a trillion, $500 billion talkingpointsmemo.com/edblog/irs-p...",2025-03-24 15:20:07.318000+00:00,27649,12853,920,0.0,Neutral
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ll4kwsvk4k2e,The market value of Tesla has fallen by roughly half since December. Competition is revving up for the carmaker. But it is not the only thing Elon Musk should be worried about econ.st/4iWTRRa,2025-03-24 10:39:54.961000+00:00,383,81,30,-0.431,Negativo
+economist.com/internationa...",2025-03-26 04:47:47.919000+00:00,35,9,1,-0.5267,Negativo,298,43,4,45,2025-03-26,-0.078125
+aoc.bsky.social,at://did:plc:zipphihu644mxj7qjafvwwun/app.bsky.feed.post/3lla7lqbf3s2b,Pete Hegseth must resign or be fired immediately.,2025-03-25 21:27:30.895000+00:00,86479,18077,5508,-0.7184,Negativo,49,8,21,110064,2025-03-25,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ll6vkl66i22n,The exchange will only heighten alarm in Europe. It will stoke fears that America could fast turn from a protector into something more like a predator econ.st/4kYCTDL,2025-03-25 08:55:14.840000+00:00,149,38,19,-0.3415,Negativo,166,27,8,206,2025-03-25,0.2333333333333333
+aoc.bsky.social,at://did:plc:e62gb2ushvtvjvqcbrxeaw2n/app.bsky.feed.post/3ll5n4rq2ck24,"I mean very obviously Hegseth should resign, and if it were a Democratic administration this would be quickly be a consensus position.",2025-03-24 20:51:42.283000+00:00,98601,16317,3693,-0.34,Negativo,134,22,20,118611,2025-03-24,0.006944444444444438
+aoc.bsky.social,at://did:plc:sgti3jsgu3luif24tokvth3a/app.bsky.feed.post/3ll52lufvkc2z,"This continues to be the biggest story in the country: DOGE has already squandered half a trillion dollars in 6 weeks. Not billion. half a trillion, $500 billion talkingpointsmemo.com/edblog/irs-p...",2025-03-24 15:20:07.318000+00:00,27649,12853,920,0.0,Neutral,199,29,15,41422,2025-03-24,-0.16666666666666666
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ll4kwsvk4k2e,The market value of Tesla has fallen by roughly half since December. Competition is revving up for the carmaker. But it is not the only thing Elon Musk should be worried about econ.st/4iWTRRa,2025-03-24 10:39:54.961000+00:00,383,81,30,-0.431,Negativo,191,33,10,494,2025-03-24,-0.08333333333333333
 economist.com,at://did:plc:fqg2krki2lw3b6rex2jtrkos/app.bsky.feed.post/3ll4jm6yhk22z,"I raised the prospect that the Fed's swap lines might not be there during the next financial crisis in this column on the breakdown of international economic cooperation in the 1930s.
 
-It is not the economic impact of tariffs that is most worrying www.economist.com/finance-and-...",2025-03-24 10:16:04.801000+00:00,129,43,9,-0.6801,Negativo
-economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ll46agcqu22m,"I had a sneak peek at some data which is being published by Meta today, showing that Britain is less divided by class than you might expect: www.economist.com/britain/2025...",2025-03-24 06:52:38.664000+00:00,97,27,11,0.0,Neutral
-economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3ll45fbwyts2j,"Back to work after a week off and wanted to belatedly share thoughts on America's Middle East policy after a trip to DC this month. The first of which is that Trump has a skeleton crew: if personnel is policy, there's almost no policy because there are almost no personnel. 🧵",2025-03-24 06:37:28.115000+00:00,413,153,10,-0.1566,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ll3l5wm2h22b,Timeline cleanse 🌞,2025-03-24 01:11:13.982000+00:00,113884,10331,1993,0.0,Neutral
-economist.com,at://did:plc:lg6hkdrtipy2it5hxwgv4a62/app.bsky.feed.post/3ll365kv6322t,"“Turkey is nearing a point of no return. Only last week, its government was still what political scientists call a competitive authoritarian regime…But on March 19th police detained Mr Imamoglu, who has emerged as Mr Erdogan’s strongest rival. What remains is close to naked autocracy.”",2025-03-23 21:18:23.059000+00:00,256,80,15,-0.0772,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkyotkoses2c,Also I’ve been telling people to leave connected to one more person they didn’t know coming in.,2025-03-22 21:39:01.704000+00:00,762,41,24,-0.0516,Negativo
+It is not the economic impact of tariffs that is most worrying www.economist.com/finance-and-...",2025-03-24 10:16:04.801000+00:00,129,43,9,-0.6801,Negativo,281,44,10,181,2025-03-24,0.15
+economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ll46agcqu22m,"I had a sneak peek at some data which is being published by Meta today, showing that Britain is less divided by class than you might expect: www.economist.com/britain/2025...",2025-03-24 06:52:38.664000+00:00,97,27,11,0.0,Neutral,174,28,6,135,2025-03-24,-0.16666666666666666
+economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3ll45fbwyts2j,"Back to work after a week off and wanted to belatedly share thoughts on America's Middle East policy after a trip to DC this month. The first of which is that Trump has a skeleton crew: if personnel is policy, there's almost no policy because there are almost no personnel. 🧵",2025-03-24 06:37:28.115000+00:00,413,153,10,-0.1566,Negativo,275,51,6,576,2025-03-24,0.08333333333333333
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ll3l5wm2h22b,Timeline cleanse 🌞,2025-03-24 01:11:13.982000+00:00,113884,10331,1993,0.0,Neutral,18,3,1,126208,2025-03-24,0.0
+economist.com,at://did:plc:lg6hkdrtipy2it5hxwgv4a62/app.bsky.feed.post/3ll365kv6322t,"“Turkey is nearing a point of no return. Only last week, its government was still what political scientists call a competitive authoritarian regime…But on March 19th police detained Mr Imamoglu, who has emerged as Mr Erdogan’s strongest rival. What remains is close to naked autocracy.”",2025-03-23 21:18:23.059000+00:00,256,80,15,-0.0772,Negativo,286,45,21,351,2025-03-23,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkyotkoses2c,Also I’ve been telling people to leave connected to one more person they didn’t know coming in.,2025-03-22 21:39:01.704000+00:00,762,41,24,-0.0516,Negativo,95,17,21,827,2025-03-22,0.5
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkyosefobk2c,"I’ve been tightening the calls to action at each event, but it’s a really good question I revisit often.
 
 Broadly I have been giving both electoral (school boards, hyper local elections) and non-electoral (join PTAs, block associations, community orgs) calls to action.
 
-Would love input!",2025-03-22 21:38:21.558000+00:00,1937,180,60,0.925,Positivo
+Would love input!",2025-03-22 21:38:21.558000+00:00,1937,180,60,0.925,Positivo,288,45,21,2177,2025-03-22,0.26458333333333334
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkynaqf6ds24,"Tucson, Arizona today.
 
 Original projected attendance was 3,000 people.
 
-23,000 showed up.",2025-03-22 21:10:36.398000+00:00,170567,27863,4502,0.3182,Positivo
+23,000 showed up.",2025-03-22 21:10:36.398000+00:00,170567,27863,4502,0.3182,Positivo,90,12,21,202932,2025-03-22,0.375
 aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkyknwkins2a,"AOC: We need to be taxing the rich on the floor of the Congress
 
 We need to be establishing guaranteed healthcare on the floor of the Congress
 
-We need to be passing a living wage on the floor of the Congress",2025-03-22 20:24:17.852000+00:00,46131,8183,716,0.5574,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkyjzrspuc2a,AOC: In every single stop that Bernie and I have had in the past couple of days… every single stop has completely blown out all attendance projections.,2025-03-22 20:13:01.789000+00:00,56651,8442,873,-0.5267,Negativo
+We need to be passing a living wage on the floor of the Congress",2025-03-22 20:24:17.852000+00:00,46131,8183,716,0.5574,Positivo,208,41,20,55030,2025-03-22,0.375
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkyjzrspuc2a,AOC: In every single stop that Bernie and I have had in the past couple of days… every single stop has completely blown out all attendance projections.,2025-03-22 20:13:01.789000+00:00,56651,8442,873,-0.5267,Negativo,151,27,20,65966,2025-03-22,-0.0732142857142857
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkwlajfsbs24,"Tonight an unbelievable **34,000 people** gathered for our Denver rally to take on billionaires and win our country back.
 
 This was the largest political gathering in Denver since Obama in 2008.
 
 Also bigger than the 2024 DNC.
 
-And the largest ever rally in Bernie’s career (and obviously, mine too).",2025-03-22 01:29:22.112000+00:00,109125,18540,3509,0.6808,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkwghmhcrb2y,"AOC: Do you know which coloradans did vote to cut medicare and jack up health care cost? Every single Republican representative from Colorado. Don't you worry, I was just at Gabe Evans' district, and 11,000 of his constituents would like a word ",2025-03-22 00:03:51.331000+00:00,19779,3230,205,0.7189,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkw7whc7l224,Wait until you see Denver tonight.,2025-03-21 22:06:53.204000+00:00,161,6,15,0.0,Neutral
+And the largest ever rally in Bernie’s career (and obviously, mine too).",2025-03-22 01:29:22.112000+00:00,109125,18540,3509,0.6808,Positivo,300,49,1,131174,2025-03-22,0.09166666666666667
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkwghmhcrb2y,"AOC: Do you know which coloradans did vote to cut medicare and jack up health care cost? Every single Republican representative from Colorado. Don't you worry, I was just at Gabe Evans' district, and 11,000 of his constituents would like a word ",2025-03-22 00:03:51.331000+00:00,19779,3230,205,0.7189,Positivo,245,42,0,23214,2025-03-22,-0.07142857142857142
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkw7whc7l224,Wait until you see Denver tonight.,2025-03-21 22:06:53.204000+00:00,161,6,15,0.0,Neutral,34,6,22,182,2025-03-21,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkw5ii4g5c24,"We expected 2,000 people out in GOP-held Greeley, Colorado. 
 
 11,000 people showed up.
 
-Something special is happening, folks. Now is the time to organize in every dimension possible and get to work.",2025-03-21 21:23:16.817000+00:00,131303,26667,3860,0.4019,Positivo
-aoc.bsky.social,at://did:plc:r75unbj372lvbim6syioaueo/app.bsky.feed.post/3lkw2n6sm6c22,I'm dying,2025-03-21 20:32:13.602000+00:00,10666,1069,171,0.0,Neutral
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkvlqjirhc2a,The idea of upgrading humans holds plenty of promise. Realising it will mean driving out the cranks and bringing the technology into the mainstream econ.st/41Oftbn,2025-03-21 16:05:39.336000+00:00,36,5,9,0.3182,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkvklsskqc27,The idea of upgrading humans holds plenty of promise. Realising it will mean driving out the cranks and bringing the technology into the mainstream econ.st/4iibACB,2025-03-21 15:45:07.544000+00:00,24,1,10,0.3182,Positivo
+Something special is happening, folks. Now is the time to organize in every dimension possible and get to work.",2025-03-21 21:23:16.817000+00:00,131303,26667,3860,0.4019,Positivo,199,32,21,161830,2025-03-21,0.0857142857142857
+aoc.bsky.social,at://did:plc:r75unbj372lvbim6syioaueo/app.bsky.feed.post/3lkw2n6sm6c22,I'm dying,2025-03-21 20:32:13.602000+00:00,10666,1069,171,0.0,Neutral,9,2,20,11906,2025-03-21,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkvlqjirhc2a,The idea of upgrading humans holds plenty of promise. Realising it will mean driving out the cranks and bringing the technology into the mainstream econ.st/41Oftbn,2025-03-21 16:05:39.336000+00:00,36,5,9,0.3182,Positivo,163,25,16,50,2025-03-21,-0.3125
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkvklsskqc27,The idea of upgrading humans holds plenty of promise. Realising it will mean driving out the cranks and bringing the technology into the mainstream econ.st/4iibACB,2025-03-21 15:45:07.544000+00:00,24,1,10,0.3182,Positivo,163,25,15,35,2025-03-21,-0.3125
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3lkvkesck2s2h,"On paper, the modern refugee system has roots in a set of moral certainties that governments signed up to after WW2. Actually the history of the Geneva refugee convention and the asylum system is much messier and more political than that. My column TheTelegram 1/2
 
-economist.com/internationa...",2025-03-21 15:41:12.190000+00:00,16,3,1,0.2263,Positivo
+economist.com/internationa...",2025-03-21 15:41:12.190000+00:00,16,3,1,0.2263,Positivo,295,46,15,20,2025-03-21,0.15
 economist.com,at://did:plc:stnvqwajs5ifq6ooi3amaslh/app.bsky.feed.post/3lkvaea7qss2e,"The Five Eyes spy pact is the world's most successful SIGINT (or signals intelligence) alliance in history. Is Donald Trump putting it at risk?
 This week in the International pages of @economist.com we have a crunchy look at how it works by @shashj.bsky.social 
-www.economist.com/internationa...",2025-03-21 12:41:55.807000+00:00,24,9,8,0.7264,Positivo
+www.economist.com/internationa...",2025-03-21 12:41:55.807000+00:00,24,9,8,0.7264,Positivo,295,44,12,41,2025-03-21,0.4166666666666667
 economist.com,at://did:plc:f6cn2pnbt5mg5vofx363xmrt/app.bsky.feed.post/3lkv56rdvvc2y,"For decades Alzheimer’s research has been marred by disappointment—existing drugs only slow the disease. Now an old idea, once dismissed as fringe, is making a comeback. If it’s right, millions of cases could be prevented using medicines we already have...
 
-www.economist.com/science-and-...",2025-03-21 11:45:11.217000+00:00,38,12,3,0.0258,Neutral
+www.economist.com/science-and-...",2025-03-21 11:45:11.217000+00:00,38,12,3,0.0258,Neutral,291,41,11,53,2025-03-21,0.021428571428571415
 economist.com,at://did:plc:pzajbfbxbpdzve2lhwwlzfwe/app.bsky.feed.post/3lkuz57dtzs2v,"Wrote about Zoe, and how it exemplifies the modern wellness industry. 
 
 My own theory -- which I'd like to see them test -- is that personalised recommendations are effective at changing behaviour because we all like to feel special. 
 
-www.economist.com/britain/2025...",2025-03-21 10:32:43.819000+00:00,9,1,1,0.9136,Positivo
-economist.com,at://did:plc:54l4wovpee26ptnjel4nspty/app.bsky.feed.post/3lkuwrh2u622k,"How far could Xi Jinping go to resist the Panama Canal port deal? For this week's Economist, I parse the latest signs of Chinese displeasure at BlackRock's planned purchase of 2 Panama ports and 41 others from Hong Kong-based CK Hutchison www.economist.com/china/2025/0...",2025-03-21 09:50:21.770000+00:00,20,7,1,0.0,Neutral
-economist.com,at://did:plc:gn6mkok3lpf2nb3iqmkaev67/app.bsky.feed.post/3lkuv6yo5lk2c,"Our data team looked at first names and what they reveal, with some fascinating graphics. Have a look. 👇 www.economist.com/interactive/...",2025-03-21 09:22:08.959000+00:00,13,2,3,0.5423,Positivo
-economist.com,at://did:plc:mj5h6johygkjaoo3dg5q23lm/app.bsky.feed.post/3lkutjrah222j,"I wrote this week on the PLA's new barge-bridge  vessels, which could unlock significant new capacity for China to sustain & support any invasion of Taiwan, allowing it to deliver a greater quantity of follow-on forces to the island without seizing a port. www.economist.com/china/2025/0...",2025-03-21 08:52:22.784000+00:00,165,53,9,0.7184,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkudzo26ts2h,And that’s on that 😌,2025-03-21 04:14:56.435000+00:00,74527,8911,1324,0.3818,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkudmbs3ls2x,"Sanders: In our form a government, unless you are a coward, you don’t sue the media because they report on things you don’t like.",2025-03-21 04:07:27.379000+00:00,36913,6732,352,-0.128,Negativo
-aoc.bsky.social,at://did:plc:j53tav4pdcpfxyx2gcfr5fhb/app.bsky.feed.post/3lkuc2q4rw22m,"AOC, @aoc.bsky.social, making the case for free speech alongside universal healthcare is so KEY for the left, because it's time progressives reclaimed the mantle of fighting for free speech from the faux free speech warriors of the right.",2025-03-21 03:39:44.688000+00:00,32594,5499,443,0.8126,Positivo
+www.economist.com/britain/2025...",2025-03-21 10:32:43.819000+00:00,9,1,1,0.9136,Positivo,269,40,10,11,2025-03-21,0.4392857142857143
+economist.com,at://did:plc:54l4wovpee26ptnjel4nspty/app.bsky.feed.post/3lkuwrh2u622k,"How far could Xi Jinping go to resist the Panama Canal port deal? For this week's Economist, I parse the latest signs of Chinese displeasure at BlackRock's planned purchase of 2 Panama ports and 41 others from Hong Kong-based CK Hutchison www.economist.com/china/2025/0...",2025-03-21 09:50:21.770000+00:00,20,7,1,0.0,Neutral,272,42,9,28,2025-03-21,0.19999999999999998
+economist.com,at://did:plc:gn6mkok3lpf2nb3iqmkaev67/app.bsky.feed.post/3lkuv6yo5lk2c,"Our data team looked at first names and what they reveal, with some fascinating graphics. Have a look. 👇 www.economist.com/interactive/...",2025-03-21 09:22:08.959000+00:00,13,2,3,0.5423,Positivo,138,20,9,18,2025-03-21,0.475
+economist.com,at://did:plc:mj5h6johygkjaoo3dg5q23lm/app.bsky.feed.post/3lkutjrah222j,"I wrote this week on the PLA's new barge-bridge  vessels, which could unlock significant new capacity for China to sustain & support any invasion of Taiwan, allowing it to deliver a greater quantity of follow-on forces to the island without seizing a port. www.economist.com/china/2025/0...",2025-03-21 08:52:22.784000+00:00,165,53,9,0.7184,Positivo,290,44,8,227,2025-03-21,0.2869318181818182
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkudzo26ts2h,And that’s on that 😌,2025-03-21 04:14:56.435000+00:00,74527,8911,1324,0.3818,Positivo,20,5,4,84762,2025-03-21,0.0
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkudmbs3ls2x,"Sanders: In our form a government, unless you are a coward, you don’t sue the media because they report on things you don’t like.",2025-03-21 04:07:27.379000+00:00,36913,6732,352,-0.128,Negativo,129,24,4,43997,2025-03-21,0.0
+aoc.bsky.social,at://did:plc:j53tav4pdcpfxyx2gcfr5fhb/app.bsky.feed.post/3lkuc2q4rw22m,"AOC, @aoc.bsky.social, making the case for free speech alongside universal healthcare is so KEY for the left, because it's time progressives reclaimed the mantle of fighting for free speech from the faux free speech warriors of the right.",2025-03-21 03:39:44.688000+00:00,32594,5499,443,0.8126,Positivo,238,38,3,38536,2025-03-21,0.2122448979591837
 aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkubrfc6yc2x,"AOC: I want to live in an America that guarantees healthcare to every person.
 
 I want to live in an America that has a living wage for every person
 
-I want to live in an America where you have free speech to express yourself and not be afraid of being put on a list or deported.",2025-03-21 03:34:31.342000+00:00,72774,14975,1252,0.6369,Positivo
-aoc.bsky.social,at://did:plc:2ylgbet7hkz6ntdh6eljnsri/app.bsky.feed.post/3lktyhm7nnc2o,The wealthiest man in the world has fully purchased the federal government of the United States. This is one of the most extraordinary crises in the history of this country and you need to ask whether your elected representatives are acting like it.,2025-03-21 00:47:59.377000+00:00,17278,5132,517,0.8176,Positivo
+I want to live in an America where you have free speech to express yourself and not be afraid of being put on a list or deported.",2025-03-21 03:34:31.342000+00:00,72774,14975,1252,0.6369,Positivo,278,56,3,89001,2025-03-21,0.041818181818181824
+aoc.bsky.social,at://did:plc:2ylgbet7hkz6ntdh6eljnsri/app.bsky.feed.post/3lktyhm7nnc2o,The wealthiest man in the world has fully purchased the federal government of the United States. This is one of the most extraordinary crises in the history of this country and you need to ask whether your elected representatives are acting like it.,2025-03-21 00:47:59.377000+00:00,17278,5132,517,0.8176,Positivo,249,43,0,22927,2025-03-21,0.27777777777777773
 aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lktnldcgzc2s,"AOC: What they like to call as radical, I believe is common sense. 
 
 I believe that when a person gets sick, they shouldn’t go bankrupt in the wealthiest country in the history of the world. Common sense
 
-I believe that a minimum wage should cover the minimum cost to live. Common sense...",2025-03-20 21:33:13.089000+00:00,72317,16035,1124,-0.296,Negativo
+I believe that a minimum wage should cover the minimum cost to live. Common sense...",2025-03-20 21:33:13.089000+00:00,72317,16035,1124,-0.296,Negativo,289,52,21,89476,2025-03-20,-0.29558441558441556
 aoc.bsky.social,at://did:plc:uz5apa2z3jrxhjjzqw5qik65/app.bsky.feed.post/3lktnjdq4f22j,"NEW: AOC in Vegas.
 
 Major challenge to Dem leadership🔥
 
-“If you’re willing to fight for someone you don’t know, you’re welcome here. But I will say this: Those leaders on either side of aisle willing to put their fellow Americans down so they can get ahead; they may best find a home somewhere else.”",2025-03-20 21:32:06.428000+00:00,14176,2092,163,0.7647,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lktnbky4ns2s,"AOC: Fox News and the right-wing would have you believe that these American values are something out of The Communist Manifesto. But let me tell you Fox News, I don’t believe in healthcare, labor, and human rights because I’m a Marxist.. I believe it because I was a waitress.",2025-03-20 21:27:45.595000+00:00,51250,11241,724,0.2144,Positivo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lktlwokpac2s,"AOC: Alina Habba said,  “What intellectual thought.. you were in a bar AOC. Not to have a drink but to serve one.” I don’t care what this woman says about me but I want you to understand that she isn’t just talking about me, she’s talking about all of us.",2025-03-20 21:03:46.507000+00:00,30936,6353,851,0.7845,Positivo
+“If you’re willing to fight for someone you don’t know, you’re welcome here. But I will say this: Those leaders on either side of aisle willing to put their fellow Americans down so they can get ahead; they may best find a home somewhere else.”",2025-03-20 21:32:06.428000+00:00,14176,2092,163,0.7647,Positivo,300,54,21,16431,2025-03-20,0.3347582972582973
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lktnbky4ns2s,"AOC: Fox News and the right-wing would have you believe that these American values are something out of The Communist Manifesto. But let me tell you Fox News, I don’t believe in healthcare, labor, and human rights because I’m a Marxist.. I believe it because I was a waitress.",2025-03-20 21:27:45.595000+00:00,51250,11241,724,0.2144,Positivo,276,49,21,63215,2025-03-20,0.0
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lktlwokpac2s,"AOC: Alina Habba said,  “What intellectual thought.. you were in a bar AOC. Not to have a drink but to serve one.” I don’t care what this woman says about me but I want you to understand that she isn’t just talking about me, she’s talking about all of us.",2025-03-20 21:03:46.507000+00:00,30936,6353,851,0.7845,Positivo,255,50,21,38140,2025-03-20,0.3
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkqgcrfr6227,"⚡️FIGHT THE OLIGARCHY RALLY ⚡️
 STARTING TOMORROW.
 
@@ -348,39 +348,39 @@ Nevada. Arizona. Colorado.
 You, me, and Bernie.
 Dem and GOP districts. ❤️💙
 
-See you there 💪🏽🌞",2025-03-19 14:45:10.468000+00:00,77662,15294,2699,0.6369,Positivo
+See you there 💪🏽🌞",2025-03-19 14:45:10.468000+00:00,77662,15294,2699,0.6369,Positivo,144,23,14,95655,2025-03-19,0.0
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lkptqaecfs2h,"Come for the chart, stay for the unnecessary autobiographical detour— I wrote Blighty, @economist.com newsletter on Britain this week.
 
-Read (and indeed subscribe) here: www.economist.com/britain/202...",2025-03-19 09:12:41.205593+00:00,13,2,1,0.0,Neutral
-aoc.bsky.social,at://did:plc:4bxm7ddq6ad2zprszcnd4o6f/app.bsky.feed.post/3lkonlm3zm222,"Must read: Mahmoud Khalil speaks out for the first time since his arrest by the Trump administration in an exclusive letter, dictated over the phone to his family, from ICE detention in Louisiana.",2025-03-18 21:50:03.608000+00:00,13275,6595,108,-0.5267,Negativo
+Read (and indeed subscribe) here: www.economist.com/britain/202...",2025-03-19 09:12:41.205593+00:00,13,2,1,0.0,Neutral,202,25,9,16,2025-03-19,-0.2
+aoc.bsky.social,at://did:plc:4bxm7ddq6ad2zprszcnd4o6f/app.bsky.feed.post/3lkonlm3zm222,"Must read: Mahmoud Khalil speaks out for the first time since his arrest by the Trump administration in an exclusive letter, dictated over the phone to his family, from ICE detention in Louisiana.",2025-03-18 21:50:03.608000+00:00,13275,6595,108,-0.5267,Negativo,196,33,21,19978,2025-03-18,0.1
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lkohmsgxkr2b,"Quick take on Labour’s announcements today to tacke worklessness:
 — After years of dithering by multiple governments, any action is welcome
 — The rest of Labour’s economic agenda may well sabotage this effort
 
 More in my @economist.com leader:
-www.economist.com/leaders/202...",2025-03-18 20:03:21.312658+00:00,14,2,3,0.0516,Positivo
+www.economist.com/leaders/202...",2025-03-18 20:03:21.312658+00:00,14,2,3,0.0516,Positivo,276,39,20,19,2025-03-18,0.32222222222222224
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lkodxbmbjc26,"Amid a flurry of book reviews calling the Abundance liberals too neoliberal, I've—valiantly—taken the other side to encourage them to lean further in a markets-y direction.
 
 My review for @economist.com of Abundance and Why Nothing Works ⬇️
 
-www.economist.com/finance-and-...",2025-03-18 18:57:37.856000+00:00,17,3,0,0.5106,Positivo
+www.economist.com/finance-and-...",2025-03-18 18:57:37.856000+00:00,17,3,0,0.5106,Positivo,275,38,18,20,2025-03-18,-0.0625
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkeqn7u7u22c,"Among the material devastation to everyday people, Senate Dems have now blown a hole in their ability to work with the House.
 
 We had an agreed upon plan, House took immense risk, then Senate turned around midway and destroyed it w/ a fear-based, inexplicable abdication.
 
-They own what happens next.",2025-03-14 23:18:01.737000+00:00,132222,25965,5958,-0.5719,Negativo
-aoc.bsky.social,at://did:plc:7prh6raya2ntwnpyzte5u5hc/app.bsky.feed.post/3lkepqvflws2w,These are the same Senate Democrats who lectured the base for years about the importance of preserving the filibuster so it would still be available when Democrats were in the minority,2025-03-14 23:02:11.248000+00:00,24187,4615,370,0.3612,Positivo
+They own what happens next.",2025-03-14 23:18:01.737000+00:00,132222,25965,5958,-0.5719,Negativo,300,50,23,164145,2025-03-14,-0.040000000000000015
+aoc.bsky.social,at://did:plc:7prh6raya2ntwnpyzte5u5hc/app.bsky.feed.post/3lkepqvflws2w,These are the same Senate Democrats who lectured the base for years about the importance of preserving the filibuster so it would still be available when Democrats were in the minority,2025-03-14 23:02:11.248000+00:00,24187,4615,370,0.3612,Positivo,184,31,23,29172,2025-03-14,-0.13333333333333333
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkep3jemoc2c,"Cool so what happens if GOP attach a national abortion ban to a CR? You'll vote for that too?
 
-🚮",2025-03-14 22:50:13.989000+00:00,87993,14224,5271,-0.3939,Negativo
+🚮",2025-03-14 22:50:13.989000+00:00,87993,14224,5271,-0.3939,Negativo,96,20,22,107488,2025-03-14,0.35
 economist.com,at://did:plc:bonfenuobglfiguxubvmcrow/app.bsky.feed.post/3lkeauyvqh22s,"The Economist's cover story this week is essentially a guide for how Europe could wage economic war on America if needed. Which for a publication as Atlantacist as us is uh, something
 www.economist.com/briefing/202...
-From The Economist",2025-03-14 18:36:03.012000+00:00,68,21,4,-0.5994,Negativo
+From The Economist",2025-03-14 18:36:03.012000+00:00,68,21,4,-0.5994,Negativo,236,36,18,93,2025-03-14,0.1
 economist.com,at://did:plc:fqg2krki2lw3b6rex2jtrkos/app.bsky.feed.post/3lke76nzo3s2y,"The new economics of nativism
-www.economist.com/finance-and-...",2025-03-14 18:05:39.668000+00:00,21,9,3,0.0,Neutral
+www.economist.com/finance-and-...",2025-03-14 18:05:39.668000+00:00,21,9,3,0.0,Neutral,63,6,18,33,2025-03-14,0.13636363636363635
 aoc.bsky.social,at://did:plc:ihpglfqq3dapqjmwl2ntktil/app.bsky.feed.post/3lkdz4z4alk27,"Extraordinary moment — Nancy Pelosi issues a statement calling on Democratic senators to reject the House funding bill, i.e. to defy Chuck Schumer.
 
-""Democratic senators should listen to the women,"" she says, referring to Murray/DeLauro who want a 1-month stopgap bill instead.",2025-03-14 16:17:21.722000+00:00,43437,9815,1134,-0.34,Negativo
+""Democratic senators should listen to the women,"" she says, referring to Murray/DeLauro who want a 1-month stopgap bill instead.",2025-03-14 16:17:21.722000+00:00,43437,9815,1134,-0.34,Negativo,277,42,16,54386,2025-03-14,0.3333333333333333
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkduskfjpk2x,"KEEP CALLING. PEEL OFF ALL DEM SENATORS YOU CAN.
 
 ☎️: (202) 224-3121
@@ -389,32 +389,32 @@ Tell them to vote NO on Cloture and NO on CR. Vote is pushed to after 1:15ish fo
 
 The only public YES votes are Schumer and Fetterman. They need 7-8 total. KEEP CALLING.
 
-Call retiring Senators too!",2025-03-14 14:59:55.791000+00:00,68092,20217,3123,-0.4069,Negativo
+Call retiring Senators too!",2025-03-14 14:59:55.791000+00:00,68092,20217,3123,-0.4069,Negativo,295,53,14,91432,2025-03-14,-0.15
 economist.com,at://did:plc:hv44fkzpsbhlpsnh7d5ilt4r/app.bsky.feed.post/3lkdsg34h5s27,"If the peace deal collapses, fighting could quickly engulf the country. Worse still, it could merge with Sudan’s civil war across the border 👇
 
-www.economist.com/middle-east-...",2025-03-14 14:17:09.627000+00:00,13,5,0,-0.802,Negativo
-economist.com,at://did:plc:psxf6wrijwkudvi2etmxsess/app.bsky.feed.post/3lkdqya5v2c2i,"DeepSeek is free, fast and still best in class. Geopolitics and censorship are making potential users cautious - but not putting them off entirely",2025-03-14 13:51:31.413000+00:00,22,5,4,0.5499,Positivo
-economist.com,at://did:plc:psxf6wrijwkudvi2etmxsess/app.bsky.feed.post/3lkdpp6mpjk2e,"www.economist.com/leaders/2025... Dismissing Manus by noting that it's just an assemblage of off-the-shelf models and tools misses the point: now that you can push the frontier by assembling off the shelf models and tools, the ""AI safety"" conversation needs to change rapidly",2025-03-14 13:28:34.070000+00:00,28,12,0,0.2263,Positivo
+www.economist.com/middle-east-...",2025-03-14 14:17:09.627000+00:00,13,5,0,-0.802,Negativo,177,25,14,18,2025-03-14,-0.033333333333333354
+economist.com,at://did:plc:psxf6wrijwkudvi2etmxsess/app.bsky.feed.post/3lkdqya5v2c2i,"DeepSeek is free, fast and still best in class. Geopolitics and censorship are making potential users cautious - but not putting them off entirely",2025-03-14 13:51:31.413000+00:00,22,5,4,0.5499,Positivo,146,24,13,31,2025-03-14,0.32
+economist.com,at://did:plc:psxf6wrijwkudvi2etmxsess/app.bsky.feed.post/3lkdpp6mpjk2e,"www.economist.com/leaders/2025... Dismissing Manus by noting that it's just an assemblage of off-the-shelf models and tools misses the point: now that you can push the frontier by assembling off the shelf models and tools, the ""AI safety"" conversation needs to change rapidly",2025-03-14 13:28:34.070000+00:00,28,12,0,0.2263,Positivo,275,41,13,40,2025-03-14,0.0
 economist.com,at://did:plc:xywusxnkbs2lro65vj6gksiu/app.bsky.feed.post/3lkdbxgvhbs2t,"About three quarters of aid spending goes on something that doesn't work: trying to make poor countries rich by spending money. Only a quarter is humanitarian relief and health funding
 
-www.economist.com/finance-and-...",2025-03-14 09:22:38.795000+00:00,18,6,2,0.5574,Positivo
+www.economist.com/finance-and-...",2025-03-14 09:22:38.795000+00:00,18,6,2,0.5574,Positivo,219,31,9,26,2025-03-14,-0.00833333333333334
 economist.com,at://did:plc:e4im47sn5kpw4ljt2ookgwo3/app.bsky.feed.post/3lkd7gftr5k2w,"Everything you need to know about the European nuclear deterrence debate, and what options really lie ahead for Macron, Starmer, Merz, Tusk and other Europeans. By my colleague @shashj.bsky.social 
 
-www.economist.com/internationa...",2025-03-14 08:37:19.780000+00:00,121,35,9,0.0,Neutral
+www.economist.com/internationa...",2025-03-14 08:37:19.780000+00:00,121,35,9,0.0,Neutral,232,30,8,165,2025-03-14,0.025000000000000005
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkcm6nlkx22i,"A YES on cloture is a YES for the bill.
 
-Do not let anyone play games with you.",2025-03-14 02:52:58.373000+00:00,97139,17076,2328,0.7032,Positivo
+Do not let anyone play games with you.",2025-03-14 02:52:58.373000+00:00,97139,17076,2328,0.7032,Positivo,79,18,2,116543,2025-03-14,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkclsqapqc2i,"I think some in the Senate have convinced themselves that the backlash to folding will be limited to “the left” and therefore ignorable.
 
 Those people are deeply and profoundly misreading the moment and the stakes.
 
-Virtually every swing district House Dem walked the plank to vote NO for a reason.",2025-03-14 02:46:18.509000+00:00,134667,25039,5203,-0.4824,Negativo
+Virtually every swing district House Dem walked the plank to vote NO for a reason.",2025-03-14 02:46:18.509000+00:00,134667,25039,5203,-0.4824,Negativo,298,50,2,164909,2025-03-14,0.002976190476190476
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkcfp67hcs2u,"New Yorkers: Call Sen. Gillibrand’s office to vote NO on cloture and NO on the Republican Spending Bill.
 
 They vote in the morning.
-☎️: (202) 224-4451",2025-03-14 00:56:56.478000+00:00,31774,8141,1063,-0.7065,Negativo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkcdggnras2a,"AOC: It is almost unthinkable why Senate Democrats would vote to to hand the few pieces of leverage that we have away for free when we've been sent here to protect social security, protect medicaid, and protect medicare.",2025-03-14 00:16:15.863000+00:00,33785,7399,824,0.9403,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkbzb5qzdk2u,I’ll be on CNN at 6 with @jaketapper.bsky.social to discuss Senate Democrats’ responsibility to protect the federal government and vote NO on cloture and the GOP spending bill,2025-03-13 21:14:21.341000+00:00,25138,2825,1251,-0.0857,Negativo
+☎️: (202) 224-4451",2025-03-14 00:56:56.478000+00:00,31774,8141,1063,-0.7065,Negativo,150,26,0,40978,2025-03-14,-0.3068181818181818
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lkcdggnras2a,"AOC: It is almost unthinkable why Senate Democrats would vote to to hand the few pieces of leverage that we have away for free when we've been sent here to protect social security, protect medicaid, and protect medicare.",2025-03-14 00:16:15.863000+00:00,33785,7399,824,0.9403,Positivo,220,38,0,42008,2025-03-14,0.04583333333333334
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkbzb5qzdk2u,I’ll be on CNN at 6 with @jaketapper.bsky.social to discuss Senate Democrats’ responsibility to protect the federal government and vote NO on cloture and the GOP spending bill,2025-03-13 21:14:21.341000+00:00,25138,2825,1251,-0.0857,Negativo,175,28,21,29214,2025-03-13,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lkbrgm5rvk2u,"CALLS ARE WORKING - it has bought us precious time, but we NEED to keep the pressure up.
 
 Tomorrow is the cloture vote.
@@ -423,16 +423,16 @@ KEEP CALLING: (202) 224-3121 ☎️☎️☎️
 
 Tell your Dem Senator to vote NO on Cloture and NO on the Republican spending bill.
 
-Do NOT assume your Senator will be good on this. Trust me.",2025-03-13 18:54:14.278000+00:00,34078,11829,1502,0.0132,Neutral
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkbq5b4os22k,There is no point whingeing about Donald Trump’s frenetic foreign policy. America’s bullied allies need to toughen up econ.st/3FwcIEb,2025-03-13 18:31:06.957000+00:00,103,16,12,-0.7351,Negativo
+Do NOT assume your Senator will be good on this. Trust me.",2025-03-13 18:54:14.278000+00:00,34078,11829,1502,0.0132,Neutral,301,56,18,47409,2025-03-13,0.15
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lkbq5b4os22k,There is no point whingeing about Donald Trump’s frenetic foreign policy. America’s bullied allies need to toughen up econ.st/3FwcIEb,2025-03-13 18:31:06.957000+00:00,103,16,12,-0.7351,Negativo,133,19,18,131,2025-03-13,-0.125
 economist.com,at://did:plc:fidlfwaezwm2zmmszdfabgy2/app.bsky.feed.post/3lkbpa2ijcb2u,"Britain's rise in worklessness has been five-year slow-motion disaster. Not far off a million more people are out of work and not looking, versus 2019.
 
 I wrote a chunky piece on this for @economist.com, but wanted to draw out a few specific bits here (🧵)
 
-www.economist.com/britain/202...",2025-03-13 18:14:46.885280+00:00,23,8,3,-0.3716,Negativo
+www.economist.com/britain/202...",2025-03-13 18:14:46.885280+00:00,23,8,3,-0.3716,Negativo,289,46,18,34,2025-03-13,0.0625
 economist.com,at://did:plc:kyw6ixvyu2ntuesu4waayf5n/app.bsky.feed.post/3lkawa6rjnc2o,"Our poll of Ukraine is now in (N=1000). Mr Zelensky approval at >70%, very few want elections before peace. But also suggests 58% will not want Ukraine to concede territory, and that many also expect the war to end within the year ->
-www.economist.com/europe/2025/... by  @olliecarroll.bsky.social",2025-03-13 10:47:27.889000+00:00,608,141,23,-0.4756,Negativo
-aoc.bsky.social,at://did:plc:o4pdps2jkn7uhrdgadni7djk/app.bsky.feed.post/3lkaffwffxs2d,"the tesla protest might objectively be among the most successful in history already just in terms of immediate response, if you consider they forced the world’s most powerful person & its most wealthy to fully degrade themselves like used car salesmen on live TV while the whole world watched agog.",2025-03-13 05:46:26.819000+00:00,23142,4082,269,0.8151,Positivo
+www.economist.com/europe/2025/... by  @olliecarroll.bsky.social",2025-03-13 10:47:27.889000+00:00,608,141,23,-0.4756,Negativo,297,46,10,772,2025-03-13,0.12
+aoc.bsky.social,at://did:plc:o4pdps2jkn7uhrdgadni7djk/app.bsky.feed.post/3lkaffwffxs2d,"the tesla protest might objectively be among the most successful in history already just in terms of immediate response, if you consider they forced the world’s most powerful person & its most wealthy to fully degrade themselves like used car salesmen on live TV while the whole world watched agog.",2025-03-13 05:46:26.819000+00:00,23142,4082,269,0.8151,Positivo,298,50,5,27493,2025-03-13,0.30863636363636365
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lk6rnjzzz22m,"It should be very clear to every Senate Democrat that any vote for Cloture will also be considered a vote for the bill.
 
 People aren’t going to be tricked with procedural games.
@@ -441,7 +441,7 @@ They know exactly what is going on.
 
 Defend Medicaid.
 Vote NO on Cloture.
-NO on bill.",2025-03-12 14:20:07.725000+00:00,19619,4935,443,-0.5534,Negativo
+NO on bill.",2025-03-12 14:20:07.725000+00:00,19619,4935,443,-0.5534,Negativo,264,48,14,24997,2025-03-12,0.19
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lk6rmsh7pk2m,"🚨 Everyone needs to call their Dem Senator right now. They are starting to cave.
 
 Tell them:
@@ -452,79 +452,79 @@ AND
 Don’t let them pivot to reconciliation. GOP doesn’t need Dem votes on that and they know it.
 
 TODAY is the showdown.
-🤳🏽: (202) 224-3121",2025-03-12 14:19:42.990000+00:00,55411,19347,2685,-0.7065,Negativo
-economist.com,at://did:plc:mj5h6johygkjaoo3dg5q23lm/app.bsky.feed.post/3lk5xmhzzzc2o,"“The talks in Jeddah lasted several hours. According to participants, the Ukrainians opened with Zelensky’s idea for partial ceasefire. The Americans countered with the idea of a complete ceasefire…an initial 30 days, renewable if both combatants agree” www.economist.com/europe/2025/...",2025-03-12 06:34:14.782000+00:00,126,29,9,0.0,Neutral
+🤳🏽: (202) 224-3121",2025-03-12 14:19:42.990000+00:00,55411,19347,2685,-0.7065,Negativo,300,55,14,77443,2025-03-12,-0.15476190476190477
+economist.com,at://did:plc:mj5h6johygkjaoo3dg5q23lm/app.bsky.feed.post/3lk5xmhzzzc2o,"“The talks in Jeddah lasted several hours. According to participants, the Ukrainians opened with Zelensky’s idea for partial ceasefire. The Americans countered with the idea of a complete ceasefire…an initial 30 days, renewable if both combatants agree” www.economist.com/europe/2025/...",2025-03-12 06:34:14.782000+00:00,126,29,9,0.0,Neutral,287,38,6,164,2025-03-12,0.0
 economist.com,at://did:plc:jipommeyosswbzw2k32vcjhp/app.bsky.feed.post/3lk4rqb4etk2x,"Which countries are most exposed to cuts to US foreign aid? Those who rely heavily on health funding, and which are least able to replace this. 
 
-www.economist.com/graphic-deta...",2025-03-11 19:16:19.549000+00:00,31,17,2,-0.469,Negativo
+www.economist.com/graphic-deta...",2025-03-11 19:16:19.549000+00:00,31,17,2,-0.469,Negativo,179,27,19,50,2025-03-11,0.075
 economist.com,at://did:plc:jgdr43ovl2qf6lwmpmr35ocw/app.bsky.feed.post/3lk4jdw54f22t,"Britain has been quietly making significant progress in women's representation across business and politics. 
 Data for all 29 OECD countries in our annual glass-ceiling index 👇
-www.economist.com/graphic-deta...",2025-03-11 16:46:15.450000+00:00,91,24,2,0.5574,Positivo
+www.economist.com/graphic-deta...",2025-03-11 16:46:15.450000+00:00,91,24,2,0.5574,Positivo,210,27,16,117,2025-03-11,0.1875
 economist.com,at://did:plc:e4im47sn5kpw4ljt2ookgwo3/app.bsky.feed.post/3ljrxmyfw3s2w,"“We need to be clear: while the American people may still be our friends, the Trump administration is no longer our ally”
 
 François Hollande’s guest essay in @economist.com 
 
-economist.com/by-invitatio...",2025-03-07 12:02:35.088000+00:00,191,69,9,0.5423,Positivo
+economist.com/by-invitatio...",2025-03-07 12:02:35.088000+00:00,191,69,9,0.5423,Positivo,204,29,12,269,2025-03-07,0.049999999999999996
 economist.com,at://did:plc:kyw6ixvyu2ntuesu4waayf5n/app.bsky.feed.post/3ljrurnpbkk22,"In 2024, Russia seized less than half a percent of Ukrainian land at the cost of about 100,000 lives, new estimates of casualties and my calculations suggest. My take on the latest data:
-www.economist.com/graphic-deta...",2025-03-07 11:11:30.410000+00:00,50,22,2,0.0,Neutral
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3ljqn622vpd2r,"AOC: It's really because Republicans— they’re very thin skinned and they're very sensitive, and their feelings are very easily hurt. And so they have to vote on censure resolutions.",2025-03-06 23:22:36.190000+00:00,26290,4286,691,-0.2466,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljqcgl6w7s2h,"It has been a transformative week for Sir Keir Starmer. The prime minister has sketched a new role for Britain in the world—but he must get radical at home, too econ.st/3XwW1P8",2025-03-06 20:10:31.574000+00:00,127,22,6,0.0,Neutral
+www.economist.com/graphic-deta...",2025-03-07 11:11:30.410000+00:00,50,22,2,0.0,Neutral,220,34,11,74,2025-03-07,0.07575757575757576
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3ljqn622vpd2r,"AOC: It's really because Republicans— they’re very thin skinned and they're very sensitive, and their feelings are very easily hurt. And so they have to vote on censure resolutions.",2025-03-06 23:22:36.190000+00:00,26290,4286,691,-0.2466,Negativo,181,29,23,31267,2025-03-06,0.09333333333333334
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljqcgl6w7s2h,"It has been a transformative week for Sir Keir Starmer. The prime minister has sketched a new role for Britain in the world—but he must get radical at home, too econ.st/3XwW1P8",2025-03-06 20:10:31.574000+00:00,127,22,6,0.0,Neutral,176,31,20,155,2025-03-06,0.13636363636363635
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3ljq4tpko7s2r,"Governments worldwide are bracing for Donald Trump’s transactional, “show me the money” approach to statecraft to become a global norm, as old rules and institutions crumble. A sobering edition of The Telegram, reported from D.C. and NYC 
 economist.com/internationa...
-from The Economist",2025-03-06 18:30:29.916000+00:00,34,14,8,-0.2023,Negativo
-economist.com,at://did:plc:bhb72yhjemgz7yfhm6oeui7m/app.bsky.feed.post/3ljpuilj24k2q,"Beauty routines with a side of Trump, raw milk lattes and “Make America Hot Again” parties: in the lucrative world of fashion and lifestyle influencing, conservatism is gaining clout. For this week's issue of @economist.com, I met the women giving MAGA a makeover www.economist.com/united-state...",2025-03-06 16:01:06.642000+00:00,7,5,5,0.8934,Positivo
-economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ljptt5fvo225,"Are the Liberals back? I took a look at their polling surge with our Canada correspondent, Rob Russo: www.economist.com/the-americas...",2025-03-06 15:49:07.210000+00:00,148,13,6,-0.5574,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljpqjkoaks2x,Foreign aid’s demise will be brutal and chaotic. But it offers an opportunity to rethink an inefficient system that has long needed an overhaul econ.st/4kqbjyW,2025-03-06 14:50:04.332000+00:00,82,9,66,0.0129,Neutral
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljpdr3crbk2c,"Investors, consumers and companies are showing the first signs of souring on Donald Trump’s vision. With his aggressive and erratic protectionism, he is playing with fire econ.st/41tx87X",2025-03-06 11:01:38.007000+00:00,495,212,48,-0.0516,Negativo
+from The Economist",2025-03-06 18:30:29.916000+00:00,34,14,8,-0.2023,Negativo,287,41,18,56,2025-03-06,0.05
+economist.com,at://did:plc:bhb72yhjemgz7yfhm6oeui7m/app.bsky.feed.post/3ljpuilj24k2q,"Beauty routines with a side of Trump, raw milk lattes and “Make America Hot Again” parties: in the lucrative world of fashion and lifestyle influencing, conservatism is gaining clout. For this week's issue of @economist.com, I met the women giving MAGA a makeover www.economist.com/united-state...",2025-03-06 16:01:06.642000+00:00,7,5,5,0.8934,Positivo,297,44,16,17,2025-03-06,0.009615384615384609
+economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ljptt5fvo225,"Are the Liberals back? I took a look at their polling surge with our Canada correspondent, Rob Russo: www.economist.com/the-americas...",2025-03-06 15:49:07.210000+00:00,148,13,6,-0.5574,Negativo,135,19,15,167,2025-03-06,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljpqjkoaks2x,Foreign aid’s demise will be brutal and chaotic. But it offers an opportunity to rethink an inefficient system that has long needed an overhaul econ.st/4kqbjyW,2025-03-06 14:50:04.332000+00:00,82,9,66,0.0129,Neutral,159,25,14,157,2025-03-06,-0.23750000000000002
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljpdr3crbk2c,"Investors, consumers and companies are showing the first signs of souring on Donald Trump’s vision. With his aggressive and erratic protectionism, he is playing with fire econ.st/41tx87X",2025-03-06 11:01:38.007000+00:00,495,212,48,-0.0516,Negativo,186,27,11,755,2025-03-06,0.25
 economist.com,at://did:plc:luw7pcqimp4xchky7hdkvzvd/app.bsky.feed.post/3ljpb3xwqx22k,"Can Friedrich Merz get Europe out of its funk?
 
 My Charlemagne this week on the budding Merz-mentum (sorry) changing the mood in the EU.
 
-www.economist.com/europe/2025/...",2025-03-06 10:14:02.371000+00:00,74,15,8,-0.0772,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlypr3k6k2z,Some have walked out I believe.,2025-03-05 03:06:03.387000+00:00,336,2,44,0.0,Neutral
+www.economist.com/europe/2025/...",2025-03-06 10:14:02.371000+00:00,74,15,8,-0.0772,Negativo,171,25,10,97,2025-03-06,-0.2
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlypr3k6k2z,Some have walked out I believe.,2025-03-05 03:06:03.387000+00:00,336,2,44,0.0,Neutral,31,6,3,382,2025-03-05,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljly7b3xy22z,"Trump backed GOP into a big corner with his “balanced budget” point.
 
 The ONLY way House GOP could even think about upholding their “no cuts to Medicaid” swing seat promises and their spending cut mandates is deficit spending and bad math.
 
-Now they have to gut Medicaid & hand it to Elon in public.",2025-03-05 02:56:49.752000+00:00,30663,4539,1187,-0.5574,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlxog2vbk2z,This list is so long and taking up so much real estate in his speech it’s almost like they want to distract from their massive cuts to Medicaid,2025-03-05 02:47:24.535000+00:00,83232,11615,1903,-0.2862,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlxbfevrk2z,Protect your peace.,2025-03-05 02:40:07.605000+00:00,64042,3755,1311,0.7269,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlx2qxuvc2z,He usually tries to at least open with broad vague lines that are “hard” to not clap for. He’s not even trying this time around.,2025-03-05 02:36:24.882000+00:00,16731,885,591,-0.1027,Negativo
-aoc.bsky.social,at://did:plc:n74wy26n6klbv7xgrndeog7s/app.bsky.feed.post/3ljlx2dxjnk2d,Yeah thanking the Supreme Court for his excesses may not have the effect he hopes for.,2025-03-05 02:36:11.239000+00:00,4883,322,42,0.8225,Positivo
-aoc.bsky.social,at://did:plc:pwsjq3xnal6auzgeqho4ecw7/app.bsky.feed.post/3ljlwyl7oa22p,Trump whining that Democrats wouldn't applaud him even if he cured a disease and then a second later bragging about withdrawing from the World Health Organization,2025-03-05 02:35:11.737000+00:00,13508,1828,196,-0.5236,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlw2kbw222z,Put your Joint Address questions here and I’ll see if I can answer some as I go ⬇️,2025-03-05 02:18:24.128000+00:00,15218,1307,3994,0.0,Neutral
+Now they have to gut Medicaid & hand it to Elon in public.",2025-03-05 02:56:49.752000+00:00,30663,4539,1187,-0.5574,Negativo,299,54,2,36389,2025-03-05,-0.17499999999999996
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlxog2vbk2z,This list is so long and taking up so much real estate in his speech it’s almost like they want to distract from their massive cuts to Medicaid,2025-03-05 02:47:24.535000+00:00,83232,11615,1903,-0.2862,Negativo,143,28,2,96750,2025-03-05,0.05000000000000001
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlxbfevrk2z,Protect your peace.,2025-03-05 02:40:07.605000+00:00,64042,3755,1311,0.7269,Positivo,19,3,2,69108,2025-03-05,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlx2qxuvc2z,He usually tries to at least open with broad vague lines that are “hard” to not clap for. He’s not even trying this time around.,2025-03-05 02:36:24.882000+00:00,16731,885,591,-0.1027,Negativo,128,25,2,18207,2025-03-05,-0.18819444444444444
+aoc.bsky.social,at://did:plc:n74wy26n6klbv7xgrndeog7s/app.bsky.feed.post/3ljlx2dxjnk2d,Yeah thanking the Supreme Court for his excesses may not have the effect he hopes for.,2025-03-05 02:36:11.239000+00:00,4883,322,42,0.8225,Positivo,86,16,2,5247,2025-03-05,0.0
+aoc.bsky.social,at://did:plc:pwsjq3xnal6auzgeqho4ecw7/app.bsky.feed.post/3ljlwyl7oa22p,Trump whining that Democrats wouldn't applaud him even if he cured a disease and then a second later bragging about withdrawing from the World Health Organization,2025-03-05 02:35:11.737000+00:00,13508,1828,196,-0.5236,Negativo,162,26,2,15532,2025-03-05,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlw2kbw222z,Put your Joint Address questions here and I’ll see if I can answer some as I go ⬇️,2025-03-05 02:18:24.128000+00:00,15218,1307,3994,0.0,Neutral,82,18,2,20519,2025-03-05,0.0
 aoc.bsky.social,at://did:plc:u4mkozlkynxgdnsxaric2ieq/app.bsky.feed.post/3ljldb32yms2a,"when Elon Musk started recruiting for DOGE last November, he said the work would be “tedious” and “compensation is zero""
 
 now it turns out some DOGE operatives are earning six-figure salaries, one as high as $195,200, as much as a civil servant can legally make
 
-www.wired.com/story/doge-g...",2025-03-04 20:42:01.959000+00:00,6387,2399,213,0.1027,Positivo
+www.wired.com/story/doge-g...",2025-03-04 20:42:01.959000+00:00,6387,2399,213,0.1027,Positivo,292,46,20,8999,2025-03-04,0.01200000000000001
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlccebvjs2z,"SOTU seats are not assigned. There are general seating areas for each body (House, Senate, SCOTUS,etc) but there are honored seats for each party’s leadership and they’re even trying to squat those.
 
-If it doesn’t sort out, be aware you may see applause on both sides of the aisle but they may be GOP",2025-03-04 20:24:51.436000+00:00,14014,2285,835,0.872,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlc36jh7k2z,Already hearing that Republican members have been showing up to the House floor trying to take up the Dem side seats for the joint address 💀,2025-03-04 20:20:50.511000+00:00,24756,3487,2040,0.0,Neutral
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljl2xw34v22z,Yep we’ll likely upload to YouTube afterwards,2025-03-04 18:13:44.797000+00:00,231,2,14,0.296,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljl2nsya5s2z,I’m not going to the Joint Address. I will be live posting and chatting with you all here instead. Then going on IG Live after.,2025-03-04 18:08:06.009000+00:00,169007,16257,8611,0.0,Neutral
+If it doesn’t sort out, be aware you may see applause on both sides of the aisle but they may be GOP",2025-03-04 20:24:51.436000+00:00,14014,2285,835,0.872,Positivo,300,54,20,17134,2025-03-04,0.15000000000000002
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljlc36jh7k2z,Already hearing that Republican members have been showing up to the House floor trying to take up the Dem side seats for the joint address 💀,2025-03-04 20:20:50.511000+00:00,24756,3487,2040,0.0,Neutral,140,26,20,30283,2025-03-04,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljl2xw34v22z,Yep we’ll likely upload to YouTube afterwards,2025-03-04 18:13:44.797000+00:00,231,2,14,0.296,Positivo,45,7,18,247,2025-03-04,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljl2nsya5s2z,I’m not going to the Joint Address. I will be live posting and chatting with you all here instead. Then going on IG Live after.,2025-03-04 18:08:06.009000+00:00,169007,16257,8611,0.0,Neutral,127,25,18,193875,2025-03-04,0.13636363636363635
 economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3ljddplkdjk2r,"In the corridors of political Kyiv, officials are largely stunned by the ferocity of the American treatment towards their leader.
 
-Among those strategising about what to do next, the key question is why did it happen? Two main theories are circulating econ.st/43hV2WP",2025-03-01 16:28:51.094000+00:00,129,31,59,-0.2732,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljbei7bvts2m,"If you were in Congress, what would you do for the State of the Union? What do you think Dems should do?",2025-02-28 21:37:17.615000+00:00,44885,4426,36187,0.0,Neutral
-economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ljawsyo2dk2q,"After the AfD's surge on Sunday, far right parties are the most voted-for of any grouping in Europe, for the first time in history: www.economist.com/graphic-deta...",2025-02-28 17:32:47.388000+00:00,662,287,51,0.4019,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lj6q6ekqpk2k,"If you want a good life, inheriting is becoming nearly as important as working. That is dangerous for capitalism and society econ.st/3QDUfYu",2025-02-27 20:28:33.267000+00:00,176,53,12,0.2263,Positivo
+Among those strategising about what to do next, the key question is why did it happen? Two main theories are circulating econ.st/43hV2WP",2025-03-01 16:28:51.094000+00:00,129,31,59,-0.2732,Negativo,267,42,16,219,2025-03-01,0.06349206349206349
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ljbei7bvts2m,"If you were in Congress, what would you do for the State of the Union? What do you think Dems should do?",2025-02-28 21:37:17.615000+00:00,44885,4426,36187,0.0,Neutral,104,22,21,85498,2025-02-28,0.0
+economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3ljawsyo2dk2q,"After the AfD's surge on Sunday, far right parties are the most voted-for of any grouping in Europe, for the first time in history: www.economist.com/graphic-deta...",2025-02-28 17:32:47.388000+00:00,662,287,51,0.4019,Positivo,165,25,17,1000,2025-02-28,0.2839285714285714
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lj6q6ekqpk2k,"If you want a good life, inheriting is becoming nearly as important as working. That is dangerous for capitalism and society econ.st/3QDUfYu",2025-02-27 20:28:33.267000+00:00,176,53,12,0.2263,Positivo,140,22,20,241,2025-02-27,0.23749999999999996
 economist.com,at://did:plc:bonfenuobglfiguxubvmcrow/app.bsky.feed.post/3lj6fbyfymc2h,"Good piece by Mark Greenblatt, one of the fired inspector generals, in this week's ""By Invitation"" section of The Economist, on why the firing of IGs is so worrying: 
 
 Donald Trump should not replace us with his stooges, warns a fired inspector-general
-www.economist.com/by-invitatio...",2025-02-27 17:13:43.611000+00:00,54,24,6,-0.8811,Negativo
+www.economist.com/by-invitatio...",2025-02-27 17:13:43.611000+00:00,54,24,6,-0.8811,Negativo,286,43,17,84,2025-02-27,0.7
 economist.com,at://did:plc:gn6mkok3lpf2nb3iqmkaev67/app.bsky.feed.post/3lj6dxxzq6c27,"Did some of the maths in this week's The @economist.com on EU defence spending and Ukraine aid if America withdraws. 
 
-Doable, but requires putting a lot of money on the table. www.economist.com/europe/2025/...",2025-02-27 16:50:13.922000+00:00,200,59,14,0.0516,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lj6detw4hk2v,"A mafia-like struggle for global power has begun, with rules that do not suit America. Other countries are already planning for a lawless era econ.st/3DbeFFe",2025-02-27 16:39:32.055000+00:00,228,78,22,-0.3182,Negativo
-economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3lj6bgzbyas2b,"Israel and Hamas both seem willing to extend the Gaza ceasefire by a few weeks. But buying more time for phase-two talks does not mean those talks will succeed: they will run up against a familiar problem, that both sides have incompatible demands. www.economist.com/middle-east-...",2025-02-27 16:04:57.335000+00:00,18,3,0,0.2732,Positivo
+Doable, but requires putting a lot of money on the table. www.economist.com/europe/2025/...",2025-02-27 16:50:13.922000+00:00,200,59,14,0.0516,Positivo,210,32,16,273,2025-02-27,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lj6detw4hk2v,"A mafia-like struggle for global power has begun, with rules that do not suit America. Other countries are already planning for a lawless era econ.st/3DbeFFe",2025-02-27 16:39:32.055000+00:00,228,78,22,-0.3182,Negativo,157,25,16,328,2025-02-27,-0.0625
+economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3lj6bgzbyas2b,"Israel and Hamas both seem willing to extend the Gaza ceasefire by a few weeks. But buying more time for phase-two talks does not mean those talks will succeed: they will run up against a familiar problem, that both sides have incompatible demands. www.economist.com/middle-east-...",2025-02-27 16:04:57.335000+00:00,18,3,0,0.2732,Positivo,282,44,16,21,2025-02-27,0.21625
 economist.com,at://did:plc:jcksceh5aahrpmcbidzwh6sh/app.bsky.feed.post/3lj6a2zfbq22k,"I wrote about the latest Democracy index from EIU. 2024 was a great year for polling-booth manufacturers, but less so for global democracy
 
-www.economist.com/interactive/...",2025-02-27 15:40:21.046000+00:00,61,20,5,0.3716,Positivo
+www.economist.com/interactive/...",2025-02-27 15:40:21.046000+00:00,61,20,5,0.3716,Positivo,173,24,15,86,2025-02-27,0.2833333333333333
 economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lj67i442cc2e,"Some sad news to share: John Parker, one of The Economist’s finest correspondents, has died at the age of 70.
 
-At a time of global upheaval the world has lost one of the people best able to interpret momentous change. We remember his lengthy career econ.st/4kjEOm4",2025-02-27 15:29:46.357000+00:00,89,7,0,-0.3818,Negativo
+At a time of global upheaval the world has lost one of the people best able to interpret momentous change. We remember his lengthy career econ.st/4kjEOm4",2025-02-27 15:29:46.357000+00:00,89,7,0,-0.3818,Negativo,264,46,15,96,2025-02-27,0.25
 economist.com,at://did:plc:luw7pcqimp4xchky7hdkvzvd/app.bsky.feed.post/3lj63mfnn6c2s,"Europe is desperately–and justifiably–keen to be a party to Ukraine peace talks.
 
 In practice it will be allowed ONE envoy to face off against Trump and Putin.
@@ -532,142 +532,142 @@ In practice it will be allowed ONE envoy to face off against Trump and Putin.
 Who should it be?
 Charlemagne this week considers the main candidates. Should it be Costa? Macron? Tusk?
 
-www.economist.com/europe/2025/...",2025-02-27 14:20:35.618000+00:00,31,5,11,0.7998,Positivo
+www.economist.com/europe/2025/...",2025-02-27 14:20:35.618000+00:00,31,5,11,0.7998,Positivo,300,45,14,47,2025-02-27,0.16666666666666666
 economist.com,at://did:plc:stnvqwajs5ifq6ooi3amaslh/app.bsky.feed.post/3lj62wrqlis2d,"Can Europe confront Vladimir Putin’s Russia on its own? 
 This is the question we asked in this week's International pages of @economist.com 
  
-The answer is grim. A short 🧵",2025-02-27 14:08:30.103000+00:00,45,10,12,-0.6597,Negativo
+The answer is grim. A short 🧵",2025-02-27 14:08:30.103000+00:00,45,10,12,-0.6597,Negativo,172,29,14,67,2025-02-27,-0.1
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3lj4qwpucfs2q,"No, Pres Trump wooing Putin is not the same as Nixon going to China. My column on Trumpworld’s claims that their hero is about to split Russia from China. Actually, the main split is between the U.S. and western allies
 www.economist.com/internationa...
-from The Economist",2025-02-27 01:36:50.958000+00:00,132,29,7,0.5574,Positivo
+from The Economist",2025-02-27 01:36:50.958000+00:00,132,29,7,0.5574,Positivo,271,44,1,168,2025-02-27,0.041666666666666664
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lj2foddnek24,"This vote was to start the process of the cuts. It WILL come back for a final vote.
 
 There are some chances to slow or potentially stop it. Need constant pressure on GOP
 
-Focus on GOP swing seats & key committees. Energy & Commerce is where the Medicaid fight will go down. Ways&Means for tax fight.",2025-02-26 03:09:58.767000+00:00,49016,13036,1223,-0.7845,Negativo
+Focus on GOP swing seats & key committees. Energy & Commerce is where the Medicaid fight will go down. Ways&Means for tax fight.",2025-02-26 03:09:58.767000+00:00,49016,13036,1223,-0.7845,Negativo,299,56,3,63275,2025-02-26,-0.06507936507936508
 aoc.bsky.social,at://did:plc:5o6k7jvowuyaquloafzn3cfw/app.bsky.feed.post/3lizzztzpds2w,"🔥 @aoc.bsky.social : “The numbers don’t add up. $880 BILLION is a devastating cut to Medicaid, and an attack on Medicare. Anyone who votes for this budget is voting to cut Medicaid and gut health care for Medicare recipients in 🇺🇸.”
 
-Full: www.instagram.com/reel/DGg7cr0...",2025-02-25 23:41:40.466000+00:00,23273,6303,584,-0.8689,Negativo
+Full: www.instagram.com/reel/DGg7cr0...",2025-02-25 23:41:40.466000+00:00,23273,6303,584,-0.8689,Negativo,273,43,23,30160,2025-02-25,-0.325
 aoc.bsky.social,at://did:plc:ic7n7z2yrxtl4ejl5dfjchmm/app.bsky.feed.post/3lizvpd3if22h,"Elon Musk and his 19-year-olds have now disrupted the approval of medical devices that save lives.
 
-Every member of Congress bears a responsibility to stop this right now.",2025-02-25 22:24:12.189000+00:00,40764,9508,807,0.6249,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3liwxiz75f22t,"Trimming the headcount of federal employees, as Elon Musk wants to do, is unlikely to save much money. Civilian payroll costs account for just 4% of the $7trn the government spends each year econ.st/3CS39yA",2025-02-24 18:18:28.764000+00:00,167,52,21,0.4939,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3liunveycjc2o,"Ukrainian officials say their encounters with Donald Trump’s team are so confusing that they have been watching documentaries for clues about his negotiation style. There have been three versions of a deal, considered “bad”, “better” and “disastrous” econ.st/3XhvSno",2025-02-23 20:21:06.882000+00:00,135,35,12,-0.3593,Negativo
+Every member of Congress bears a responsibility to stop this right now.",2025-02-25 22:24:12.189000+00:00,40764,9508,807,0.6249,Positivo,171,28,22,51079,2025-02-25,0.14285714285714285
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3liwxiz75f22t,"Trimming the headcount of federal employees, as Elon Musk wants to do, is unlikely to save much money. Civilian payroll costs account for just 4% of the $7trn the government spends each year econ.st/3CS39yA",2025-02-24 18:18:28.764000+00:00,167,52,21,0.4939,Positivo,206,34,18,240,2025-02-24,-0.033333333333333326
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3liunveycjc2o,"Ukrainian officials say their encounters with Donald Trump’s team are so confusing that they have been watching documentaries for clues about his negotiation style. There have been three versions of a deal, considered “bad”, “better” and “disastrous” econ.st/3XhvSno",2025-02-23 20:21:06.882000+00:00,135,35,12,-0.3593,Negativo,266,38,20,182,2025-02-23,-0.29999999999999993
 economist.com,at://did:plc:f36yyafwdm4vyr3sf23owygt/app.bsky.feed.post/3liunsjrk4s26,"The Americans called it a “transaction of love.” The Ukrainian officials I spoke to called it differently: “not negotiation, but extortion”.
 
-www.economist.com/europe/2025/...",2025-02-23 20:19:31.239000+00:00,129,33,9,0.0,Neutral
-economist.com,at://did:plc:lg6hkdrtipy2it5hxwgv4a62/app.bsky.feed.post/3liunnhclw22e,"Here’s our piece on the state of play in the Ukraine-US mineral “deal”. Tldr: the American proposal is unclear, punitive and makes no sense. There are perfectly good ways for Ukraine to reward America for support by letting it exploit mineral deposits. This is not one of them.",2025-02-23 20:16:40.878000+00:00,281,89,16,0.8402,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lium3rn5nk2s,"Whatever the final result, it is not an outcome that will please those that had hoped desperately for political clarity in a country that has long been lacking it. Neither party hoping to govern can be satisfied econ.st/4b9JM0B",2025-02-23 19:48:53.990000+00:00,58,11,3,0.4956,Positivo
+www.economist.com/europe/2025/...",2025-02-23 20:19:31.239000+00:00,129,33,9,0.0,Neutral,175,22,20,171,2025-02-23,0.25
+economist.com,at://did:plc:lg6hkdrtipy2it5hxwgv4a62/app.bsky.feed.post/3liunnhclw22e,"Here’s our piece on the state of play in the Ukraine-US mineral “deal”. Tldr: the American proposal is unclear, punitive and makes no sense. There are perfectly good ways for Ukraine to reward America for support by letting it exploit mineral deposits. This is not one of them.",2025-02-23 20:16:40.878000+00:00,281,89,16,0.8402,Positivo,277,48,20,386,2025-02-23,0.35
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lium3rn5nk2s,"Whatever the final result, it is not an outcome that will please those that had hoped desperately for political clarity in a country that has long been lacking it. Neither party hoping to govern can be satisfied econ.st/4b9JM0B",2025-02-23 19:48:53.990000+00:00,58,11,3,0.4956,Positivo,227,38,19,72,2025-02-23,-0.030000000000000006
 economist.com,at://did:plc:hv44fkzpsbhlpsnh7d5ilt4r/app.bsky.feed.post/3liuizkr7vc2k,"Governments in the Sahel are leading a new wave of resource nationalism in Africa. But there is more pragmatism than meets the eye 
 
 My latest from Mali, with John Mcdermott in Cape Town 
 
-www.economist.com/middle-east-...",2025-02-23 18:53:58.449000+00:00,19,4,0,0.0,Neutral
+www.economist.com/middle-east-...",2025-02-23 18:53:58.449000+00:00,19,4,0,0.0,Neutral,222,34,18,23,2025-02-23,0.37878787878787873
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis5gzvrr22u,"Also if you feel strongly about Eric Adams, you should call your city councilmember to express that and ask for their position.
 
-You’d be surprised. Hochul’s stance is highly disappointing but it doesn’t come from nowhere. Press all your electeds. City elections are in 5 months. Ask candidates too.",2025-02-22 20:21:26.156000+00:00,58010,9133,840,-0.0635,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis4xlwsjc2u,Not at all! That’s actually the median age in the House :),2025-02-22 20:12:48.194000+00:00,218,2,5,0.5093,Positivo
+You’d be surprised. Hochul’s stance is highly disappointing but it doesn’t come from nowhere. Press all your electeds. City elections are in 5 months. Ask candidates too.",2025-02-22 20:21:26.156000+00:00,58010,9133,840,-0.0635,Negativo,299,49,20,67983,2025-02-22,-0.022222222222222216
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis4xlwsjc2u,Not at all! That’s actually the median age in the House :),2025-02-22 20:12:48.194000+00:00,218,2,5,0.5093,Positivo,58,12,20,225,2025-02-22,0.25
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis4oh6jec2u,"It may not be cool or hip in some circles, but we legitimately do need a massive amount of people to run for office.
 
 Flood the school boards, councils, county seats, state legislatures, Congress, etc. 
 
-Big changes at the top happen when the ground shifts at the bottom. And that can start now.",2025-02-22 20:07:41.214000+00:00,110116,23774,2202,0.1825,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis43au2322u,They need him to be a genius because they cannot handle what it means for them to be tricked by a fool.,2025-02-22 19:56:57.036000+00:00,23169,4413,352,-0.5423,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lirven7fd22o,"One of the more alarming announcements, given the Trump administration’s trashing of conventions across the federal government, was the dismissal of the most senior lawyers of the army, navy and air force econ.st/41CNv3H",2025-02-22 17:56:55.796000+00:00,142,51,18,-0.2006,Negativo
+Big changes at the top happen when the ground shifts at the bottom. And that can start now.",2025-02-22 20:07:41.214000+00:00,110116,23774,2202,0.1825,Positivo,295,53,20,136092,2025-02-22,0.2125
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lis43au2322u,They need him to be a genius because they cannot handle what it means for them to be tricked by a fool.,2025-02-22 19:56:57.036000+00:00,23169,4413,352,-0.5423,Negativo,103,22,19,27934,2025-02-22,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lirven7fd22o,"One of the more alarming announcements, given the Trump administration’s trashing of conventions across the federal government, was the dismissal of the most senior lawyers of the army, navy and air force econ.st/41CNv3H",2025-02-22 17:56:55.796000+00:00,142,51,18,-0.2006,Negativo,220,33,17,211,2025-02-22,0.3
 economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lirodrmtv22u,"To reflect the momentous events of the past week we designed two covers featuring Donald Trump.
 
 One explains how Europe must respond as he and Vladimir Putin smash the post-war order econ.st/41vGi5q
 
-The other considers the power of the president econ.st/4gRbzUD",2025-02-22 15:51:10.640000+00:00,174,48,8,0.0,Neutral
+The other considers the power of the president econ.st/4gRbzUD",2025-02-22 15:51:10.640000+00:00,174,48,8,0.0,Neutral,263,41,15,230,2025-02-22,-0.1875
 economist.com,at://did:plc:72ta6vioc5gvbjwftihwwlto/app.bsky.feed.post/3lirc4wl4as2b,"“Once you go there, you won’t go back”
 
 I followed the black market in human growth hormone for @economist.com's The Weekend Intelligence. I met doctors, users and drug dealers to understand our quest to optimise ourselves, and what it can ultimately cost. 
 
-www.economist.com/podcasts/202...",2025-02-22 12:12:36.088000+00:00,19,5,1,0.8225,Positivo
-economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3liqsb72vxk2k,"My piece this week on the dilemma facing countries like Egypt and Jordan. For decades, America saw them as linchpins of regional stability. But now the region's status quo has been upended, and being a force for inertia is no longer seen as a merit. www.economist.com/middle-east-...",2025-02-22 07:28:39.342000+00:00,30,4,2,0.3182,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lipyb62kak2d,This is how it’s done.,2025-02-21 23:43:20.991000+00:00,78630,11199,2884,0.0,Neutral
+www.economist.com/podcasts/202...",2025-02-22 12:12:36.088000+00:00,19,5,1,0.8225,Positivo,292,43,12,25,2025-02-22,-0.041666666666666664
+economist.com,at://did:plc:pph7kpffzisvspkqf3o4r76o/app.bsky.feed.post/3liqsb72vxk2k,"My piece this week on the dilemma facing countries like Egypt and Jordan. For decades, America saw them as linchpins of regional stability. But now the region's status quo has been upended, and being a force for inertia is no longer seen as a merit. www.economist.com/middle-east-...",2025-02-22 07:28:39.342000+00:00,30,4,2,0.3182,Positivo,283,46,7,36,2025-02-22,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lipyb62kak2d,This is how it’s done.,2025-02-21 23:43:20.991000+00:00,78630,11199,2884,0.0,Neutral,22,5,23,92713,2025-02-21,0.0
 economist.com,at://did:plc:plii465qeole5opgncza7x4z/app.bsky.feed.post/3lipppetg2k2c,"Ventured to Kansas this week to write about how Trump’s funding cuts are already hurting some of his biggest supporters: farmers
-www.economist.com/united-state...",2025-02-21 21:10:14.186000+00:00,34,13,5,-0.25,Negativo
+www.economist.com/united-state...",2025-02-21 21:10:14.186000+00:00,34,13,5,-0.25,Negativo,162,22,21,52,2025-02-21,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lipjjcouak2u,"Medicaid is not for sale.
 NASA is not for sale.
 The Post Office is not for sale.
 America is not for sale.
 
-We have an obligation to resist kings. We outnumber them. And they can be overwhelmed.",2025-02-21 19:19:28.159000+00:00,105800,24458,2499,0.0516,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lioycjinys2g,Europe has had its bleakest week since the fall of the Iron Curtain. This is how it must respond to the threat posed by Donald Trump and Vladimir Putin econ.st/4gSbyQp,2025-02-21 14:11:26.792000+00:00,175,48,8,-0.5267,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lioyadzhgc2g,America is fated to wage a titanic struggle over the power of the president econ.st/4kb0dOg,2025-02-21 14:10:13.931000+00:00,127,28,22,-0.3182,Negativo
-economist.com,at://did:plc:cq3cgajrgw3sdbmfz2ml4374/app.bsky.feed.post/3liokkeu64s2p,Great job opening at The Economist: we're looking for an economics correspondent to cover Britain. No journalistic experience necessary. www.economist.com/britain/2025...,2025-02-21 10:05:17.992000+00:00,40,30,5,0.4404,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3limt2yh6sk2j,There are moments in these deportation fights when I can just FEEL how pissed off they are that I’m Puerto Rican 😂 they want to threaten me with it so bad 😂,2025-02-20 17:32:25.863000+00:00,144797,13681,4165,-0.8356,Negativo
-economist.com,at://did:plc:pzajbfbxbpdzve2lhwwlzfwe/app.bsky.feed.post/3limoccvrwk26,How far can knife crime be treated as a problem of supply? My latest story is on a peculiarly British problem and what is and isn't in the government's strategy for curbing it. (Also tested the much-trailed round-tipped knives: they are surprisingly good) www.economist.com/britain/2025...,2025-02-20 16:07:03.002000+00:00,20,6,3,-0.6369,Negativo
-economist.com,at://did:plc:luw7pcqimp4xchky7hdkvzvd/app.bsky.feed.post/3limmdu2fsk24,"My Charlemagne on the week to end all weeks in Europe. We are one month down, 47 to go of the Trump presidency. Will we be able to withstand it? www.economist.com/europe/2025/...",2025-02-20 15:32:07.050000+00:00,35,8,5,0.0,Neutral
-economist.com,at://did:plc:hbivwcoxsjpo5ntbok7j2dza/app.bsky.feed.post/3limlqrtmf22e,"Some people just imprint themselves on your memory, even after one meeting. Pableaux Johnson did that for me, and it was an honour to remember him in our pages this week: www.economist.com/obituary/202...",2025-02-20 15:21:27.196000+00:00,18,5,1,0.5719,Positivo
-aoc.bsky.social,at://did:plc:5o6k7jvowuyaquloafzn3cfw/app.bsky.feed.post/3lileeeuuac2w,🗣️ @aoc.bsky.social out fighting for the people & federal workers: “Every day our job is to wake up and say ‘what can I do today?’ — There is no act too small. Every action matters.” 🇺🇸,2025-02-20 03:36:35.021000+00:00,57310,13218,955,-0.5719,Negativo
+We have an obligation to resist kings. We outnumber them. And they can be overwhelmed.",2025-02-21 19:19:28.159000+00:00,105800,24458,2499,0.0516,Positivo,193,37,19,132757,2025-02-21,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lioycjinys2g,Europe has had its bleakest week since the fall of the Iron Curtain. This is how it must respond to the threat posed by Donald Trump and Vladimir Putin econ.st/4gSbyQp,2025-02-21 14:11:26.792000+00:00,175,48,8,-0.5267,Negativo,167,30,14,231,2025-02-21,0.0
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3lioyadzhgc2g,America is fated to wage a titanic struggle over the power of the president econ.st/4kb0dOg,2025-02-21 14:10:13.931000+00:00,127,28,22,-0.3182,Negativo,91,15,14,177,2025-02-21,0.0
+economist.com,at://did:plc:cq3cgajrgw3sdbmfz2ml4374/app.bsky.feed.post/3liokkeu64s2p,Great job opening at The Economist: we're looking for an economics correspondent to cover Britain. No journalistic experience necessary. www.economist.com/britain/2025...,2025-02-21 10:05:17.992000+00:00,40,30,5,0.4404,Positivo,170,20,10,75,2025-02-21,0.4
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3limt2yh6sk2j,There are moments in these deportation fights when I can just FEEL how pissed off they are that I’m Puerto Rican 😂 they want to threaten me with it so bad 😂,2025-02-20 17:32:25.863000+00:00,144797,13681,4165,-0.8356,Negativo,156,32,17,162643,2025-02-20,-0.6999999999999998
+economist.com,at://did:plc:pzajbfbxbpdzve2lhwwlzfwe/app.bsky.feed.post/3limoccvrwk26,How far can knife crime be treated as a problem of supply? My latest story is on a peculiarly British problem and what is and isn't in the government's strategy for curbing it. (Also tested the much-trailed round-tipped knives: they are surprisingly good) www.economist.com/britain/2025...,2025-02-20 16:07:03.002000+00:00,20,6,3,-0.6369,Negativo,289,44,16,29,2025-02-20,0.32499999999999996
+economist.com,at://did:plc:luw7pcqimp4xchky7hdkvzvd/app.bsky.feed.post/3limmdu2fsk24,"My Charlemagne on the week to end all weeks in Europe. We are one month down, 47 to go of the Trump presidency. Will we be able to withstand it? www.economist.com/europe/2025/...",2025-02-20 15:32:07.050000+00:00,35,8,5,0.0,Neutral,178,31,15,48,2025-02-20,0.17222222222222222
+economist.com,at://did:plc:hbivwcoxsjpo5ntbok7j2dza/app.bsky.feed.post/3limlqrtmf22e,"Some people just imprint themselves on your memory, even after one meeting. Pableaux Johnson did that for me, and it was an honour to remember him in our pages this week: www.economist.com/obituary/202...",2025-02-20 15:21:27.196000+00:00,18,5,1,0.5719,Positivo,204,32,15,24,2025-02-20,0.0
+aoc.bsky.social,at://did:plc:5o6k7jvowuyaquloafzn3cfw/app.bsky.feed.post/3lileeeuuac2w,🗣️ @aoc.bsky.social out fighting for the people & federal workers: “Every day our job is to wake up and say ‘what can I do today?’ — There is no act too small. Every action matters.” 🇺🇸,2025-02-20 03:36:35.021000+00:00,57310,13218,955,-0.5719,Negativo,185,36,3,71483,2025-02-20,-0.075
 aoc.bsky.social,at://did:plc:bzifobir42vpt2t6boetzur6/app.bsky.feed.post/3likxmdjqm22j,"📢 “He’s trying to steal Medicaid to enrich himself. He’s gutting NASA to line his pockets with SpaceX. He’s looting everything good in America for private profit.” - @aoc.bsky.social at today’s #SaveOurServices NYC rally.
 
-The fight isn’t over. Join us: go.savepublicservices.com",2025-02-19 23:48:23.400000+00:00,33468,9580,572,-0.1779,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liktna2b3k2s,What a shame. Teamsters deserve better than this.,2025-02-19 22:37:18.328000+00:00,28287,3542,1930,-0.0516,Negativo
+The fight isn’t over. Join us: go.savepublicservices.com",2025-02-19 23:48:23.400000+00:00,33468,9580,572,-0.1779,Negativo,279,41,23,43620,2025-02-19,0.35
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liktna2b3k2s,What a shame. Teamsters deserve better than this.,2025-02-19 22:37:18.328000+00:00,28287,3542,1930,-0.0516,Negativo,49,8,22,33759,2025-02-19,0.5
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liievb2psc2f,"We try, though the politics of the country more broadly on this issue create real challenges to getting the votes. Dems from more moderate/conservative areas are very sensitive on this issue.
 
-We may get DREAMers but I don’t know what else they’d support in the current environment. Endless cycle 🔁",2025-02-18 23:08:02.229000+00:00,364,12,17,0.6428,Positivo
+We may get DREAMers but I don’t know what else they’d support in the current environment. Endless cycle 🔁",2025-02-18 23:08:02.229000+00:00,364,12,17,0.6428,Positivo,298,50,23,393,2025-02-18,0.18107142857142858
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liieaqsixk2f,"One of the factors that I think is underdiscussed is the precision w/ which GOP drove wedges on this issue.
 
-Years of inaction on path to citizenship created a window for GOP to drum up resentment among the undocumented against recent arrivals/asylees. “We’ve been waiting longer” + siloed info diets",2025-02-18 22:56:34.091000+00:00,1120,140,19,-0.4404,Negativo
+Years of inaction on path to citizenship created a window for GOP to drum up resentment among the undocumented against recent arrivals/asylees. “We’ve been waiting longer” + siloed info diets",2025-02-18 22:56:34.091000+00:00,1120,140,19,-0.4404,Negativo,300,50,22,1279,2025-02-18,0.0
 economist.com,at://did:plc:uod7l6gktnbincngqypbi4zb/app.bsky.feed.post/3liianimjtk2g,"Australia has been brooding for years about its dependency on America for security and China for prosperity. That angst may just stand Australia in good stead in a lonelier, harsher world. An edition of The Telegram reported from Sydney, Canberra and Perth
 
-www.economist.com/internationa...",2025-02-18 21:52:06.743000+00:00,44,10,4,-0.0516,Negativo
-aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lii5rwfxks2w,"Jim Acosta: I think the AP should consider whether or not to sue the administration… and the rest of the press corps should start seriously considering whether it’s worth sending everyone into the Oval Office, onto Air Force One, or into the briefing room.",2025-02-18 21:00:54.199000+00:00,50857,9552,1873,0.0516,Positivo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ligjgj447s2z,I need the origin story,2025-02-18 05:23:56.580000+00:00,134,4,13,0.0,Neutral
+www.economist.com/internationa...",2025-02-18 21:52:06.743000+00:00,44,10,4,-0.0516,Negativo,291,43,21,58,2025-02-18,0.7
+aoc.bsky.social,at://did:plc:iu4j537hox5huj4bwnwgub4z/app.bsky.feed.post/3lii5rwfxks2w,"Jim Acosta: I think the AP should consider whether or not to sue the administration… and the rest of the press corps should start seriously considering whether it’s worth sending everyone into the Oval Office, onto Air Force One, or into the briefing room.",2025-02-18 21:00:54.199000+00:00,50857,9552,1873,0.0516,Positivo,256,44,21,62282,2025-02-18,-0.016666666666666663
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ligjgj447s2z,I need the origin story,2025-02-18 05:23:56.580000+00:00,134,4,13,0.0,Neutral,23,5,5,151,2025-02-18,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ligegzbsqk2z,"Go ahead.
 
-Let the people see you for what you are.",2025-02-18 03:54:44.834000+00:00,109415,17142,5880,0.0,Neutral
+Let the people see you for what you are.",2025-02-18 03:54:44.834000+00:00,109415,17142,5880,0.0,Neutral,51,11,3,132437,2025-02-18,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3ligcewocfc2z,"This is why you fight these cowards.
 
 The moment you stand up to them, they crumble.
 
 Homan has nothing. The Fourth Amendment is clear and I am well within my duties to educate people of their rights.
 
-He can threaten me with jail and call names all he wants. He’s got nothing else.",2025-02-18 03:17:47.502000+00:00,153151,27300,8127,-0.128,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liaqbmvkkc2h,It is! It’s why I moved to E&C. We need single payer members/M4A cosponsors on the committees of jurisdiction,2025-02-15 22:10:30.546000+00:00,1955,78,47,0.0,Neutral
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3li6faeerbs2i,Pt. 2/2 ⬇️,2025-02-14 23:47:35.894000+00:00,13656,3333,146,0.0,Neutral
+He can threaten me with jail and call names all he wants. He’s got nothing else.",2025-02-18 03:17:47.502000+00:00,153151,27300,8127,-0.128,Negativo,282,53,3,188578,2025-02-18,0.05
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3liaqbmvkkc2h,It is! It’s why I moved to E&C. We need single payer members/M4A cosponsors on the committees of jurisdiction,2025-02-15 22:10:30.546000+00:00,1955,78,47,0.0,Neutral,109,19,22,2080,2025-02-15,-0.07142857142857142
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3li6faeerbs2i,Pt. 2/2 ⬇️,2025-02-14 23:47:35.894000+00:00,13656,3333,146,0.0,Neutral,10,3,23,17135,2025-02-14,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3li6facwhtk2i,"It is perfectly legal to know your rights and to educate others about them, too.
 
 EVERYONE in the United States, citizen or not, has rights. I will not allow this administration to intimidate us from helping you know about them.
 
-Here’s our shareable guide ⬇️: (pt. 1/2)",2025-02-14 23:47:35.893000+00:00,117325,34886,1883,0.8039,Positivo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3li62hqrsfk2h,"If Friedrich Merz becomes Germany’s chancellor he will need a mandate for sweeping change. So far, he has been too timid to ask for one econ.st/42SJskJ",2025-02-14 20:34:54.108000+00:00,44,7,7,-0.25,Negativo
-economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3li5yx5vfd22c,"How are Germans planning to vote? I took a look, with five charts and a bunch of data 🇩🇪📈",2025-02-14 20:07:43.723000+00:00,138,43,6,0.0,Neutral
+Here’s our shareable guide ⬇️: (pt. 1/2)",2025-02-14 23:47:35.893000+00:00,117325,34886,1883,0.8039,Positivo,270,47,23,154094,2025-02-14,-0.275
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3li62hqrsfk2h,"If Friedrich Merz becomes Germany’s chancellor he will need a mandate for sweeping change. So far, he has been too timid to ask for one econ.st/42SJskJ",2025-02-14 20:34:54.108000+00:00,44,7,7,-0.25,Negativo,151,26,20,58,2025-02-14,0.1
+economist.com,at://did:plc:5jxq665jzrekunbjdjgixupa/app.bsky.feed.post/3li5yx5vfd22c,"How are Germans planning to vote? I took a look, with five charts and a bunch of data 🇩🇪📈",2025-02-14 20:07:43.723000+00:00,138,43,6,0.0,Neutral,89,19,20,187,2025-02-14,0.0
 economist.com,at://did:plc:bonfenuobglfiguxubvmcrow/app.bsky.feed.post/3li5lxcos7s2m,"The Economist's obituary this week is of Donald Shoup. As a rule, our brilliant obits editor, Ann Wroe, avoids writing about economists for the obit pages, figuring there's enough of them in the rest of the paper. Shoup was interesting enough to deserve a place 
-www.economist.com/obituary/202...",2025-02-14 16:15:10.114000+00:00,56,12,3,0.7003,Positivo
-economist.com,at://did:plc:evoelys564465icuqlatjdau/app.bsky.feed.post/3li5caiag5s2p,The last thing that Indonesia’s navy needs is an aircraft carrier. Our Banyan this week:,2025-02-14 13:21:20.508000+00:00,13,3,0,0.0,Neutral
+www.economist.com/obituary/202...",2025-02-14 16:15:10.114000+00:00,56,12,3,0.7003,Positivo,296,46,16,71,2025-02-14,0.35
+economist.com,at://did:plc:evoelys564465icuqlatjdau/app.bsky.feed.post/3li5caiag5s2p,The last thing that Indonesia’s navy needs is an aircraft carrier. Our Banyan this week:,2025-02-14 13:21:20.508000+00:00,13,3,0,0.0,Neutral,88,15,13,16,2025-02-14,0.0
 economist.com,at://did:plc:j7ee6oemj2otwkye7uhv7q2k/app.bsky.feed.post/3li4z2tiims2r,"On the ageing of London, which I think reveals the city's strengths as well as its problems
-www.economist.com/britain/2025...",2025-02-14 10:37:07.302000+00:00,34,8,1,0.2732,Positivo
+www.economist.com/britain/2025...",2025-02-14 10:37:07.302000+00:00,34,8,1,0.2732,Positivo,125,18,10,43,2025-02-14,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3li42lco6b22h,"“MaYbe shE’s goiNg to be in TroUble nOw”
 
-Maybe he can learn to read. The Constitution would be a good place to start",2025-02-14 01:31:34.088000+00:00,76430,10479,3195,0.0516,Positivo
+Maybe he can learn to read. The Constitution would be a good place to start",2025-02-14 01:31:34.088000+00:00,76430,10479,3195,0.0516,Positivo,117,23,1,90104,2025-02-14,0.24999999999999997
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3li3uf4gqx22j,"Adams must be removed. The city cannot sustain being governed for nearly a year by a Mayor who is being coerced by Trump admin in order to escape charges. 
 
-This corruption poses a real threat to the people of the city. He should have resigned a while ago, but will not. So it’s time for him to go.",2025-02-13 23:40:43.777000+00:00,87949,15023,1751,-0.5647,Negativo
-economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3li2s4wb66223,Will Donald Trump and Elon Musk wreck the Pentagon or reform it? America’s security depends upon their success econ.st/4hBgudp,2025-02-13 13:27:41.612000+00:00,57,13,20,0.4939,Positivo
+This corruption poses a real threat to the people of the city. He should have resigned a while ago, but will not. So it’s time for him to go.",2025-02-13 23:40:43.777000+00:00,87949,15023,1751,-0.5647,Negativo,298,58,23,104723,2025-02-13,0.15000000000000002
+economist.com,at://did:plc:mhzk3blh4pfxo3fqh2meowbb/app.bsky.feed.post/3li2s4wb66223,Will Donald Trump and Elon Musk wreck the Pentagon or reform it? America’s security depends upon their success econ.st/4hBgudp,2025-02-13 13:27:41.612000+00:00,57,13,20,0.4939,Positivo,126,19,13,90,2025-02-13,0.3
 economist.com,at://did:plc:kyw6ixvyu2ntuesu4waayf5n/app.bsky.feed.post/3li2gqli3gs27,"The impact of the latest round of tariffs on US imports from China depends on what the alternatives are. If you thought most of these imported goods are easy to get from elsewhere, I'd think again 
-www.economist.com/graphic-deta...",2025-02-13 10:03:56.528000+00:00,22,6,0,0.4404,Positivo
+www.economist.com/graphic-deta...",2025-02-13 10:03:56.528000+00:00,22,6,0,0.4404,Positivo,231,37,10,28,2025-02-13,0.30833333333333335
 economist.com,at://did:plc:cq3cgajrgw3sdbmfz2ml4374/app.bsky.feed.post/3li2b3rycpk25,"The big question after reading Get In: Is Sir Keir Starmer a chump? 
-www.economist.com/britain/2025...",2025-02-13 08:22:49.997000+00:00,20,7,12,0.0,Neutral
+www.economist.com/britain/2025...",2025-02-13 08:22:49.997000+00:00,20,7,12,0.0,Neutral,102,14,8,39,2025-02-13,0.0
 aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhmfdlk7fk2s,"Hell yeah. Hold the line. This is what we need people to do.
 
-Slow things down, don’t comply in advance so the courts have time to stop them. It’s starting to work.",2025-02-07 20:01:30.307000+00:00,117920,17083,2131,-0.6808,Negativo
+Slow things down, don’t comply in advance so the courts have time to stop them. It’s starting to work.",2025-02-07 20:01:30.307000+00:00,117920,17083,2131,-0.6808,Negativo,164,32,20,137134,2025-02-07,-0.15185185185185188
 economist.com,at://did:plc:qh3lu3dwvmmgxkwm5pdlthwz/app.bsky.feed.post/3lhl5fkhfac2t,"Taiwan's armed forces have a Chinese spy problem. Prosecutions for Chinese espionage have jumped fourfold in the last 4 years. 2/3 of alleged spies last year were current or retired military personnel. China is also using new tactics to recruit younger collaborators
-www.economist.com/asia/2025/02...",2025-02-07 08:06:46.605000+00:00,53,19,2,-0.4019,Negativo
+www.economist.com/asia/2025/02...",2025-02-07 08:06:46.605000+00:00,53,19,2,-0.4019,Negativo,300,43,8,74,2025-02-07,-0.007070707070707073
 economist.com,at://did:plc:qh3lu3dwvmmgxkwm5pdlthwz/app.bsky.feed.post/3lhkqkm6y3s2z,"I spent the last two days speaking w researchers and activists doing some of the most groundbreaking work on human rights in China. Many are facing pay cuts, layoffs, and total shutdown after the sudden freeze in US foreign aid
-www.economist.com/china/2025/0...",2025-02-07 04:16:57.554000+00:00,67,28,1,-0.34,Negativo
+www.economist.com/china/2025/0...",2025-02-07 04:16:57.554000+00:00,67,28,1,-0.34,Negativo,261,41,4,96,2025-02-07,0.096875
 economist.com,at://did:plc:ydzixaukeic65suig23oaf2w/app.bsky.feed.post/3lhkiqjyj7k2a,"My year-long investigation into the multibillion dollar world of online scams is out today  — on the cover of The Economist and in my new 8-part podcast series, Scam Inc
 
 Read the article: bit.ly/scam-inc
-Listen to the podcast: econ.st/3CFzGaL",2025-02-07 01:57:06.638000+00:00,236,72,20,-0.8176,Negativo
+Listen to the podcast: econ.st/3CFzGaL",2025-02-07 01:57:06.638000+00:00,236,72,20,-0.8176,Negativo,243,39,1,328,2025-02-07,0.13636363636363635
 economist.com,at://did:plc:pzajbfbxbpdzve2lhwwlzfwe/app.bsky.feed.post/3lhjnkjzxwk2a,"Wrote about the Ox-Cam Arc. Levers that could raise growth materially and quickly don't come easier than this. And Labour can pull it. 
-www.economist.com/britain/2025...",2025-02-06 17:50:34.330000+00:00,49,8,4,0.069,Positivo
-aoc.bsky.social,at://did:plc:6w3o4ip6mdbkdcx37m4pfnyj/app.bsky.feed.post/3lhf4ykzuuc2m,"The Treasury Department right now. People are turning out against Musk and DOGE staging a takeover of the Treasury’s payment system. This crowd is big. The whole block is packed. “Lock him up,” everyone yells.",2025-02-04 22:43:32.569000+00:00,44458,11413,922,-0.2732,Negativo
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhetzrjke22j,On YouTube: m.youtube.com/watch?featur...,2025-02-04 20:03:09.256000+00:00,6336,1595,394,0.0,Neutral
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhetzgfayc2j,Yesterday’s live is now on YouTube: m.youtube.com/watch?featur...,2025-02-04 20:02:57.578000+00:00,22944,4503,810,0.0,Neutral
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhdanixnvs22,For people asking for non-meta options I’ll be posting clips tomorrow,2025-02-04 04:43:36.794000+00:00,50435,4147,1606,0.0,Neutral
-aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhd7nyojjs22,"Just went live to talk about what is happening, what we can do, and what to expect this week: www.instagram.com/reel/DForuR_...",2025-02-04 04:25:59.529000+00:00,22294,2748,1396,0.0,Neutral
-aoc.bsky.social,at://did:plc:kkjomzfxvdwfsma2hgp3lnf5/app.bsky.feed.post/3lhd5hvpqks2i,"""We have a responsibility as a party to block absolutely everything when they are putting a match to the federal government."" — @aoc.bsky.social  on IG live just now",2025-02-04 03:46:47.598000+00:00,8081,964,76,-0.0516,Negativo
+www.economist.com/britain/2025...",2025-02-06 17:50:34.330000+00:00,49,8,4,0.069,Positivo,169,24,17,61,2025-02-06,0.3333333333333333
+aoc.bsky.social,at://did:plc:6w3o4ip6mdbkdcx37m4pfnyj/app.bsky.feed.post/3lhf4ykzuuc2m,"The Treasury Department right now. People are turning out against Musk and DOGE staging a takeover of the Treasury’s payment system. This crowd is big. The whole block is packed. “Lock him up,” everyone yells.",2025-02-04 22:43:32.569000+00:00,44458,11413,922,-0.2732,Negativo,209,35,22,56793,2025-02-04,0.1619047619047619
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhetzrjke22j,On YouTube: m.youtube.com/watch?featur...,2025-02-04 20:03:09.256000+00:00,6336,1595,394,0.0,Neutral,41,3,20,8325,2025-02-04,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhetzgfayc2j,Yesterday’s live is now on YouTube: m.youtube.com/watch?featur...,2025-02-04 20:02:57.578000+00:00,22944,4503,810,0.0,Neutral,65,7,20,28257,2025-02-04,0.13636363636363635
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhdanixnvs22,For people asking for non-meta options I’ll be posting clips tomorrow,2025-02-04 04:43:36.794000+00:00,50435,4147,1606,0.0,Neutral,69,11,4,56188,2025-02-04,0.0
+aoc.bsky.social,at://did:plc:p7gxyfr5vii5ntpwo7f6dhe2/app.bsky.feed.post/3lhd7nyojjs22,"Just went live to talk about what is happening, what we can do, and what to expect this week: www.instagram.com/reel/DForuR_...",2025-02-04 04:25:59.529000+00:00,22294,2748,1396,0.0,Neutral,127,20,4,26438,2025-02-04,0.13636363636363635
+aoc.bsky.social,at://did:plc:kkjomzfxvdwfsma2hgp3lnf5/app.bsky.feed.post/3lhd5hvpqks2i,"""We have a responsibility as a party to block absolutely everything when they are putting a match to the federal government."" — @aoc.bsky.social  on IG live just now",2025-02-04 03:46:47.598000+00:00,8081,964,76,-0.0516,Negativo,165,28,3,9121,2025-02-04,0.16818181818181818
