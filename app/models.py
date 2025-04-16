@@ -157,6 +157,13 @@ class TablaPostsBluesky(Base):
     reposts = Column(Integer, default=0)
     replies = Column(Integer, default=0)
     
+    # Nuevos campos para análisis de sentimiento y engagement
+    engagement = Column(Integer, default=0)
+    textblob_sentiment = Column(Float)
+    textblob_sentiment_label = Column(String)
+    vader_sentiment = Column(Float)
+    vader_sentiment_label = Column(String)
+    
     def __repr__(self):
         return f"<TablaPostsBluesky(actor_handle='{self.actor_handle}', created_at='{self.created_at}')>"
 

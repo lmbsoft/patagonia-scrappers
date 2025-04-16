@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# filepath: /home/ubuntu/docker/webmining/patagonia-scrappers-src/app/extrae-bluesky-postgres.py
 import requests
 import pandas as pd
 from datetime import datetime
@@ -9,6 +10,17 @@ from pathlib import Path
 from sqlalchemy.orm import Session
 from sqlalchemy import func
 from models import SessionLocal, TablaPostsBluesky, init_db
+from textblob import TextBlob
+
+# Instalar vaderSentiment si no está disponible
+try:
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+except ImportError:
+    import subprocess
+    import sys
+    logging.info("Instalando vaderSentiment...")
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "vaderSentiment"])
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 
 # Configuración de logging
 logging.basicConfig(
@@ -30,6 +42,10 @@ API_FEED_ENDPOINT = "app.bsky.feed.getAuthorFeed"
 USERNAME = "grupo18.bsky.social"
 PASSWORD = "Grupo18*BS"  # En producción, usar variables de entorno
 SEARCH_TERMS = ["bloomberg", "aoc", "economist"]
+
+# Umbrales de sentimiento
+POSITIVE_THRESHOLD = 0.05
+NEGATIVE_THRESHOLD = -0.05
 
 
 def parse_args():
@@ -145,14 +161,19 @@ def get_actor_feeds(token, actor_handles, posts_limit_per_actor=DEFAULT_POSTS_LI
                         logger.warning(f"Formato de fecha inválido en post de {handle}, omitiendo")
                         continue
                 
+                likes = post.get('likeCount', 0)
+                reposts = post.get('repostCount', 0)
+                replies = post.get('replyCount', 0)
+                
                 post_data = {
                     'actor_handle': handle,
                     'uri': post.get('uri', ''),
                     'text': record.get('text', ''),
                     'created_at': created_at_dt,
-                    'likes': post.get('likeCount', 0),
-                    'reposts': post.get('repostCount', 0),
-                    'replies': post.get('replyCount', 0)
+                    'likes': likes,
+                    'reposts': reposts,
+                    'replies': replies,
+                    'engagement': likes + reposts + replies
                 }
                 
                 # Solo agregar posts con fechas válidas
@@ -206,6 +227,72 @@ def get_latest_date_from_db():
         return None
 
 
+def analyze_sentiment_textblob(text):
+    """Analiza el sentimiento usando TextBlob"""
+    try:
+        sentiment = TextBlob(str(text)).sentiment.polarity
+        # Clasificar el sentimiento
+        if sentiment > POSITIVE_THRESHOLD:
+            label = 'Positivo'
+        elif sentiment < NEGATIVE_THRESHOLD:
+            label = 'Negativo'
+        else:
+            label = 'Neutral'
+        return sentiment, label
+    except:
+        return 0, 'Neutral'
+
+
+def analyze_sentiment_vader(text):
+    """Analiza el sentimiento usando VADER"""
+    try:
+        analyzer = SentimentIntensityAnalyzer()
+        vs = analyzer.polarity_scores(str(text))
+        sentiment = vs['compound']
+        # Clasificar el sentimiento
+        if sentiment >= POSITIVE_THRESHOLD:
+            label = 'Positivo'
+        elif sentiment <= NEGATIVE_THRESHOLD:
+            label = 'Negativo'
+        else:
+            label = 'Neutral'
+        return sentiment, label
+    except:
+        return 0, 'Neutral'
+
+
+def analyze_sentiments(df):
+    """Analiza el sentimiento de todos los posts usando TextBlob y VADER"""
+    logger.info("Analizando sentimiento de los posts...")
+    
+    # Analizar sentimiento con TextBlob
+    textblob_results = []
+    for text in df['text']:
+        score, label = analyze_sentiment_textblob(text)
+        textblob_results.append((score, label))
+    
+    df['textblob_sentiment'] = [r[0] for r in textblob_results]
+    df['textblob_sentiment_label'] = [r[1] for r in textblob_results]
+    
+    # Analizar sentimiento con VADER
+    vader_results = []
+    for text in df['text']:
+        score, label = analyze_sentiment_vader(text)
+        vader_results.append((score, label))
+    
+    df['vader_sentiment'] = [r[0] for r in vader_results]
+    df['vader_sentiment_label'] = [r[1] for r in vader_results]
+    
+    # Conteo de resultados
+    textblob_counts = df['textblob_sentiment_label'].value_counts()
+    vader_counts = df['vader_sentiment_label'].value_counts()
+    
+    logger.info(f"Análisis de sentimiento completado. Resultados TextBlob: {textblob_counts.to_dict()}")
+    logger.info(f"Análisis de sentimiento completado. Resultados VADER: {vader_counts.to_dict()}")
+    
+    return df
+
+
 def save_to_database(post_data):
     """Guarda los posts en la base de datos PostgreSQL"""
     if not post_data or len(post_data) == 0:
@@ -236,7 +323,12 @@ def save_to_database(post_data):
                         created_at=row['created_at'],
                         likes=row['likes'],
                         reposts=row['reposts'],
-                        replies=row['replies']
+                        replies=row['replies'],
+                        engagement=row['engagement'],
+                        textblob_sentiment=row['textblob_sentiment'],
+                        textblob_sentiment_label=row['textblob_sentiment_label'],
+                        vader_sentiment=row['vader_sentiment'],
+                        vader_sentiment_label=row['vader_sentiment_label']
                     )
                     new_posts.append(new_post)
             
@@ -292,6 +384,9 @@ def main():
         
         # Ordenar por fecha (más recientes primero)
         df = df.sort_values(by='created_at', ascending=False)
+        
+        # Analizar sentimiento
+        df = analyze_sentiments(df)
         
         # Guardar en la base de datos PostgreSQL
         save_to_database(df.to_dict('records'))
