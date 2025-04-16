@@ -1,5 +1,7 @@
 # Directorios __pycache__ en cualquier nivel
 **/__pycache__/
+**/*.code-workspace
+**/*.swp
 
 # Archivos CSV en /app y subdirectorios
 /app/**/*.csv
