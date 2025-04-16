@@ -8,3 +8,11 @@ ppi-client
 pandas
 
 psycopg2-binary
+
+vadersentiment
+textblob
+beautifulsoup4
+lxml
+scrapy
+scrapy-selenium
+

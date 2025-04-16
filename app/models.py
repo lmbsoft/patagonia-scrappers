@@ -145,5 +145,27 @@ class TablaPPI(Base):
     def __repr__(self):
         return f"<TablaPPI(Date='{self.Date}', ticker='{self.ticker}', Price={self.Price})>"
 
+class TablaPostsBluesky(Base):
+    __tablename__ = 'tabla_posts_bluesky'
+    
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    actor_handle = Column(String, nullable=False)
+    uri = Column(String, nullable=False)
+    text = Column(Text)
+    created_at = Column(DateTime, nullable=False)
+    likes = Column(Integer, default=0)
+    reposts = Column(Integer, default=0)
+    replies = Column(Integer, default=0)
+    
+    # Nuevos campos para análisis de sentimiento y engagement
+    engagement = Column(Integer, default=0)
+    textblob_sentiment = Column(Float)
+    textblob_sentiment_label = Column(String)
+    vader_sentiment = Column(Float)
+    vader_sentiment_label = Column(String)
+    
+    def __repr__(self):
+        return f"<TablaPostsBluesky(actor_handle='{self.actor_handle}', created_at='{self.created_at}')>"
+
 def init_db():
     Base.metadata.create_all(bind=engine)
