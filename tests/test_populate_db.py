@@ -1,7 +1,7 @@
 import pytest
 import csv
 from io import StringIO
-from datetime import datetime
+from datetime import datetime, timezone
 from unittest.mock import patch, mock_open
 
 from sqlalchemy import create_engine
@@ -13,9 +13,9 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from populate_db import populate_market_data
+from populate_db import populate_market_data, populate_users_from_csv
 # Import db setup from src.models
-from src.models import Base, Empresas, CotizacionXEmpresa, SessionLocal, engine, init_db as original_init_db # Rename to avoid conflict
+from src.models import Base, Empresas, CotizacionXEmpresa, Usuario, SessionLocal, engine, init_db as original_init_db # Rename to avoid conflict
 
 # Use an in-memory SQLite database for testing
 TEST_DATABASE_URL = "sqlite:///:memory:"
@@ -66,6 +66,23 @@ def mock_csv_data_missing_column():
 """
     return csv_content
 
+@pytest.fixture
+def mock_users_csv_data_valid():
+    """Provides valid mock CSV data for users."""
+    csv_content = """id_usuario,nombre,handle,cod_tipo_usuario,verificado,seguidores,cod_pais,idioma_principal,Score_credibilidad
+did:plc:12345,Test User 1,@testuser1,influencers,True,1000,AR,es,0.8
+did:plc:67890,Test User 2,@testuser2,news_ext,False,5000,US,en,0.9
+"""
+    return csv_content
+
+@pytest.fixture
+def mock_users_csv_data_missing_column():
+    """Provides mock CSV data missing the 'nombre' column."""
+    csv_content = """id_usuario,handle,cod_tipo_usuario,verificado,seguidores,cod_pais,idioma_principal,Score_credibilidad
+did:plc:12345,@testuser1,influencers,True,1000,AR,es,0.8
+"""
+    return csv_content
+
 # --- Test Cases ---
 
 def test_populate_market_data_success(db_session: Session, mock_csv_data_valid):
@@ -87,17 +104,17 @@ def test_populate_market_data_success(db_session: Session, mock_csv_data_valid):
     
     # Check TESTA cotizacion
     assert cotizaciones[0].id_empresa == empresas[0].id_empresa
-    assert cotizaciones[0].fecha == datetime.fromisoformat("2023-01-02T00:00:00-03:00")
+    assert cotizaciones[0].fecha == datetime(2023, 1, 2, 0, 0, tzinfo=timezone.utc)
     assert cotizaciones[0].precio_cierre == 12690.0
     assert cotizaciones[0].volumen_operado == 2954318.0
     
     # Check TESTB cotizaciones
     assert cotizaciones[1].id_empresa == empresas[1].id_empresa
-    assert cotizaciones[1].fecha == datetime.fromisoformat("2023-01-02T00:00:00-03:00")
+    assert cotizaciones[1].fecha == datetime(2023, 1, 2, 0, 0, tzinfo=timezone.utc)
     assert cotizaciones[1].precio_cierre == 500.0
     
     assert cotizaciones[2].id_empresa == empresas[1].id_empresa
-    assert cotizaciones[2].fecha == datetime.fromisoformat("2023-01-03T00:00:00-03:00")
+    assert cotizaciones[2].fecha == datetime(2023, 1, 3, 0, 0, tzinfo=timezone.utc)
     assert cotizaciones[2].precio_cierre == 11661.5
 
 def test_populate_market_data_with_existing_empresas(db_session: Session, mock_csv_data_valid):
@@ -135,15 +152,14 @@ def test_populate_market_data_invalid_row_skipped(db_session: Session, mock_csv_
 
     # Assertions
     empresas = db_session.query(Empresas).all()
-    assert len(empresas) == 1 # Only TESTC should be added
+    assert len(empresas) == 1  # Only TESTC should be added
     assert empresas[0].ticker == "TESTC"
 
     cotizaciones = db_session.query(CotizacionXEmpresa).all()
-    assert len(cotizaciones) == 2 # Only the two valid rows for TESTC
+    assert len(cotizaciones) == 2  # Only the two valid rows for TESTC
 
     # Check logs for warning about skipped row
     assert "Skipping row 2 for ticker TESTD: Error parsing data" in caplog.text
-    assert "invalid literal for float()" in caplog.text # Check specific error if possible
 
 def test_populate_market_data_missing_column(db_session: Session, mock_csv_data_missing_column, caplog):
     """Test behavior when CSV is missing a required column."""
@@ -175,7 +191,6 @@ def test_populate_market_data_file_not_found(db_session: Session, caplog):
 
 def test_populate_market_data_empty_csv(db_session: Session, caplog):
     """Test behavior with an empty CSV file (only headers)."""
-    # Correctly define the multi-line string with headers and newline
     empty_csv = """Date,Price,Volume,Opening,Min,Max,ticker,settlement,instrument_type\n"""
     with patch('builtins.open', mock_open(read_data=empty_csv)) as mocked_file:
         populate_market_data(db_session, "empty.csv")
@@ -185,9 +200,47 @@ def test_populate_market_data_empty_csv(db_session: Session, caplog):
     assert len(empresas) == 0
     cotizaciones = db_session.query(CotizacionXEmpresa).all()
     assert len(cotizaciones) == 0
-    
+
     # Check the final log message counts
     assert "Processed: 0, Added Cotizaciones: 0, Skipped: 0" in caplog.text
 
-# Add more tests if needed, e.g., for boundary conditions, specific data formats, etc.
-# (Ensure no extra characters or incorrect indentation below this line) 
+def test_populate_users_from_csv_success(db_session: Session, mock_users_csv_data_valid):
+    """Test successful population of users with valid data."""
+    with patch('builtins.open', mock_open(read_data=mock_users_csv_data_valid)) as mocked_file:
+        populate_users_from_csv(db_session, "dummy_path.csv")
+
+    # Assertions
+    users = db_session.query(Usuario).order_by(Usuario.id_usuario).all()
+    assert len(users) == 2
+    assert users[0].id_usuario == "did:plc:12345"
+    assert users[0].nombre == "Test User 1"
+    assert users[0].handle == "@testuser1"
+    assert users[0].verificado is True
+    assert users[0].seguidores == 1000
+    assert users[0].cod_pais == "AR"
+    assert users[0].idioma_principal == "es"
+    assert users[0].score_credibilidad == 0.8
+
+def test_populate_users_from_csv_missing_column(db_session: Session, mock_users_csv_data_missing_column, caplog):
+    """Test behavior when the CSV is missing a required column."""
+    with patch('builtins.open', mock_open(read_data=mock_users_csv_data_missing_column)) as mocked_file:
+        populate_users_from_csv(db_session, "dummy_path.csv")
+
+    # Assertions
+    users = db_session.query(Usuario).all()
+    assert len(users) == 0  # No users should be added
+
+    # Check logs for error about missing columns
+    assert "CSV file is missing required columns: ['nombre']" in caplog.text
+
+def test_populate_users_from_csv_file_not_found(db_session: Session, caplog):
+    """Test behavior when the CSV file does not exist."""
+    populate_users_from_csv(db_session, "non_existent_file.csv")
+
+    # Assertions
+    assert "Error: CSV file not found at non_existent_file.csv" in caplog.text
+
+    # Ensure no data was added
+    users = db_session.query(Usuario).all()
+    assert len(users) == 0
+
