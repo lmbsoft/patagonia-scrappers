@@ -41,7 +41,24 @@ API_SEARCH_ENDPOINT = "app.bsky.actor.searchActors"
 API_FEED_ENDPOINT = "app.bsky.feed.getAuthorFeed"
 USERNAME = "grupo18.bsky.social"
 PASSWORD = "Grupo18*BS"  # En producción, usar variables de entorno
-SEARCH_TERMS = ["bloomberg", "aoc", "economist"]
+#SEARCH_TERMS = ["bloomberg", "aoc", "economist"]
+SEARCH_TERMS = [
+    "mclem.org",
+    "bloomberg.com",
+    "theguardian.com",
+    "paulgp.com",
+    "wired.com",
+    "nytimes.com",
+    "barchart.com",
+    "unusualwhales.bsky.social",
+    "aoc.bsky.social",
+    "economist.com",
+    "claudia-sahm.bsky.social",
+    "arindube.bsky.social",
+    "dacemoglumit.bsky.social",
+    "goolsbee.bsky.social",
+    "byheatherlong.bsky.social"
+]
 
 # Umbrales de sentimiento
 POSITIVE_THRESHOLD = 0.05
