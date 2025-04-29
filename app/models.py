@@ -64,6 +64,31 @@ class NotasXUsuario(Base):
     usuario = relationship("Usuario", back_populates="notas")
     tipo_nota = relationship("TipoNota")
     empresas = relationship("EmpresasXNota", back_populates="nota", cascade="all, delete-orphan")
+    llm_outputs = relationship(
+        "NotasXUsuarioGemma",
+        back_populates="nota",
+        cascade="all, delete-orphan"
+    )
+        
+
+# New table to store LLM outputs
+class NotasXUsuarioGemma(Base):
+    __tablename__ = 'notas_x_usuario_gemma'
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    id_nota = Column(Integer, ForeignKey('notas_x_usuario.id_nota', ondelete='CASCADE'), nullable=False)
+    valoracion_llm = Column(String, nullable=False)  # 'positivo','negativo','neutral'
+    relevante_economia = Column(Boolean, nullable=False)  # True=1/False=0
+    AAPLD = Column(Boolean, default=False)
+    DESPD = Column(Boolean, default=False)
+    KOD = Column(Boolean, default=False)
+    MELID = Column(Boolean, default=False)
+    MSFTD = Column(Boolean, default=False)
+    NVDAD = Column(Boolean, default=False)
+    TEND = Column(Boolean, default=False)
+    VISTD = Column(Boolean, default=False)
+    XOMD = Column(Boolean, default=False)
+
+    nota = relationship("NotasXUsuario", back_populates="llm_outputs")
 
 class Empresas(Base):
     __tablename__ = 'empresas'
