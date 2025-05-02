@@ -6,7 +6,7 @@ Base = declarative_base()
 
 class TipoUsuario(Base):
     __tablename__ = 'tipo_usuarios'
-    cod_tipo_usuario = Column(Integer, primary_key=True)
+    cod_tipo_usuario = Column(String, primary_key=True)
     descripcion = Column(String, nullable=False)
 
 class TipoNota(Base):
@@ -21,15 +21,15 @@ class Paises(Base):
 
 class Usuario(Base):
     __tablename__ = 'usuarios'
-    id_usuario = Column(Integer, primary_key=True)
+    id_usuario = Column(String, primary_key=True)  # Cambiado a String para coincidir con los datos
     nombre = Column(String, nullable=False)
     handle = Column(String, nullable=False)
-    cod_tipo_usuario = Column(Integer, ForeignKey('tipo_usuarios.cod_tipo_usuario'))
+    cod_tipo_usuario = Column(String, ForeignKey('tipo_usuarios.cod_tipo_usuario'))  # Asegurado como String
     verificado = Column(Boolean, default=False)
     seguidores = Column(Integer)
-    cod_pais = Column(String, ForeignKey('paises.cod_pais'))
+    cod_pais = Column(String, ForeignKey('paises.cod_pais'), nullable=True)  # Permitir valores nulos explícitamente
     idioma_principal = Column(String)
-    score_credibilidad = Column(Float)  # (0,1)
+    score_credibilidad = Column(Float, nullable=True)  # Permitir valores nulos
 
     # Relationships
     tipo_usuario = relationship("TipoUsuario")
@@ -135,9 +135,11 @@ class TablaPPI(Base):
         return f"<TablaPPI(Date='{self.Date}', ticker='{self.ticker}', Price={self.Price})>"
 
 # Database configuration
+#DATABASE_URL = "postgresql://tu_usuario:tu_contraseña@base.patagonia-scrappers.lmbsoft.com.ar:5432/patagonia_db"
 DATABASE_URL = "sqlite:///patagonia_datos.db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 def init_db():
     Base.metadata.create_all(bind=engine) 
+
