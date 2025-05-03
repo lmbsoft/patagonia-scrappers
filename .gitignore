@@ -18,3 +18,12 @@
 # También podemos excluir archivos temporales comunes
 /app/**/*.tmp
 /app/**/*.bak
+
+# Directorios AutogluonModels en cualquier nivel
+**/AutogluonModels/**
+
+# Directorios catboost_info en cualquier nivel
+**/catboost_info/**
+
+# Archivos .pkl en cualquier nivel
+**/*.pkl
