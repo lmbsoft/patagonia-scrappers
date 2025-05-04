@@ -250,6 +250,11 @@ def modelar_empresa(df, empresa_id):
             verbose=False
         )
         
+        # Verificar si hay modelos, ya que compare_models puede devolver lista vacía
+        if not top_models:
+            logger.warning(f"No se encontraron modelos viables para la empresa {empresa_id}. Posible desbalance extremo de clases.")
+            return empresa_df, [], {}
+            
         # Si top_models es un solo modelo y no una lista, lo convertimos a lista
         if not isinstance(top_models, list):
             top_models = [top_models]
@@ -281,43 +286,54 @@ def modelar_empresa(df, empresa_id):
                     verbose=False
                 )
                 
-                # Visualizamos la matriz de confusión del modelo ajustado
+                # Visualizamos la matriz de confusión del modelo ajustado - CORREGIDO
                 try:
-                    plot_model(
+                    # Primero generamos la figura sin guardar
+                    fig = plot_model(
                         tuned_model, 
                         plot='confusion_matrix', 
-                        save=True,
-                        display_format='png',
-                        plot_kwargs={'fig_size': (10, 8)},
-                        save_path=os.path.join(results_dir, "plots", f"confusion_matrix_empresa_{empresa_id}_{model_name}")
+                        save=False,
+                        plot_kwargs={'fig_size': (10, 8)}
                     )
+                    # Guardamos manualmente la figura
+                    if fig:
+                        confusion_path = os.path.join(results_dir, "plots", f"confusion_matrix_empresa_{empresa_id}_{model_name}.png")
+                        plt.savefig(confusion_path)
+                        plt.close(fig)
+                        logger.info(f"Matriz de confusión guardada en {confusion_path}")
                 except Exception as plot_error:
                     logger.warning(f"Error al generar matriz de confusión: {str(plot_error)}")
                 
-                # Visualizamos la curva AUC del modelo ajustado (para multiclase)
+                # Visualizamos la curva AUC del modelo ajustado - CORREGIDO
                 try:
-                    plot_model(
+                    fig = plot_model(
                         tuned_model, 
                         plot='auc', 
-                        save=True,
-                        display_format='png',
-                        plot_kwargs={'fig_size': (10, 8)},
-                        save_path=os.path.join(results_dir, "plots", f"auc_empresa_{empresa_id}_{model_name}")
+                        save=False,
+                        plot_kwargs={'fig_size': (10, 8)}
                     )
+                    if fig:
+                        auc_path = os.path.join(results_dir, "plots", f"auc_empresa_{empresa_id}_{model_name}.png")
+                        plt.savefig(auc_path)
+                        plt.close(fig)
+                        logger.info(f"Curva AUC guardada en {auc_path}")
                 except Exception as plot_error:
                     logger.warning(f"Error al generar curva AUC: {str(plot_error)}")
                 
-                # Visualizamos feature importance
+                # Visualizamos feature importance - CORREGIDO
                 if hasattr(tuned_model, 'feature_importances_') or hasattr(tuned_model, 'coef_'):
                     try:
-                        plot_model(
+                        fig = plot_model(
                             tuned_model, 
                             plot='feature', 
-                            save=True,
-                            display_format='png',
-                            plot_kwargs={'fig_size': (12, 10)},
-                            save_path=os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}")
+                            save=False,
+                            plot_kwargs={'fig_size': (12, 10)}
                         )
+                        if fig:
+                            feature_path = os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}.png")
+                            plt.savefig(feature_path)
+                            plt.close(fig)
+                            logger.info(f"Importancia de características guardada en {feature_path}")
                     except Exception as plot_error:
                         logger.warning(f"Error al generar importancia de características: {str(plot_error)}")
                 
@@ -383,7 +399,8 @@ def main():
             try:
                 empresa_df, modelos, resultados = modelar_empresa(df_clean, empresa_id)
                 
-                if resultados:
+                # Verificar si hay resultados válidos antes de almacenar
+                if empresa_df is not None and modelos and resultados:
                     resultados_por_empresa[empresa_id] = {
                         'dataframe': empresa_df,
                         'modelos': modelos,
@@ -398,7 +415,7 @@ def main():
                 logger.error(traceback.format_exc())
                 continue  # Continuamos con la siguiente empresa
         
-        # 5. Creamos un resumen comparativo
+        # 5. Creamos un resumen comparativo si tenemos suficientes resultados
         if resultados_por_empresa:
             resumen_empresas = pd.DataFrame(columns=['Empresa', 'Mejor_Modelo', 'Accuracy', 'Precision', 'Recall', 'F1', 'Num_Registros'])
             
@@ -411,81 +428,102 @@ def main():
                         
                         # Obtenemos métricas 
                         metricas = None
+                        metrics_path = os.path.join(results_dir, f"comparacion_modelos_empresa_{empresa_id}.csv")
                         try:
-                            with open(os.path.join(results_dir, f"comparacion_modelos_empresa_{empresa_id}.csv"), 'r') as f:
-                                metricas = pd.read_csv(f)
-                        except:
-                            logger.warning(f"No se pudieron cargar métricas para empresa {empresa_id}")
+                            if os.path.exists(metrics_path):
+                                metricas = pd.read_csv(metrics_path)
+                            else:
+                                logger.warning(f"Archivo de métricas no encontrado: {metrics_path}")
+                                continue
+                        except Exception as load_error:
+                            logger.warning(f"No se pudieron cargar métricas para empresa {empresa_id}: {str(load_error)}")
                             continue
                             
-                        if metricas is not None:
-                            mejor_modelo_metricas = metricas[metricas['Model'] == modelo_nombre].iloc[0]
-                            
-                            # Añadimos al DataFrame
-                            resumen_row = {
-                                'Empresa': empresa_id,
-                                'Mejor_Modelo': modelo_nombre,
-                                'Accuracy': mejor_modelo_metricas['Accuracy'],
-                                'Precision': mejor_modelo_metricas['Prec. Macro'],
-                                'Recall': mejor_modelo_metricas['Recall Macro'],
-                                'F1': mejor_modelo_metricas['F1 Macro'],
-                                'Num_Registros': datos['dataframe'].shape[0]
-                            }
-                            
-                            resumen_empresas = pd.concat([resumen_empresas, pd.DataFrame([resumen_row])], ignore_index=True)
+                        if metricas is not None and not metricas.empty and 'Model' in metricas.columns:
+                            # Verificar si el modelo existe en el dataframe de métricas
+                            if modelo_nombre in metricas['Model'].values:
+                                mejor_modelo_metricas = metricas[metricas['Model'] == modelo_nombre].iloc[0]
+                                
+                                # Verificamos que existen todas las columnas necesarias
+                                required_cols = ['Accuracy', 'Prec. Macro', 'Recall Macro', 'F1 Macro']
+                                if all(col in mejor_modelo_metricas.index for col in required_cols):
+                                    # Añadimos al DataFrame
+                                    resumen_row = {
+                                        'Empresa': empresa_id,
+                                        'Mejor_Modelo': modelo_nombre,
+                                        'Accuracy': mejor_modelo_metricas['Accuracy'],
+                                        'Precision': mejor_modelo_metricas['Prec. Macro'],
+                                        'Recall': mejor_modelo_metricas['Recall Macro'],
+                                        'F1': mejor_modelo_metricas['F1 Macro'],
+                                        'Num_Registros': datos['dataframe'].shape[0]
+                                    }
+                                    
+                                    # Usar concat en lugar de append (que está deprecado)
+                                    resumen_empresas = pd.concat([resumen_empresas, pd.DataFrame([resumen_row])], ignore_index=True)
+                                else:
+                                    logger.warning(f"Faltan columnas requeridas en métricas para empresa {empresa_id}")
+                            else:
+                                logger.warning(f"Modelo {modelo_nombre} no encontrado en métricas para empresa {empresa_id}")
+                        else:
+                            logger.warning(f"Datos de métricas inválidos para empresa {empresa_id}")
                     except Exception as e:
                         logger.error(f"Error al crear resumen para empresa {empresa_id}: {str(e)}")
                         logger.error(traceback.format_exc())
             
-            # Guardamos el resumen
-            resumen_empresas.to_csv(os.path.join(results_dir, "resumen_modelos_por_empresa.csv"), index=False)
-            logger.info("Resumen comparativo guardado")
-            
-            # Visualizamos las métricas por empresa
-            try:
-                plt.figure(figsize=(14, 10))
+            # Guardamos el resumen si hay datos
+            if not resumen_empresas.empty:
+                resumen_empresas.to_csv(os.path.join(results_dir, "resumen_modelos_por_empresa.csv"), index=False)
+                logger.info("Resumen comparativo guardado")
                 
-                # Accuracy
-                plt.subplot(2, 2, 1)
-                sns.barplot(x='Empresa', y='Accuracy', data=resumen_empresas)
-                plt.title('Accuracy por Empresa')
-                plt.xticks(rotation=45)
-                
-                # Precision
-                plt.subplot(2, 2, 2)
-                sns.barplot(x='Empresa', y='Precision', data=resumen_empresas)
-                plt.title('Precision por Empresa')
-                plt.xticks(rotation=45)
-                
-                # Recall
-                plt.subplot(2, 2, 3)
-                sns.barplot(x='Empresa', y='Recall', data=resumen_empresas)
-                plt.title('Recall por Empresa')
-                plt.xticks(rotation=45)
-                
-                # F1
-                plt.subplot(2, 2, 4)
-                sns.barplot(x='Empresa', y='F1', data=resumen_empresas)
-                plt.title('F1-Score por Empresa')
-                plt.xticks(rotation=45)
-                
-                plt.tight_layout()
-                plt.savefig(os.path.join(results_dir, "plots", "metricas_por_empresa.png"))
-                plt.close()
-                
-                # Gráfico de comparación de modelos por empresa
-                plt.figure(figsize=(12, 8))
-                sns.countplot(x='Mejor_Modelo', data=resumen_empresas)
-                plt.title('Distribución de Mejores Modelos por Empresa')
-                plt.xticks(rotation=45)
-                plt.ylabel('Conteo')
-                plt.savefig(os.path.join(results_dir, "plots", "distribucion_modelos.png"))
-                plt.close()
-                
-                logger.info("Visualizaciones de resumen guardadas")
-            except Exception as e:
-                logger.error(f"Error al crear visualizaciones de resumen: {str(e)}")
-                logger.error(traceback.format_exc())
+                # Visualizamos las métricas por empresa
+                try:
+                    plt.figure(figsize=(14, 10))
+                    
+                    # Accuracy
+                    plt.subplot(2, 2, 1)
+                    sns.barplot(x='Empresa', y='Accuracy', data=resumen_empresas)
+                    plt.title('Accuracy por Empresa')
+                    plt.xticks(rotation=45)
+                    
+                    # Precision
+                    plt.subplot(2, 2, 2)
+                    sns.barplot(x='Empresa', y='Precision', data=resumen_empresas)
+                    plt.title('Precision por Empresa')
+                    plt.xticks(rotation=45)
+                    
+                    # Recall
+                    plt.subplot(2, 2, 3)
+                    sns.barplot(x='Empresa', y='Recall', data=resumen_empresas)
+                    plt.title('Recall por Empresa')
+                    plt.xticks(rotation=45)
+                    
+                    # F1
+                    plt.subplot(2, 2, 4)
+                    sns.barplot(x='Empresa', y='F1', data=resumen_empresas)
+                    plt.title('F1-Score por Empresa')
+                    plt.xticks(rotation=45)
+                    
+                    plt.tight_layout()
+                    plt.savefig(os.path.join(results_dir, "plots", "metricas_por_empresa.png"))
+                    plt.close()
+                    
+                    # Gráfico de comparación de modelos por empresa
+                    plt.figure(figsize=(12, 8))
+                    sns.countplot(x='Mejor_Modelo', data=resumen_empresas)
+                    plt.title('Distribución de Mejores Modelos por Empresa')
+                    plt.xticks(rotation=45)
+                    plt.ylabel('Conteo')
+                    plt.savefig(os.path.join(results_dir, "plots", "distribucion_modelos.png"))
+                    plt.close()
+                    
+                    logger.info("Visualizaciones de resumen guardadas")
+                except Exception as e:
+                    logger.error(f"Error al crear visualizaciones de resumen: {str(e)}")
+                    logger.error(traceback.format_exc())
+            else:
+                logger.warning("No se creó resumen comparativo: No hay suficientes datos válidos")
+        else:
+            logger.warning("No se creó resumen comparativo: No hay resultados por empresa")
         
         # 6. Conclusiones y resumen final
         end_time = time.time()
@@ -497,7 +535,7 @@ def main():
             f.write(f"Total de empresas analizadas: {len(resultados_por_empresa)}\n")
             f.write(f"Tiempo total de ejecución: {total_time_mins:.2f} minutos\n\n")
             
-            if resumen_empresas is not None and not resumen_empresas.empty:
+            if 'resumen_empresas' in locals() and not resumen_empresas.empty:
                 mejor_empresa = resumen_empresas.iloc[resumen_empresas['Accuracy'].idxmax()]
                 f.write(f"Empresa con mejor rendimiento: {mejor_empresa['Empresa']}\n")
                 f.write(f"- Mejor modelo: {mejor_empresa['Mejor_Modelo']}\n")
