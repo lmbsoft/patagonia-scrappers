@@ -11,13 +11,28 @@ import sys
 import time
 import logging
 import traceback
+import warnings
 from datetime import datetime
+
+# Silenciar advertencias no críticas
+warnings.filterwarnings("ignore", category=UserWarning)
+warnings.filterwarnings("ignore", category=FutureWarning)
+warnings.filterwarnings("ignore", message="Variables are collinear")
+warnings.filterwarnings("ignore", message="Target scores need to be probabilities")
+
+# Configurar matplotlib antes de importarlo
+import matplotlib
+matplotlib.use('Agg')  # Usar el backend Agg que es más estable para entornos sin GUI
+matplotlib.rcParams['font.family'] = 'DejaVu Sans'  # Especificar una fuente que sabemos está instalada
 
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pycaret.classification import *
+
+# Importaciones adicionales para las visualizaciones manuales
+from sklearn.metrics import confusion_matrix, roc_curve, auc, precision_recall_curve, average_precision_score
 
 # Configuración del sistema de logging
 log_dir = "logs"
@@ -296,56 +311,120 @@ def modelar_empresa(df, empresa_id):
                     verbose=False
                 )
                 
-                # Visualizamos la matriz de confusión del modelo ajustado - CORREGIDO
+                # VISUALIZACIONES - Método alternativo que no depende de plot_model
+                logger.info(f"Generando visualizaciones para {model_name}...")
                 try:
-                    # Primero generamos la figura sin guardar
-                    fig = plot_model(
-                        tuned_model, 
-                        plot='confusion_matrix', 
-                        save=False,
-                        plot_kwargs={'fig_size': (10, 8)}
-                    )
-                    # Guardamos manualmente la figura
-                    if fig:
-                        confusion_path = os.path.join(results_dir, "plots", f"confusion_matrix_empresa_{empresa_id}_{model_name}.png")
-                        plt.savefig(confusion_path)
-                        plt.close(fig)
-                        logger.info(f"Matriz de confusión guardada en {confusion_path}")
-                except Exception as plot_error:
-                    logger.warning(f"Error al generar matriz de confusión: {str(plot_error)}")
-                
-                # Visualizamos la curva AUC del modelo ajustado - CORREGIDO
-                try:
-                    fig = plot_model(
-                        tuned_model, 
-                        plot='auc', 
-                        save=False,
-                        plot_kwargs={'fig_size': (10, 8)}
-                    )
-                    if fig:
-                        auc_path = os.path.join(results_dir, "plots", f"auc_empresa_{empresa_id}_{model_name}.png")
-                        plt.savefig(auc_path)
-                        plt.close(fig)
-                        logger.info(f"Curva AUC guardada en {auc_path}")
-                except Exception as plot_error:
-                    logger.warning(f"Error al generar curva AUC: {str(plot_error)}")
-                
-                # Visualizamos feature importance - CORREGIDO
-                if hasattr(tuned_model, 'feature_importances_') or hasattr(tuned_model, 'coef_'):
+                    # 1. Matriz de confusión - Creación manual
+                    y_pred = predict_model(tuned_model)
+                    conf_matrix = confusion_matrix(y_pred['y_true'], y_pred['prediction_label'])
+                    
+                    plt.figure(figsize=(10, 8))
+                    sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
+                               xticklabels=model_comp.index.tolist(),
+                               yticklabels=model_comp.index.tolist())
+                    plt.title(f'Matriz de Confusión - {model_name} - Empresa {empresa_id}')
+                    plt.ylabel('Etiqueta Verdadera')
+                    plt.xlabel('Etiqueta Predicha')
+                    confusion_path = os.path.join(results_dir, "plots", f"confusion_matrix_empresa_{empresa_id}_{model_name}.png")
+                    plt.savefig(confusion_path, bbox_inches='tight', dpi=100)
+                    plt.close()
+                    logger.info(f"Matriz de confusión guardada en {confusion_path}")
+                    
+                    # 2. Curva ROC - Para cada clase (one-vs-rest)
                     try:
-                        fig = plot_model(
-                            tuned_model, 
-                            plot='feature', 
-                            save=False,
-                            plot_kwargs={'fig_size': (12, 10)}
-                        )
-                        if fig:
-                            feature_path = os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}.png")
-                            plt.savefig(feature_path)
-                            plt.close(fig)
-                            logger.info(f"Importancia de características guardada en {feature_path}")
-                    except Exception as plot_error:
-                        logger.warning(f"Error al generar importancia de características: {str(plot_error)}")
+                        y_pred_proba = predict_model(tuned_model, raw_score=True)
+                        
+                        # Verificar que tenemos las columnas de probabilidad
+                        prob_cols = [col for col in y_pred_proba.columns if col.startswith('prediction_score_')]
+                        
+                        if prob_cols:
+                            plt.figure(figsize=(10, 8))
+                            
+                            # Para cada clase, calcular y dibujar ROC
+                            classes = sorted(y_pred_proba['y_true'].unique())
+                            colors = ['blue', 'red', 'green', 'purple', 'orange', 'brown']
+                            
+                            for i, class_label in enumerate(classes):
+                                class_index = list(classes).index(class_label)
+                                prob_col = prob_cols[class_index]
+                                
+                                # One-vs-rest ROC
+                                y_true_bin = (y_pred_proba['y_true'] == class_label).astype(int)
+                                if len(y_true_bin.unique()) > 1:  # Solo si hay ejemplos positivos y negativos
+                                    fpr, tpr, _ = roc_curve(y_true_bin, y_pred_proba[prob_col])
+                                    roc_auc = auc(fpr, tpr)
+                                    
+                                    color = colors[i % len(colors)]
+                                    plt.plot(fpr, tpr, color=color, lw=2,
+                                             label=f'ROC clase {class_label} (AUC = {roc_auc:.2f})')
+                            
+                            plt.plot([0, 1], [0, 1], 'k--', lw=2)
+                            plt.xlim([0.0, 1.0])
+                            plt.ylim([0.0, 1.05])
+                            plt.xlabel('Tasa de Falsos Positivos')
+                            plt.ylabel('Tasa de Verdaderos Positivos')
+                            plt.title(f'Curva ROC - {model_name} - Empresa {empresa_id}')
+                            plt.legend(loc="lower right")
+                            roc_path = os.path.join(results_dir, "plots", f"roc_empresa_{empresa_id}_{model_name}.png")
+                            plt.savefig(roc_path, bbox_inches='tight', dpi=100)
+                            plt.close()
+                            logger.info(f"Curva ROC guardada en {roc_path}")
+                    except Exception as roc_err:
+                        logger.warning(f"Error al generar curva ROC: {str(roc_err)}")
+                    
+                    # 3. Importancia de características - Método alternativo
+                    if hasattr(tuned_model, 'feature_importances_') or hasattr(tuned_model, 'coef_'):
+                        try:
+                            # Obtener importancia de características
+                            if hasattr(tuned_model, 'feature_importances_'):
+                                importance = tuned_model.feature_importances_
+                            elif hasattr(tuned_model, 'coef_'):
+                                # Para modelos lineales que usan coef_
+                                importance = np.abs(tuned_model.coef_).sum(axis=0) if tuned_model.coef_.ndim > 1 else np.abs(tuned_model.coef_)
+                            else:
+                                logger.warning(f"No se pudo determinar la importancia de características para {model_name}")
+                                raise AttributeError("Modelo no tiene atributos de importancia")
+                            
+                            # Obtener nombres de características
+                            features = get_config('X_train').columns.tolist()
+                            
+                            # Crear DataFrame de importancia
+                            if len(features) == len(importance):
+                                feature_importance = pd.DataFrame({
+                                    'Feature': features,
+                                    'Importance': importance
+                                })
+                                feature_importance = feature_importance.sort_values('Importance', ascending=False)
+                                
+                                # Mostrar solo las 15 características más importantes
+                                top_n = min(15, len(feature_importance))
+                                feature_importance = feature_importance.head(top_n)
+                                
+                                plt.figure(figsize=(12, 8))
+                                sns.barplot(x='Importance', y='Feature', data=feature_importance)
+                                plt.title(f'Importancia de Características - {model_name} - Empresa {empresa_id}')
+                                plt.tight_layout()
+                                feature_path = os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}.png")
+                                plt.savefig(feature_path, bbox_inches='tight', dpi=100)
+                                plt.close()
+                                logger.info(f"Importancia de características guardada en {feature_path}")
+                        except Exception as feat_err:
+                            logger.warning(f"Error al generar importancia de características: {str(feat_err)}")
+                except Exception as plot_error:
+                    logger.warning(f"Error general al generar visualizaciones: {str(plot_error)}")
+                    # Si fallan todas las visualizaciones específicas, intentamos con visualizaciones más básicas
+                    try:
+                        # Crear una visualización básica del modelo
+                        plt.figure(figsize=(8, 6))
+                        plt.text(0.5, 0.5, f"Modelo: {model_name}\nEmpresa: {empresa_id}", 
+                                horizontalalignment='center', verticalalignment='center', fontsize=14)
+                        plt.axis('off')
+                        basic_path = os.path.join(results_dir, "plots", f"modelo_info_{empresa_id}_{model_name}.png")
+                        plt.savefig(basic_path)
+                        plt.close()
+                        logger.info(f"Información básica del modelo guardada en {basic_path}")
+                    except Exception as basic_err:
+                        logger.error(f"No se pudo generar ni siquiera una visualización básica: {str(basic_err)}")
                 
                 # Guardamos el modelo
                 model_path = os.path.join(results_dir, "models", f"modelo_{empresa_id}_{model_name}")
