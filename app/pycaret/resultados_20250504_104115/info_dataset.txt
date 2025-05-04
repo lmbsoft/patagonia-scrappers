@@ -1,0 +1,12 @@
+Dimensiones del dataset: (2909, 75)
+Número de filas: 2909
+Número de columnas: 75
+
+Distribución de la variable 'label':
+label
+SUBE        1336
+BAJA        1265
+MANTIENE     308
+
+Número de empresas distintas: 9
+IDs de empresas: [10, 11, 12, 13, 14, 15, 16, 17, 18]
