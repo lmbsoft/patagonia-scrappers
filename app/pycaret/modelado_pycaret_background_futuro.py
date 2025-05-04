@@ -320,111 +320,233 @@ def modelar_empresa(df, empresa_id):
                     
                     plt.figure(figsize=(10, 8))
                     sns.heatmap(conf_matrix, annot=True, fmt='d', cmap='Blues',
-                               xticklabels=model_comp.index.tolist(),
-                               yticklabels=model_comp.index.tolist())
+                               xticklabels=sorted(y_pred['y_true'].unique()),
+                               yticklabels=sorted(y_pred['y_true'].unique()))
                     plt.title(f'Matriz de Confusión - {model_name} - Empresa {empresa_id}')
                     plt.ylabel('Etiqueta Verdadera')
                     plt.xlabel('Etiqueta Predicha')
                     confusion_path = os.path.join(results_dir, "plots", f"confusion_matrix_empresa_{empresa_id}_{model_name}.png")
+                    plt.tight_layout()
                     plt.savefig(confusion_path, bbox_inches='tight', dpi=100)
                     plt.close()
                     logger.info(f"Matriz de confusión guardada en {confusion_path}")
                     
-                    # 2. Curva ROC - Para cada clase (one-vs-rest)
+                    # 2. Curva ROC - Solo para modelos que tienen predict_proba
                     try:
-                        y_pred_proba = predict_model(tuned_model, raw_score=True)
-                        
-                        # Verificar que tenemos las columnas de probabilidad
-                        prob_cols = [col for col in y_pred_proba.columns if col.startswith('prediction_score_')]
-                        
-                        if prob_cols:
+                        # Verificar primero si el modelo tiene predict_proba
+                        if hasattr(tuned_model, 'predict_proba'):
+                            y_pred_proba = predict_model(tuned_model, raw_score=True)
+                            
+                            # Verificar que tenemos las columnas de probabilidad
+                            prob_cols = [col for col in y_pred_proba.columns if col.startswith('prediction_score_')]
+                            
+                            if prob_cols:
+                                plt.figure(figsize=(10, 8))
+                                
+                                # Para cada clase, calcular y dibujar ROC
+                                classes = sorted(y_pred_proba['y_true'].unique())
+                                colors = ['blue', 'red', 'green', 'purple', 'orange', 'brown']
+                                
+                                for i, class_label in enumerate(classes):
+                                    class_index = list(classes).index(class_label)
+                                    if class_index < len(prob_cols):  # Asegurarse de que hay suficientes columnas
+                                        prob_col = prob_cols[class_index]
+                                        
+                                        # One-vs-rest ROC
+                                        y_true_bin = (y_pred_proba['y_true'] == class_label).astype(int)
+                                        if len(y_true_bin.unique()) > 1:  # Solo si hay ejemplos positivos y negativos
+                                            fpr, tpr, _ = roc_curve(y_true_bin, y_pred_proba[prob_col])
+                                            roc_auc = auc(fpr, tpr)
+                                            
+                                            color = colors[i % len(colors)]
+                                            plt.plot(fpr, tpr, color=color, lw=2,
+                                                     label=f'ROC clase {class_label} (AUC = {roc_auc:.2f})')
+                                
+                                plt.plot([0, 1], [0, 1], 'k--', lw=2)
+                                plt.xlim([0.0, 1.0])
+                                plt.ylim([0.0, 1.05])
+                                plt.xlabel('Tasa de Falsos Positivos')
+                                plt.ylabel('Tasa de Verdaderos Positivos')
+                                plt.title(f'Curva ROC - {model_name} - Empresa {empresa_id}')
+                                plt.legend(loc="lower right")
+                                roc_path = os.path.join(results_dir, "plots", f"roc_empresa_{empresa_id}_{model_name}.png")
+                                plt.tight_layout()
+                                plt.savefig(roc_path, bbox_inches='tight', dpi=100)
+                                plt.close()
+                                logger.info(f"Curva ROC guardada en {roc_path}")
+                        else:
+                            # Para modelos sin predict_proba, crear un gráfico alternativo (como precisión/recall)
+                            y_pred = predict_model(tuned_model)
+                            unique_classes = sorted(y_pred['y_true'].unique())
+                            
                             plt.figure(figsize=(10, 8))
                             
-                            # Para cada clase, calcular y dibujar ROC
-                            classes = sorted(y_pred_proba['y_true'].unique())
-                            colors = ['blue', 'red', 'green', 'purple', 'orange', 'brown']
-                            
-                            for i, class_label in enumerate(classes):
-                                class_index = list(classes).index(class_label)
-                                prob_col = prob_cols[class_index]
+                            # Calculamos precisión y recall por clase
+                            for i, class_label in enumerate(unique_classes):
+                                y_true_binary = (y_pred['y_true'] == class_label).astype(int)
+                                y_pred_binary = (y_pred['prediction_label'] == class_label).astype(int)
                                 
-                                # One-vs-rest ROC
-                                y_true_bin = (y_pred_proba['y_true'] == class_label).astype(int)
-                                if len(y_true_bin.unique()) > 1:  # Solo si hay ejemplos positivos y negativos
-                                    fpr, tpr, _ = roc_curve(y_true_bin, y_pred_proba[prob_col])
-                                    roc_auc = auc(fpr, tpr)
-                                    
-                                    color = colors[i % len(colors)]
-                                    plt.plot(fpr, tpr, color=color, lw=2,
-                                             label=f'ROC clase {class_label} (AUC = {roc_auc:.2f})')
+                                precision = np.sum((y_true_binary == 1) & (y_pred_binary == 1)) / (np.sum(y_pred_binary == 1) + 1e-10)
+                                recall = np.sum((y_true_binary == 1) & (y_pred_binary == 1)) / (np.sum(y_true_binary == 1) + 1e-10)
+                                
+                                plt.scatter(recall, precision, s=100, label=f'Clase {class_label}')
                             
-                            plt.plot([0, 1], [0, 1], 'k--', lw=2)
-                            plt.xlim([0.0, 1.0])
-                            plt.ylim([0.0, 1.05])
-                            plt.xlabel('Tasa de Falsos Positivos')
-                            plt.ylabel('Tasa de Verdaderos Positivos')
-                            plt.title(f'Curva ROC - {model_name} - Empresa {empresa_id}')
-                            plt.legend(loc="lower right")
-                            roc_path = os.path.join(results_dir, "plots", f"roc_empresa_{empresa_id}_{model_name}.png")
-                            plt.savefig(roc_path, bbox_inches='tight', dpi=100)
+                            plt.title(f'Precisión vs. Recall por Clase - {model_name} - Empresa {empresa_id}')
+                            plt.xlabel('Recall')
+                            plt.ylabel('Precisión')
+                            plt.grid(True, linestyle='--', alpha=0.7)
+                            plt.xlim([-0.05, 1.05])
+                            plt.ylim([-0.05, 1.05])
+                            plt.legend()
+                            
+                            pr_path = os.path.join(results_dir, "plots", f"precision_recall_empresa_{empresa_id}_{model_name}.png")
+                            plt.tight_layout()
+                            plt.savefig(pr_path, bbox_inches='tight', dpi=100)
                             plt.close()
-                            logger.info(f"Curva ROC guardada en {roc_path}")
+                            logger.info(f"Gráfico Precisión-Recall guardado en {pr_path}")
                     except Exception as roc_err:
-                        logger.warning(f"Error al generar curva ROC: {str(roc_err)}")
-                    
-                    # 3. Importancia de características - Método alternativo
-                    if hasattr(tuned_model, 'feature_importances_') or hasattr(tuned_model, 'coef_'):
+                        logger.warning(f"Error al generar curva ROC o alternativa: {str(roc_err)}")
+                        # Si falla la ROC, intentamos otra visualización alternativa
                         try:
-                            # Obtener importancia de características
-                            if hasattr(tuned_model, 'feature_importances_'):
-                                importance = tuned_model.feature_importances_
-                            elif hasattr(tuned_model, 'coef_'):
-                                # Para modelos lineales que usan coef_
-                                importance = np.abs(tuned_model.coef_).sum(axis=0) if tuned_model.coef_.ndim > 1 else np.abs(tuned_model.coef_)
+                            # Diagrama de barras con accuracy por clase
+                            plt.figure(figsize=(10, 6))
+                            class_metrics = {}
+                            
+                            # Calcular accuracy por clase
+                            for class_label in sorted(y_pred['y_true'].unique()):
+                                mask = (y_pred['y_true'] == class_label)
+                                class_accuracy = np.mean(y_pred.loc[mask, 'y_true'] == y_pred.loc[mask, 'prediction_label'])
+                                class_metrics[class_label] = class_accuracy
+                            
+                            # Crear gráfico
+                            plt.bar(range(len(class_metrics)), list(class_metrics.values()), align='center')
+                            plt.xticks(range(len(class_metrics)), list(class_metrics.keys()))
+                            plt.title(f'Precisión por Clase - {model_name} - Empresa {empresa_id}')
+                            plt.xlabel('Clase')
+                            plt.ylabel('Precisión')
+                            plt.ylim([0, 1])
+                            
+                            acc_path = os.path.join(results_dir, "plots", f"accuracy_por_clase_empresa_{empresa_id}_{model_name}.png")
+                            plt.tight_layout()
+                            plt.savefig(acc_path, bbox_inches='tight', dpi=100)
+                            plt.close()
+                            logger.info(f"Gráfico de precisión por clase guardado en {acc_path}")
+                        except Exception as alt_err:
+                            logger.warning(f"Error al generar visualización alternativa: {str(alt_err)}")
+                    
+                    # 3. Importancia de características - Método mejorado
+                    try:
+                        # Intentar obtener importancia de características de diferentes maneras
+                        importance = None
+                        features = get_config('X_train').columns.tolist()
+                        
+                        if hasattr(tuned_model, 'feature_importances_'):
+                            importance = tuned_model.feature_importances_
+                        elif hasattr(tuned_model, 'coef_'):
+                            if tuned_model.coef_.ndim > 1:
+                                importance = np.abs(tuned_model.coef_).sum(axis=0)
                             else:
-                                logger.warning(f"No se pudo determinar la importancia de características para {model_name}")
-                                raise AttributeError("Modelo no tiene atributos de importancia")
+                                importance = np.abs(tuned_model.coef_)
+                        # Añadir soporte para modelos con importancia implícita
+                        elif isinstance(tuned_model, (KNeighborsClassifier, LogisticRegression)):
+                            # Para KNN y modelos lineales sin importancia explícita, usar permutación
+                            from sklearn.inspection import permutation_importance
                             
-                            # Obtener nombres de características
-                            features = get_config('X_train').columns.tolist()
+                            # Obtener los datos de entrenamiento
+                            X_train = get_config('X_train')
+                            y_train = get_config('y_train')
                             
-                            # Crear DataFrame de importancia
-                            if len(features) == len(importance):
-                                feature_importance = pd.DataFrame({
-                                    'Feature': features,
-                                    'Importance': importance
-                                })
-                                feature_importance = feature_importance.sort_values('Importance', ascending=False)
-                                
-                                # Mostrar solo las 15 características más importantes
-                                top_n = min(15, len(feature_importance))
-                                feature_importance = feature_importance.head(top_n)
-                                
-                                plt.figure(figsize=(12, 8))
-                                sns.barplot(x='Importance', y='Feature', data=feature_importance)
-                                plt.title(f'Importancia de Características - {model_name} - Empresa {empresa_id}')
-                                plt.tight_layout()
-                                feature_path = os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}.png")
-                                plt.savefig(feature_path, bbox_inches='tight', dpi=100)
-                                plt.close()
-                                logger.info(f"Importancia de características guardada en {feature_path}")
-                        except Exception as feat_err:
-                            logger.warning(f"Error al generar importancia de características: {str(feat_err)}")
+                            # Asegurarse de que X_train esté como array para permutation_importance
+                            result = permutation_importance(tuned_model, X_train, y_train, 
+                                                           n_repeats=5, random_state=42, n_jobs=-1)
+                            importance = result.importances_mean
+                        
+                        # Si tenemos importancia y características, crear visualización
+                        if importance is not None and len(features) == len(importance):
+                            feature_importance = pd.DataFrame({
+                                'Feature': features,
+                                'Importance': importance
+                            })
+                            feature_importance = feature_importance.sort_values('Importance', ascending=False)
+                            
+                            # Mostrar solo las 15 características más importantes
+                            top_n = min(15, len(feature_importance))
+                            feature_importance = feature_importance.head(top_n)
+                            
+                            plt.figure(figsize=(12, 8))
+                            sns.barplot(x='Importance', y='Feature', data=feature_importance)
+                            plt.title(f'Importancia de Características - {model_name} - Empresa {empresa_id}')
+                            plt.tight_layout()
+                            feature_path = os.path.join(results_dir, "plots", f"feature_importance_empresa_{empresa_id}_{model_name}.png")
+                            plt.savefig(feature_path, bbox_inches='tight', dpi=100)
+                            plt.close()
+                            logger.info(f"Importancia de características guardada en {feature_path}")
+                        else:
+                            # Si no podemos obtener la importancia, creamos una visualización de correlación
+                            plt.figure(figsize=(12, 10))
+                            X_train = get_config('X_train')
+                            correlation = X_train.corrwith(get_config('y_train')).abs().sort_values(ascending=False)
+                            
+                            # Mostrar top 15 correlaciones
+                            top_corr = correlation.head(15)
+                            sns.barplot(x=top_corr.values, y=top_corr.index)
+                            plt.title(f'Correlación con Variable Objetivo - {model_name} - Empresa {empresa_id}')
+                            plt.xlabel('Correlación Absoluta')
+                            plt.tight_layout()
+                            
+                            corr_path = os.path.join(results_dir, "plots", f"correlacion_objetivo_empresa_{empresa_id}_{model_name}.png")
+                            plt.savefig(corr_path, bbox_inches='tight', dpi=100)
+                            plt.close()
+                            logger.info(f"Correlación con variable objetivo guardada en {corr_path}")
+                    except Exception as feat_err:
+                        logger.warning(f"Error al generar importancia de características: {str(feat_err)}")
+                        # Creamos un gráfico alternativo si falla la importancia de características
+                        try:
+                            plt.figure(figsize=(10, 6))
+                            # Distribución de predicciones vs. valores reales
+                            sns.countplot(data=y_pred, x='prediction_label', hue='y_true')
+                            plt.title(f'Distribución de Predicciones - {model_name} - Empresa {empresa_id}')
+                            plt.xlabel('Clase Predicha')
+                            plt.ylabel('Conteo')
+                            plt.legend(title='Clase Real')
+                            plt.tight_layout()
+                            
+                            dist_path = os.path.join(results_dir, "plots", f"distribucion_predicciones_{empresa_id}_{model_name}.png")
+                            plt.savefig(dist_path, bbox_inches='tight', dpi=100)
+                            plt.close()
+                            logger.info(f"Distribución de predicciones guardada en {dist_path}")
+                        except Exception as alt_feat_err:
+                            logger.warning(f"Error al generar visualización alternativa de distribución: {str(alt_feat_err)}")
                 except Exception as plot_error:
                     logger.warning(f"Error general al generar visualizaciones: {str(plot_error)}")
-                    # Si fallan todas las visualizaciones específicas, intentamos con visualizaciones más básicas
+                    # Si fallan todas las visualizaciones específicas, intentamos con visualizaciones realmente básicas
                     try:
-                        # Crear una visualización básica del modelo
+                        # Matriz de confusión simplificada
+                        y_pred = predict_model(tuned_model)
+                        labels = sorted(y_pred['y_true'].unique())
+                        cm = confusion_matrix(y_pred['y_true'], y_pred['prediction_label'], labels=labels)
+                        
                         plt.figure(figsize=(8, 6))
-                        plt.text(0.5, 0.5, f"Modelo: {model_name}\nEmpresa: {empresa_id}", 
-                                horizontalalignment='center', verticalalignment='center', fontsize=14)
-                        plt.axis('off')
-                        basic_path = os.path.join(results_dir, "plots", f"modelo_info_{empresa_id}_{model_name}.png")
-                        plt.savefig(basic_path)
+                        plt.imshow(cm, interpolation='nearest', cmap=plt.cm.Blues)
+                        plt.title(f'Matriz de Confusión - {model_name} - Empresa {empresa_id}')
+                        plt.colorbar()
+                        plt.tight_layout()
+                        
+                        basic_cm_path = os.path.join(results_dir, "plots", f"basic_cm_{empresa_id}_{model_name}.png")
+                        plt.savefig(basic_cm_path)
                         plt.close()
-                        logger.info(f"Información básica del modelo guardada en {basic_path}")
+                        logger.info(f"Matriz de confusión básica guardada en {basic_cm_path}")
                     except Exception as basic_err:
                         logger.error(f"No se pudo generar ni siquiera una visualización básica: {str(basic_err)}")
+                        # En el peor caso, creamos una imagen que indica el error
+                        plt.figure(figsize=(8, 6))
+                        plt.text(0.5, 0.5, f"Error al generar visualizaciones\nModelo: {model_name}\nEmpresa: {empresa_id}", 
+                                horizontalalignment='center', verticalalignment='center', fontsize=14, color='red')
+                        plt.axis('off')
+                        error_path = os.path.join(results_dir, "plots", f"error_visualizacion_{empresa_id}_{model_name}.png")
+                        plt.savefig(error_path)
+                        plt.close()
+                        logger.error(f"Imagen de error guardada en {error_path}")
                 
                 # Guardamos el modelo
                 model_path = os.path.join(results_dir, "models", f"modelo_{empresa_id}_{model_name}")
