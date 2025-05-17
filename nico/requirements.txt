@@ -4,3 +4,5 @@ scikit-learn
 lightgbm
 optuna
 shap
+imbalanced-learn
+ppi-client
