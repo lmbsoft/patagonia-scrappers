@@ -4,8 +4,8 @@ from sqlalchemy.orm import sessionmaker, relationship, declarative_base
 from datetime import datetime
 
 # Configuración de la base de datos PostgreSQL mediante variables de entorno
-USER = os.getenv("DB_USER", "tu_usuario")
-PASSWORD = os.getenv("DB_PASSWORD", "tu_contraseña")
+USER = os.getenv("DB_USER", "usuario")
+PASSWORD = os.getenv("DB_PASSWORD", "contraseña")
 HOST = os.getenv("DB_HOST", "db")
 DB = os.getenv("DB_NAME", "patagonia_db")
 

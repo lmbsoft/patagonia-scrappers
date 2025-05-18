@@ -135,7 +135,6 @@ class TablaPPI(Base):
         return f"<TablaPPI(Date='{self.Date}', ticker='{self.ticker}', Price={self.Price})>"
 
 # Database configuration
-#DATABASE_URL = "postgresql://tu_usuario:tu_contraseña@base.patagonia-scrappers.lmbsoft.com.ar:5432/patagonia_db"
 DATABASE_URL = "sqlite:///patagonia_datos.db"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
