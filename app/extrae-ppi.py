@@ -23,8 +23,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Claves de acceso a la API (deberías considerar mover esto a variables de entorno en producción)
-KEY_PUBLICA = "TnAzYWFDU3JYZDZuVW82RE16RTc="
-KEY_PRIVADA = "ODIxMzUxOTctZmMxNy00OGRhLWI2OTItNTc5MzFhMjZlMmZl"
+KEY_PUBLICA = os.environ.get("PPI_KEY_PUBLICA")
+KEY_PRIVADA = os.environ.get("PPI_KEY_PRIVADA")
 
 # Constantes
 DEFAULT_START_DATE = datetime(2025, 1, 1)

@@ -1,11 +1,11 @@
 import requests
-
+import os
 url = "https://bsky.social/xrpc/app.bsky.feed.getAuthorFeed"
 
 url_se = "https://bsky.social/xrpc/com.atproto.server.createSession"
 payload = {
-  "identifier": "grupo18.bsky.social",
-  "password":'Grupo18*BS'
+  "identifier": os.environ.get("BLUESKY_USERNAME"),
+  "password": os.environ.get("BLUESKY_PASSWORD")
 }
 response_tk = requests.post(url_se, json=payload)
 response_tk.raise_for_status()

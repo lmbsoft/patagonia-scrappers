@@ -38,9 +38,9 @@ API_AUTH_ENDPOINT = "com.atproto.server.createSession"
 API_SEARCH_ENDPOINT = "app.bsky.actor.searchActors"
 API_FEED_ENDPOINT = "app.bsky.feed.getAuthorFeed"
 DEFAULT_POSTS_LIMIT = 100
-USERNAME = "grupo18.bsky.social"
-PASSWORD = "Grupo18*BS"  # En producción, usar variables de entorno
-SEARCH_TERMS = ["bloomberg", "aoc", "economist"]
+USERNAME = os.environ.get("BLUESKY_USERNAME")
+PASSWORD = os.environ.get("BLUESKY_PASSWORD")
+SEARCH_TERMS = os.environ.get("BLUESKY_SEARCH_TERMS", "bloomberg,aoc,economist").split(",")
 
 # Umbrales de sentimiento
 POSITIVE_THRESHOLD = 0.05
